@@ -47,22 +47,6 @@ create DATABASE LINK "QUERY_LINK"
 create synonym sales_delivery_company for oltp_link.sales@query_link;
 /
 
-  
--- Procedures para fazer os inserts nas tabelas extra
-
-create or replace procedure insert_extra_tables
-is
-begin
-    delete delivery_company;
-    delete fleet;
-    
-    fleet_extra_table;
-    delivery_company_extra_table;
-    
-    commit;
-end;
-/
-
 
 -- Procedures para fazer os inserts nas tabelas extra
 
@@ -147,7 +131,7 @@ end;
 /
 
 
--- Dar privilÈgio de select ‡s tabelas extra ao utilizador BDII_1702033 
+-- Dar privilÔøΩgio de select ÔøΩs tabelas extra ao utilizador BDII_1702033 
 
 grant select on delivery_company to BDII_1702033;
 grant select on fleet to BDII_1702033;
@@ -222,5 +206,21 @@ ALTER TABLE sales
 ALTER TABLE sales
     ADD CONSTRAINT sales_delivery_company_fk FOREIGN KEY ( delivery_company_id )
         REFERENCES delivery_company ( id );
+/
+
+
+-- Verificar que start_date n√£o s√£o mais recentes que end_date
+
+select id, start_date, end_date
+from fleet
+where start_date > end_date;
+/
+
+-- Selecionar uma certa delivery_company ordenando os type por ordem alfab√©tica
+
+select name, type
+from delivery_company
+where name = 'CTT'
+order by type asc;
 /
 
