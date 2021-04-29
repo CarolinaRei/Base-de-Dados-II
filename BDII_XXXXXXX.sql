@@ -44,9 +44,12 @@ create DATABASE LINK "QUERY_LINK"
 
 -- Synonym da tabela Sales da BD Operacional
 
-create synonym sales_delivery_company for oltp_link.sales@query_link;
+create synonym sales for oltp_2021.sales@query_link;
 /
 
+-- Verificar
+select * from oltp_2021.sales@query_link;
+select * from sales;
 
 -- Procedures para fazer os inserts nas tabelas extra
 
@@ -91,8 +94,8 @@ create or replace procedure delivery_company_extra_table
 is
     type namesarray IS VARRAY(8) OF VARCHAR2(20);
     type typesarray IS VARRAY(6) OF VARCHAR2(20);
-	v_min_value NUMBER(5):=1;
-    v_max_value NUMBER(5):=600;
+	v_min_value NUMBER(9):= 1;
+    v_max_value NUMBER(9):= 2;
     v_name_array namesarray;
     v_type_array typesarray;
     v_name VARCHAR2(20);
@@ -101,13 +104,13 @@ is
     v_count number(9);
     v_delivery_company_fleet_fk number(9);
 begin
+    select min(sale_id), max (sale_id)
+    into v_min_value, v_max_value
+    from sales;
+    
     v_name_array := namesarray('UPS', 'Amazon', 'Binni', 'Stack', 'Stark', 'CTT', 'DpD', 'HelloWorld');
     v_type_array := typesarray('Fisical', 'Mail', 'Data', 'Crypto', 'Stuff', 'All-Rounded');
     
-	/*select min(delivery_company_id), max(delivery_company_id)
-	into v_min_value, v_max_value
-	from sales;*/
-	
 	for j in v_min_value..v_max_value loop
 		v_name := v_name_array(trunc(dbms_random.value(1, v_name_array.count())));
         v_type := v_type_array(trunc(dbms_random.value(1, v_type_array.count())));
@@ -126,97 +129,34 @@ begin
 		
 		insert into delivery_company(id, name, type, fleet_id)
 		values(j, v_name, v_type, v_delivery_company_fleet_fk); 
-	end loop; 
+	end loop;
 end;
 /
 
+-- Verificar/Testar
 
--- Dar privilï¿½gio de select ï¿½s tabelas extra ao utilizador BDII_1702033 
+select * from delivery_company;
+select * from sales;
+select count(sale_id) from sales;
+select count(id) from delivery_company;
+
+
+-- Dar privilégio de select às tabelas extra ao utilizador BDII_1702033
 
 grant select on delivery_company to BDII_1702033;
 grant select on fleet to BDII_1702033;
-
-
--- Tabela sales
-
-CREATE TABLE sales (
-    cust_id               NUMBER NOT NULL,
-    channel_id            CHAR(1 BYTE) NOT NULL,
-    sale_date             DATE,
-    employee_id           NUMBER(6),
-    sale_id               NUMBER NOT NULL,
-    store_id              NUMBER(6),
-    donation_id           NUMBER(6),
-    order_id              NUMBER(9),
-    delivery_id           NUMBER(6),
-    store_promotion_id    NUMBER(6),
-    status_id             NUMBER(6),
-    currency_id           NUMBER(9),
-    currency_rate         NUMBER(9, 4),
-    credit_company_id     NUMBER(9),
-    payment_method_id     NUMBER(6),
-    credit_limit_id       NUMBER(6),
-    weather_id            NUMBER(6),
-    marketing_id          NUMBER(6),
-    delivery_company_id   NUMBER(6),
-    salesman_fleet_id     NUMBER(6),
-    contribution_id       NUMBER(6)
-);
-
-COMMENT ON TABLE sales IS
-    'facts table, without a primary key; all rows are uniquely identified by the combination of all foreign keys';
-
-COMMENT ON COLUMN sales.sale_id IS
-    'primary key';
-
-CREATE INDEX sales_channel_id ON
-    sales (
-        channel_id
-    ASC );
-
-CREATE INDEX sales_customer_fk_fk ON
-    oltp_2021.sales (
-        cust_id
-    ASC );
-
-CREATE INDEX sales_employee_id ON
-    sales (
-        employee_id
-    ASC );
-
-CREATE UNIQUE INDEX sales_pk ON
-    sales (
-        sale_id
-    ASC );
-
-ALTER TABLE sales ADD CONSTRAINT pk_sales PRIMARY KEY ( sale_id );
-
-ALTER TABLE sales
-    ADD CONSTRAINT fk_sales_channel FOREIGN KEY ( channel_id )
-        REFERENCES channels ( channel_id );
-
-ALTER TABLE sales
-    ADD CONSTRAINT fk_sales_customer FOREIGN KEY ( cust_id )
-        REFERENCES customers ( cust_id );
-
-ALTER TABLE sales
-    ADD CONSTRAINT fk_sales_employee FOREIGN KEY ( employee_id )
-        REFERENCES employees ( employee_id );
-
-ALTER TABLE sales
-    ADD CONSTRAINT sales_delivery_company_fk FOREIGN KEY ( delivery_company_id )
-        REFERENCES delivery_company ( id );
 /
 
 
--- Verificar que start_date nÃ£o sÃ£o mais recentes que end_date
+-- Verificar que start_date não são mais recentes que end_date
 
 select id, start_date, end_date
 from fleet
 where start_date > end_date;
 /
 
--- Selecionar uma certa delivery_company ordenando os type por ordem alfabÃ©tica
+
+-- Selecionar uma certa delivery_company ordenando os type por ordem alfabética
 
 select name, type
 from delivery_company
