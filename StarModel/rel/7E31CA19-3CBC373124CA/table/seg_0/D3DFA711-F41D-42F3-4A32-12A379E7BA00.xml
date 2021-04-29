@@ -1,0 +1,38 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D3DFA711-F41D-42F3-4A32-12A379E7BA00" name="SALES">
+<createdBy>ASUS</createdBy>
+<createdTime>2021-04-29 10:38:40 UTC</createdTime>
+<generatorID>FC78D0FF-1CEC-A1B5-3044-DB9014D8B73C</generatorID>
+<ownerDesignName>StarModel</ownerDesignName>
+<abbreviation>SALES</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_SALES" id="BDCE474B-3489-284F-DDDA-8CFDEC32766E">
+<createdBy>ASUS</createdBy>
+<createdTime>2021-04-29 10:38:40 UTC</createdTime>
+<generatorID>5A010DA8-D563-7524-12E8-5DFFA004DA88</generatorID>
+<ownerDesignName>StarModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E6E15D15-B63D-5741-FAF7-38DCE1A904CA" name="SALES_PK">
+<createdBy>ASUS</createdBy>
+<createdTime>2021-04-29 10:38:40 UTC</createdTime>
+<generatorID>8C453AC8-6AD5-0F27-383F-955963AD0A38</generatorID>
+<ownerDesignName>StarModel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BDCE474B-3489-284F-DDDA-8CFDEC32766E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

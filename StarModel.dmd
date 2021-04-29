@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="StarModel" id="64C0EDC0-7E34-D646-1ABB-D5E024C5F469" version="3.5">
+<createdBy>ASUS</createdBy>
+<createdTime>2021-04-29 10:34:52 UTC</createdTime>
+<ownerDesignName>StarModel</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>64C0EDC0-7E34-D646-1ABB-D5E024C5F469</designId>
+</OSDM_Design>
