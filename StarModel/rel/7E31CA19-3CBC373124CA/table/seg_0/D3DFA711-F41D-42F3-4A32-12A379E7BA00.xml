@@ -20,6 +20,69 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="EMPLOYEES_Column_1" id="BBFACE56-38F1-EBC6-5318-D8B3F8446701">
+<createdBy>ASUS</createdBy>
+<createdTime>2021-04-29 11:12:45 UTC</createdTime>
+<ownerDesignName>StarModel</ownerDesignName>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="04A86FEC-2958-9D9E-9B79-B8D8F9752129" referredColumn="2A81D22A-F1F6-B7E9-8646-ED008A36A0DE"/>
+</associations>
+</Column>
+<Column name="PRODUCTS_Column_1" id="D5CEE800-C27C-6E40-3C46-41F5FC2407AC">
+<createdBy>ASUS</createdBy>
+<createdTime>2021-04-29 11:13:06 UTC</createdTime>
+<ownerDesignName>StarModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="504F07CF-3105-DB57-EA48-79D0328152F7" referredColumn="8B6C60EF-79B5-D62F-DF85-493DAA85412A"/>
+</associations>
+</Column>
+<Column name="CUSTOMERS_Column_1" id="C48C5C5B-E3F7-DB1D-10B3-184404B23488">
+<createdBy>ASUS</createdBy>
+<createdTime>2021-04-29 11:13:11 UTC</createdTime>
+<ownerDesignName>StarModel</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2E3AE9E5-9D85-8D38-C627-DA27CDE24704" referredColumn="31285E18-A22D-EB18-5429-EAA12FEF033F"/>
+</associations>
+</Column>
+<Column name="DATE_Column_1" id="0E566020-F067-DCFB-B4A2-626B92C6ECBA">
+<createdBy>ASUS</createdBy>
+<createdTime>2021-04-29 11:13:19 UTC</createdTime>
+<ownerDesignName>StarModel</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F65B903C-DB0F-54CF-2CBB-229AF67819E9" referredColumn="9BD66A2F-6161-25B5-BB85-730967523787"/>
+</associations>
+</Column>
+<Column name="DELIVERY_COMPANY_Column_1" id="0CF59A35-B6CF-73B0-EB83-CEECC3DDE82D">
+<createdBy>ASUS</createdBy>
+<createdTime>2021-04-29 11:13:31 UTC</createdTime>
+<ownerDesignName>StarModel</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FE71A2E8-8BB0-3500-04D1-03AA0D3B0BB3" referredColumn="2C93BE2E-6890-48BE-4221-B0F0E4173A5F"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="E6E15D15-B63D-5741-FAF7-38DCE1A904CA" name="SALES_PK">
@@ -32,6 +95,56 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="BDCE474B-3489-284F-DDDA-8CFDEC32766E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="76B0AB4C-C0B6-1983-13AC-F4980A1CB60B" name="SALES_EMPLOYEES_FK">
+<createdBy>ASUS</createdBy>
+<createdTime>2021-04-29 11:12:45 UTC</createdTime>
+<ownerDesignName>StarModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BBFACE56-38F1-EBC6-5318-D8B3F8446701"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="70A29617-DE71-1EFE-DE6B-F2E375E1EFB4" name="SALES_PRODUCTS_FK">
+<createdBy>ASUS</createdBy>
+<createdTime>2021-04-29 11:13:06 UTC</createdTime>
+<ownerDesignName>StarModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D5CEE800-C27C-6E40-3C46-41F5FC2407AC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1159BA2C-5100-78D3-E107-22891FC773AE" name="SALES_CUSTOMERS_FK">
+<createdBy>ASUS</createdBy>
+<createdTime>2021-04-29 11:13:11 UTC</createdTime>
+<ownerDesignName>StarModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C48C5C5B-E3F7-DB1D-10B3-184404B23488"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9840261D-1A68-D755-BC56-696ECFB0DE2D" name="SALES_DATE_FK">
+<createdBy>ASUS</createdBy>
+<createdTime>2021-04-29 11:13:19 UTC</createdTime>
+<ownerDesignName>StarModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0E566020-F067-DCFB-B4A2-626B92C6ECBA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="10A4A1F0-B38A-9312-DBA6-5C54A3027127" name="SALES_DELIVERY_COMPANY_FK">
+<createdBy>ASUS</createdBy>
+<createdTime>2021-04-29 11:13:31 UTC</createdTime>
+<ownerDesignName>StarModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0CF59A35-B6CF-73B0-EB83-CEECC3DDE82D"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

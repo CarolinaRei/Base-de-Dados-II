@@ -7,4 +7,28 @@
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Column_1" id="8B6C60EF-79B5-D62F-DF85-493DAA85412A">
+<createdBy>ASUS</createdBy>
+<createdTime>2021-04-29 11:12:11 UTC</createdTime>
+<ownerDesignName>StarModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BEF8A896-DEEE-3E20-239D-F00E41D36974" name="PRODUCTS_PK">
+<createdBy>ASUS</createdBy>
+<createdTime>2021-04-29 11:12:11 UTC</createdTime>
+<ownerDesignName>StarModel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8B6C60EF-79B5-D62F-DF85-493DAA85412A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
 </Table>
