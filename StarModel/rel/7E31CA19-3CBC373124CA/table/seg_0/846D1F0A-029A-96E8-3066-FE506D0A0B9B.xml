@@ -8,12 +8,39 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="Column_1" id="2C93BE2E-6890-48BE-4221-B0F0E4173A5F">
+<Column name="ID" id="2C93BE2E-6890-48BE-4221-B0F0E4173A5F">
 <createdBy>ASUS</createdBy>
 <createdTime>2021-04-29 11:12:33 UTC</createdTime>
 <ownerDesignName>StarModel</ownerDesignName>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAME" id="7BED6B43-AB3F-AF2C-A97C-E1DA655408B2">
+<createdBy>ASUS</createdBy>
+<createdTime>2021-05-01 16:13:08 UTC</createdTime>
+<ownerDesignName>StarModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TYPE" id="F64DFCF5-22A9-BAAB-C1F9-BAC6873379ED">
+<createdBy>ASUS</createdBy>
+<createdTime>2021-05-01 16:13:29 UTC</createdTime>
+<ownerDesignName>StarModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>

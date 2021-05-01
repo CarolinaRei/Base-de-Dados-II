@@ -8,14 +8,53 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="Column_1" id="8B6C60EF-79B5-D62F-DF85-493DAA85412A">
+<Column name="ID" id="8B6C60EF-79B5-D62F-DF85-493DAA85412A">
 <createdBy>ASUS</createdBy>
 <createdTime>2021-04-29 11:12:11 UTC</createdTime>
 <ownerDesignName>StarModel</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAME" id="41544AE1-C2F8-6B94-C78F-BD4FFDAAFD06">
+<createdBy>ASUS</createdBy>
+<createdTime>2021-05-01 16:16:44 UTC</createdTime>
+<ownerDesignName>StarModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESC" id="A4A93179-946D-6076-F077-853D4E253FFD">
+<createdBy>ASUS</createdBy>
+<createdTime>2021-05-01 16:16:44 UTC</createdTime>
+<ownerDesignName>StarModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 BYTE</dataTypeSize>
+<ownDataTypeParameters>4000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRODUCTS_MINI_ID" id="CF69D879-53DE-7CB0-7521-BACF779FCCE3">
+<createdBy>ASUS</createdBy>
+<createdTime>2021-05-01 18:27:19 UTC</createdTime>
+<ownerDesignName>StarModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3DDC0290-0253-7E75-E7C4-B1AB3F20270F" referredColumn="5A70B36B-810C-02DB-8E21-7EAFCD6C3D86"/>
+</associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
@@ -28,6 +67,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="8B6C60EF-79B5-D62F-DF85-493DAA85412A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="211BD4C4-B519-45D1-E6AD-0E3652623219" name="PRODUCTS_PRODUCTS_MINI_FK">
+<createdBy>ASUS</createdBy>
+<createdTime>2021-05-01 18:27:19 UTC</createdTime>
+<ownerDesignName>StarModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CF69D879-53DE-7CB0-7521-BACF779FCCE3"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

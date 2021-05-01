@@ -1,0 +1,84 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="249446A3-910F-42ED-7D27-91C276FEE6CD" name="EMPLOYEES_MINI">
+<createdBy>ASUS</createdBy>
+<createdTime>2021-05-01 17:58:03 UTC</createdTime>
+<ownerDesignName>StarModel</ownerDesignName>
+<ordsAlias>table_10</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="44E3AF65-4058-7521-B66D-87AF329D3332">
+<createdBy>ASUS</createdBy>
+<createdTime>2021-05-01 17:58:37 UTC</createdTime>
+<ownerDesignName>StarModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EMAIL" id="E5D7A277-A453-BAD4-8BDC-FDF027551EAC">
+<createdBy>ASUS</createdBy>
+<createdTime>2021-05-01 18:08:59 UTC</createdTime>
+<ownerDesignName>StarModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PHONE_NUMBER" id="4342CC56-EB3B-85A9-F4E2-191FD58EFD95">
+<createdBy>ASUS</createdBy>
+<createdTime>2021-05-01 18:08:59 UTC</createdTime>
+<ownerDesignName>StarModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SALARY" id="AC8BF1F1-7BB7-0C17-5838-8B5D9667B041">
+<createdBy>ASUS</createdBy>
+<createdTime>2021-05-01 18:08:59 UTC</createdTime>
+<ownerDesignName>StarModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<ownDataTypeParameters>,12,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COMMISSION_PCT" id="13E9170B-E0DA-D0CF-FA1A-5D84630BD086">
+<createdBy>ASUS</createdBy>
+<createdTime>2021-05-01 18:08:59 UTC</createdTime>
+<ownerDesignName>StarModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>3</dataTypeScale>
+<ownDataTypeParameters>,5,3</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CA408CC2-6775-9099-6F12-3BF08C01B05C" name="EMPLOYEES_MINI_PK">
+<createdBy>ASUS</createdBy>
+<createdTime>2021-05-01 17:58:37 UTC</createdTime>
+<ownerDesignName>StarModel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="44E3AF65-4058-7521-B66D-87AF329D3332"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

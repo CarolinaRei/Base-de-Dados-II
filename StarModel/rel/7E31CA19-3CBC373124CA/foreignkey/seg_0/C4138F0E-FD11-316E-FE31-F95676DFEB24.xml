@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C4138F0E-FD11-316E-FE31-F95676DFEB24" containerWithKeyObject="9C6B2679-695B-43B7-32FC-C5C9056E5AA8" localFKIndex="9CD5AE3E-4E26-6023-C0E1-F0DFDEB23763" name="CUSTOMERS_CUSTOMERS_MINI_FK">
+<createdBy>ASUS</createdBy>
+<createdTime>2021-05-01 18:25:47 UTC</createdTime>
+<ownerDesignName>StarModel</ownerDesignName>
+<referredTableLongName>CUSTOMERS_MINI</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>6EBBC19D-E0A5-4AD6-63BF-BFF8B5946644</referredTableID>
+<keyObject>6CE7169D-BF41-FE85-FF24-8C3C362EB46B</keyObject>
+<referredKeyID>6CE7169D-BF41-FE85-FF24-8C3C362EB46B</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
