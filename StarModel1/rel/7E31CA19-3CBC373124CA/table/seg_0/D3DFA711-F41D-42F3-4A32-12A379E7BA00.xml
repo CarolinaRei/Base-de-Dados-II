@@ -3,7 +3,7 @@
 <createdBy>ASUS</createdBy>
 <createdTime>2021-04-29 10:38:40 UTC</createdTime>
 <generatorID>FC78D0FF-1CEC-A1B5-3044-DB9014D8B73C</generatorID>
-<ownerDesignName>StarModel</ownerDesignName>
+<ownerDesignName>StarModel1</ownerDesignName>
 <abbreviation>SALES</abbreviation>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
@@ -13,7 +13,7 @@
 <createdBy>ASUS</createdBy>
 <createdTime>2021-04-29 10:38:40 UTC</createdTime>
 <generatorID>5A010DA8-D563-7524-12E8-5DFFA004DA88</generatorID>
-<ownerDesignName>StarModel</ownerDesignName>
+<ownerDesignName>StarModel1</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -24,7 +24,7 @@
 <Column name="EMPLOYEES_SALE" id="BBFACE56-38F1-EBC6-5318-D8B3F8446701">
 <createdBy>ASUS</createdBy>
 <createdTime>2021-04-29 11:12:45 UTC</createdTime>
-<ownerDesignName>StarModel</ownerDesignName>
+<ownerDesignName>StarModel1</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -39,7 +39,7 @@
 <Column name="PRODUCTS_SALE" id="D5CEE800-C27C-6E40-3C46-41F5FC2407AC">
 <createdBy>ASUS</createdBy>
 <createdTime>2021-04-29 11:13:06 UTC</createdTime>
-<ownerDesignName>StarModel</ownerDesignName>
+<ownerDesignName>StarModel1</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -54,7 +54,7 @@
 <Column name="CUSTOMERS_SALE" id="C48C5C5B-E3F7-DB1D-10B3-184404B23488">
 <createdBy>ASUS</createdBy>
 <createdTime>2021-04-29 11:13:11 UTC</createdTime>
-<ownerDesignName>StarModel</ownerDesignName>
+<ownerDesignName>StarModel1</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -66,7 +66,7 @@
 <Column name="DATE_SALE" id="0E566020-F067-DCFB-B4A2-626B92C6ECBA">
 <createdBy>ASUS</createdBy>
 <createdTime>2021-04-29 11:13:19 UTC</createdTime>
-<ownerDesignName>StarModel</ownerDesignName>
+<ownerDesignName>StarModel1</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -81,7 +81,7 @@
 <Column name="DELIVERY_COMPANY_SALE" id="0CF59A35-B6CF-73B0-EB83-CEECC3DDE82D">
 <createdBy>ASUS</createdBy>
 <createdTime>2021-04-29 11:13:31 UTC</createdTime>
-<ownerDesignName>StarModel</ownerDesignName>
+<ownerDesignName>StarModel1</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -96,7 +96,7 @@
 <Column name="PRODUCT_QUANTITY" id="E362CCDC-779A-D592-6CF3-C195DC74D1F2">
 <createdBy>ASUS</createdBy>
 <createdTime>2021-05-01 17:22:25 UTC</createdTime>
-<ownerDesignName>StarModel</ownerDesignName>
+<ownerDesignName>StarModel1</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -108,7 +108,7 @@
 <Column name="TOTAL_SALE" id="6C902409-0FF2-01FC-97A3-7967CD9AAFE9">
 <createdBy>ASUS</createdBy>
 <createdTime>2021-05-01 17:22:25 UTC</createdTime>
-<ownerDesignName>StarModel</ownerDesignName>
+<ownerDesignName>StarModel1</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -121,7 +121,7 @@
 <Column name="COORDINATES" id="7DDBC18A-89D4-9F09-44D6-2A78DE20CB3D">
 <createdBy>ASUS</createdBy>
 <createdTime>2021-05-01 17:22:25 UTC</createdTime>
-<ownerDesignName>StarModel</ownerDesignName>
+<ownerDesignName>StarModel1</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -134,7 +134,7 @@
 <Column name="DELIVERY_COMPANY_USED" id="FB3E6D45-9A6F-A5D1-2B92-D8B4AAE939D8">
 <createdBy>ASUS</createdBy>
 <createdTime>2021-05-01 17:22:25 UTC</createdTime>
-<ownerDesignName>StarModel</ownerDesignName>
+<ownerDesignName>StarModel1</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -146,7 +146,7 @@
 <Column name="DESCRIPTION" id="EDEA4853-DC68-DF30-46E5-036436901153">
 <createdBy>ASUS</createdBy>
 <createdTime>2021-05-01 17:32:18 UTC</createdTime>
-<ownerDesignName>StarModel</ownerDesignName>
+<ownerDesignName>StarModel1</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -158,7 +158,7 @@
 <Column name="AVERAGE_CUSTOMER_AGE" id="D28FF798-75DA-4C04-AA0C-6D74A6FE9313">
 <createdBy>ASUS</createdBy>
 <createdTime>2021-05-01 17:36:08 UTC</createdTime>
-<ownerDesignName>StarModel</ownerDesignName>
+<ownerDesignName>StarModel1</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -170,7 +170,7 @@
 <Column name="TOTAL_CUSTOMERS" id="4F827AC2-702C-DBAA-F247-A538704E13D9">
 <createdBy>ASUS</createdBy>
 <createdTime>2021-05-01 17:51:55 UTC</createdTime>
-<ownerDesignName>StarModel</ownerDesignName>
+<ownerDesignName>StarModel1</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -182,7 +182,7 @@
 <Column name="EMPLOYEES_MINI_ID" id="1BD494EE-772D-8F11-C146-F441C1A0027A">
 <createdBy>ASUS</createdBy>
 <createdTime>2021-05-01 18:13:55 UTC</createdTime>
-<ownerDesignName>StarModel</ownerDesignName>
+<ownerDesignName>StarModel1</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -196,7 +196,7 @@
 <Column name="CUSTOMERS_MINI_ID" id="9715F1A0-066A-4A14-A81E-80B43400917E">
 <createdBy>ASUS</createdBy>
 <createdTime>2021-05-01 18:25:55 UTC</createdTime>
-<ownerDesignName>StarModel</ownerDesignName>
+<ownerDesignName>StarModel1</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -211,7 +211,7 @@
 <Column name="PRODUCTS_MINI_ID" id="2FB85CD5-5941-648C-2993-2B8526D8E68F">
 <createdBy>ASUS</createdBy>
 <createdTime>2021-05-01 18:27:25 UTC</createdTime>
-<ownerDesignName>StarModel</ownerDesignName>
+<ownerDesignName>StarModel1</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -226,12 +226,12 @@
 <Column name="CUSTOMERS_ID" id="8774CBF2-E9ED-AE51-6A61-45FA00697D3A">
 <createdBy>ASUS</createdBy>
 <createdTime>2021-05-04 11:54:33 UTC</createdTime>
-<ownerDesignName>StarModel</ownerDesignName>
+<ownerDesignName>StarModel1</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>9</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
@@ -244,7 +244,7 @@
 <createdBy>ASUS</createdBy>
 <createdTime>2021-04-29 10:38:40 UTC</createdTime>
 <generatorID>8C453AC8-6AD5-0F27-383F-955963AD0A38</generatorID>
-<ownerDesignName>StarModel</ownerDesignName>
+<ownerDesignName>StarModel1</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
@@ -255,7 +255,7 @@
 <ind_PK_UK id="76B0AB4C-C0B6-1983-13AC-F4980A1CB60B" name="SALES_EMPLOYEES_FK">
 <createdBy>ASUS</createdBy>
 <createdTime>2021-04-29 11:12:45 UTC</createdTime>
-<ownerDesignName>StarModel</ownerDesignName>
+<ownerDesignName>StarModel1</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
@@ -265,7 +265,7 @@
 <ind_PK_UK id="70A29617-DE71-1EFE-DE6B-F2E375E1EFB4" name="SALES_PRODUCTS_FK">
 <createdBy>ASUS</createdBy>
 <createdTime>2021-04-29 11:13:06 UTC</createdTime>
-<ownerDesignName>StarModel</ownerDesignName>
+<ownerDesignName>StarModel1</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
@@ -275,7 +275,7 @@
 <ind_PK_UK id="1159BA2C-5100-78D3-E107-22891FC773AE" name="SALES_CUSTOMERS_FK">
 <createdBy>ASUS</createdBy>
 <createdTime>2021-04-29 11:13:11 UTC</createdTime>
-<ownerDesignName>StarModel</ownerDesignName>
+<ownerDesignName>StarModel1</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
@@ -285,7 +285,7 @@
 <ind_PK_UK id="9840261D-1A68-D755-BC56-696ECFB0DE2D" name="SALES_DATE_FK">
 <createdBy>ASUS</createdBy>
 <createdTime>2021-04-29 11:13:19 UTC</createdTime>
-<ownerDesignName>StarModel</ownerDesignName>
+<ownerDesignName>StarModel1</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
@@ -295,7 +295,7 @@
 <ind_PK_UK id="10A4A1F0-B38A-9312-DBA6-5C54A3027127" name="SALES_DELIVERY_COMPANY_FK">
 <createdBy>ASUS</createdBy>
 <createdTime>2021-04-29 11:13:31 UTC</createdTime>
-<ownerDesignName>StarModel</ownerDesignName>
+<ownerDesignName>StarModel1</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
@@ -305,7 +305,7 @@
 <ind_PK_UK id="A37F5755-D440-39DE-0E12-2EE1CD804D04" name="SALES_EMPLOYEES_MINI_FK">
 <createdBy>ASUS</createdBy>
 <createdTime>2021-05-01 18:13:55 UTC</createdTime>
-<ownerDesignName>StarModel</ownerDesignName>
+<ownerDesignName>StarModel1</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
@@ -315,7 +315,7 @@
 <ind_PK_UK id="2D520BDA-DF64-F7DE-00C8-3AFADE491789" name="SALES_CUSTOMERS_MINI_FK">
 <createdBy>ASUS</createdBy>
 <createdTime>2021-05-01 18:25:55 UTC</createdTime>
-<ownerDesignName>StarModel</ownerDesignName>
+<ownerDesignName>StarModel1</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
@@ -325,7 +325,7 @@
 <ind_PK_UK id="CB4D3D05-2192-05DC-2B8A-68575CA3C20F" name="SALES_PRODUCTS_MINI_FK">
 <createdBy>ASUS</createdBy>
 <createdTime>2021-05-01 18:27:25 UTC</createdTime>
-<ownerDesignName>StarModel</ownerDesignName>
+<ownerDesignName>StarModel1</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>

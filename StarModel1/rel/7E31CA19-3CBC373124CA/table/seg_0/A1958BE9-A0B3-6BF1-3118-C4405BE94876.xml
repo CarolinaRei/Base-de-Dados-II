@@ -2,7 +2,7 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A1958BE9-A0B3-6BF1-3118-C4405BE94876" name="PRODUCTS_MINI">
 <createdBy>ASUS</createdBy>
 <createdTime>2021-05-01 17:52:26 UTC</createdTime>
-<ownerDesignName>StarModel</ownerDesignName>
+<ownerDesignName>StarModel1</ownerDesignName>
 <ordsAlias>table_8</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
@@ -11,7 +11,7 @@
 <Column name="ID" id="5A70B36B-810C-02DB-8E21-7EAFCD6C3D86">
 <createdBy>ASUS</createdBy>
 <createdTime>2021-05-01 17:59:39 UTC</createdTime>
-<ownerDesignName>StarModel</ownerDesignName>
+<ownerDesignName>StarModel1</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -22,7 +22,7 @@
 <Column name="OLD_PRICE" id="96964C20-D9D9-468F-48E2-B0EDF487DDEB">
 <createdBy>ASUS</createdBy>
 <createdTime>2021-05-01 17:53:27 UTC</createdTime>
-<ownerDesignName>StarModel</ownerDesignName>
+<ownerDesignName>StarModel1</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -35,7 +35,7 @@
 <Column name="PROMOTION_END_DATE" id="F16B784B-DAD6-3CB7-72D3-35B4ADF46B6F">
 <createdBy>ASUS</createdBy>
 <createdTime>2021-05-01 17:53:27 UTC</createdTime>
-<ownerDesignName>StarModel</ownerDesignName>
+<ownerDesignName>StarModel1</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -48,7 +48,7 @@
 <ind_PK_UK id="DA3A1138-39DA-6F9A-22CA-DCAC7194C7AB" name="PRODUCTS_MINI_PK">
 <createdBy>ASUS</createdBy>
 <createdTime>2021-05-01 17:59:39 UTC</createdTime>
-<ownerDesignName>StarModel</ownerDesignName>
+<ownerDesignName>StarModel1</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>

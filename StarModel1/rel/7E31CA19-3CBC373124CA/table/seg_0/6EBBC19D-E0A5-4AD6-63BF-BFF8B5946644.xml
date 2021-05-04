@@ -2,7 +2,7 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6EBBC19D-E0A5-4AD6-63BF-BFF8B5946644" name="CUSTOMERS_MINI">
 <createdBy>ASUS</createdBy>
 <createdTime>2021-05-01 17:48:16 UTC</createdTime>
-<ownerDesignName>StarModel</ownerDesignName>
+<ownerDesignName>StarModel1</ownerDesignName>
 <ordsAlias>table_7</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
@@ -11,7 +11,7 @@
 <Column name="ID" id="24843FB6-CA73-6F13-2BF5-CEC6053F2E4C">
 <createdBy>ASUS</createdBy>
 <createdTime>2021-05-01 17:59:21 UTC</createdTime>
-<ownerDesignName>StarModel</ownerDesignName>
+<ownerDesignName>StarModel1</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -22,7 +22,7 @@
 <Column name="MARITAL_STATUS" id="57009128-69C0-8F12-00C3-D73A0FC0F12F">
 <createdBy>ASUS</createdBy>
 <createdTime>2021-05-01 18:17:27 UTC</createdTime>
-<ownerDesignName>StarModel</ownerDesignName>
+<ownerDesignName>StarModel1</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -34,7 +34,7 @@
 <Column name="PHONE_NUMBER" id="46504596-CD89-E2A0-18B1-7F82C7F3B63A">
 <createdBy>ASUS</createdBy>
 <createdTime>2021-05-01 17:50:43 UTC</createdTime>
-<ownerDesignName>StarModel</ownerDesignName>
+<ownerDesignName>StarModel1</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -45,7 +45,7 @@
 <Column name="INCOME_LEVEL" id="BEC182A1-AFC8-7DE6-D875-15451E216D5E">
 <createdBy>ASUS</createdBy>
 <createdTime>2021-05-01 17:50:43 UTC</createdTime>
-<ownerDesignName>StarModel</ownerDesignName>
+<ownerDesignName>StarModel1</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -57,7 +57,7 @@
 <Column name="CREDIT_LIMIT" id="0CA09494-6A74-5381-1F13-C957C6861B96">
 <createdBy>ASUS</createdBy>
 <createdTime>2021-05-01 17:50:43 UTC</createdTime>
-<ownerDesignName>StarModel</ownerDesignName>
+<ownerDesignName>StarModel1</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -69,7 +69,7 @@
 <Column name="CITY" id="A0237997-621A-2B15-A6A1-200FB3D942F6">
 <createdBy>ASUS</createdBy>
 <createdTime>2021-05-01 17:50:43 UTC</createdTime>
-<ownerDesignName>StarModel</ownerDesignName>
+<ownerDesignName>StarModel1</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -80,7 +80,7 @@
 <Column name="STREET_ADDRESS" id="62AE5D2A-C483-64AA-33B5-C5EA94038CBD">
 <createdBy>ASUS</createdBy>
 <createdTime>2021-05-04 11:59:50 UTC</createdTime>
-<ownerDesignName>StarModel</ownerDesignName>
+<ownerDesignName>StarModel1</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -92,7 +92,7 @@
 <Column name="POSTAL_CODE" id="72D7C9AD-32E7-8D1E-9688-9E513E6978AF">
 <createdBy>ASUS</createdBy>
 <createdTime>2021-05-04 11:59:50 UTC</createdTime>
-<ownerDesignName>StarModel</ownerDesignName>
+<ownerDesignName>StarModel1</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -106,7 +106,7 @@
 <ind_PK_UK id="6CE7169D-BF41-FE85-FF24-8C3C362EB46B" name="CUSTOMERS_MINI_PK">
 <createdBy>ASUS</createdBy>
 <createdTime>2021-05-01 17:59:21 UTC</createdTime>
-<ownerDesignName>StarModel</ownerDesignName>
+<ownerDesignName>StarModel1</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
