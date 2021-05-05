@@ -23,7 +23,6 @@
 <createdBy>ASUS</createdBy>
 <createdTime>2021-05-01 16:13:08 UTC</createdTime>
 <ownerDesignName>StarModel</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -35,12 +34,45 @@
 <createdBy>ASUS</createdBy>
 <createdTime>2021-05-01 16:13:29 UTC</createdTime>
 <ownerDesignName>StarModel</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>20 BYTE</dataTypeSize>
 <ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FLEET_ID" id="047873B7-7322-8215-AB8F-65615C1BA16D">
+<createdBy>nserus</createdBy>
+<createdTime>2021-05-05 11:54:17 UTC</createdTime>
+<ownerDesignName>StarModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="START_dATE" id="D82152E1-ED17-C4CD-4CE4-141E9C5B9E00">
+<createdBy>nserus</createdBy>
+<createdTime>2021-05-05 11:54:17 UTC</createdTime>
+<ownerDesignName>StarModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="END_dATE" id="17995EBF-A956-284B-1BA2-9702357CDD7A">
+<createdBy>nserus</createdBy>
+<createdTime>2021-05-05 11:54:17 UTC</createdTime>
+<ownerDesignName>StarModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>

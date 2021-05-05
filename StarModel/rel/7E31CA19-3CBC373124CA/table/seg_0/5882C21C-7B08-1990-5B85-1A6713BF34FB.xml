@@ -19,6 +19,21 @@
 <ownDataTypeParameters>,6,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="PRODUCTS_MINI_ID" id="B2331563-3E9B-C097-F644-4670467EE20E">
+<createdBy>nserus</createdBy>
+<createdTime>2021-05-05 11:49:02 UTC</createdTime>
+<ownerDesignName>StarModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="27D0AA4A-3956-E94F-30B1-0DA39F41D00A" referredColumn="5A70B36B-810C-02DB-8E21-7EAFCD6C3D86"/>
+</associations>
+</Column>
 <Column name="NAME" id="41544AE1-C2F8-6B94-C78F-BD4FFDAAFD06">
 <createdBy>ASUS</createdBy>
 <createdTime>2021-05-01 16:16:44 UTC</createdTime>
@@ -41,24 +56,21 @@
 <ownDataTypeParameters>4000 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="PRODUCTS_MINI_ID" id="CF69D879-53DE-7CB0-7521-BACF779FCCE3">
+<Column name="PRICE_MAX" id="DD2A1581-364D-B092-8F18-C72C8FADD2D9">
 <createdBy>ASUS</createdBy>
-<createdTime>2021-05-01 18:27:19 UTC</createdTime>
+<createdTime>2021-05-04 11:40:43 UTC</createdTime>
 <ownerDesignName>StarModel</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>9</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,4,2</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="3DDC0290-0253-7E75-E7C4-B1AB3F20270F" referredColumn="5A70B36B-810C-02DB-8E21-7EAFCD6C3D86"/>
-</associations>
 </Column>
-<Column name="PRICE" id="DD2A1581-364D-B092-8F18-C72C8FADD2D9">
-<createdBy>ASUS</createdBy>
-<createdTime>2021-05-04 11:40:43 UTC</createdTime>
+<Column name="PRICE_MIN" id="7AFF0481-5C02-B933-4721-2156582AD08C">
+<createdBy>nserus</createdBy>
+<createdTime>2021-05-05 10:51:38 UTC</createdTime>
 <ownerDesignName>StarModel</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -81,14 +93,14 @@
 <colUsage columnID="8B6C60EF-79B5-D62F-DF85-493DAA85412A"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="211BD4C4-B519-45D1-E6AD-0E3652623219" name="PRODUCTS_PRODUCTS_MINI_FK">
-<createdBy>ASUS</createdBy>
-<createdTime>2021-05-01 18:27:19 UTC</createdTime>
+<ind_PK_UK id="E88960A2-855E-AC25-5EEC-63A1B9DAE4D7" name="PRODUCTS_PRODUCTS_MINI_FK">
+<createdBy>nserus</createdBy>
+<createdTime>2021-05-05 11:49:02 UTC</createdTime>
 <ownerDesignName>StarModel</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="CF69D879-53DE-7CB0-7521-BACF779FCCE3"/>
+<colUsage columnID="B2331563-3E9B-C097-F644-4670467EE20E"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

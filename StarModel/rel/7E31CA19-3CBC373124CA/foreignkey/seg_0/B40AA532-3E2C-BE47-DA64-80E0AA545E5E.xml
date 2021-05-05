@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B40AA532-3E2C-BE47-DA64-80E0AA545E5E" containerWithKeyObject="D3DFA711-F41D-42F3-4A32-12A379E7BA00" localFKIndex="4E2BDB77-557B-6221-14BB-BE0F3E124D62" name="SALES_MANHA_TARDE_FK">
+<createdBy>nserus</createdBy>
+<createdTime>2021-05-05 11:51:11 UTC</createdTime>
+<ownerDesignName>StarModel</ownerDesignName>
+<referredTableLongName>MANHA_TARDE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>2613D6AD-3CD3-D5B1-F49B-F5A6B2430966</referredTableID>
+<keyObject>F2D378E1-23DC-2B41-F209-168834D84029</keyObject>
+<referredKeyID>F2D378E1-23DC-2B41-F209-168834D84029</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

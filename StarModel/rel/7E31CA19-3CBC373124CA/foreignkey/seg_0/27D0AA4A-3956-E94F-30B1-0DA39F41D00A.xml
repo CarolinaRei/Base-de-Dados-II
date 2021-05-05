@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="3DDC0290-0253-7E75-E7C4-B1AB3F20270F" containerWithKeyObject="5882C21C-7B08-1990-5B85-1A6713BF34FB" localFKIndex="211BD4C4-B519-45D1-E6AD-0E3652623219" name="PRODUCTS_PRODUCTS_MINI_FK">
-<createdBy>ASUS</createdBy>
-<createdTime>2021-05-01 18:27:19 UTC</createdTime>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="27D0AA4A-3956-E94F-30B1-0DA39F41D00A" containerWithKeyObject="5882C21C-7B08-1990-5B85-1A6713BF34FB" localFKIndex="E88960A2-855E-AC25-5EEC-63A1B9DAE4D7" name="PRODUCTS_PRODUCTS_MINI_FK">
+<createdBy>nserus</createdBy>
+<createdTime>2021-05-05 11:49:02 UTC</createdTime>
 <ownerDesignName>StarModel</ownerDesignName>
 <referredTableLongName>PRODUCTS_MINI</referredTableLongName>
 <deleteRule>NO ACTION</deleteRule>

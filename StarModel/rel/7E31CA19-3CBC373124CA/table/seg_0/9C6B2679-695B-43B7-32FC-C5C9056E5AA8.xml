@@ -19,6 +19,21 @@
 <ownDataTypeParameters>,9,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="CUSTOMERS_MINI_ID" id="29A9AF17-C11D-7C24-37B5-F0398BF74E40">
+<createdBy>nserus</createdBy>
+<createdTime>2021-05-05 11:48:54 UTC</createdTime>
+<ownerDesignName>StarModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DDF24F14-8A0F-4C2F-341A-48A9F16BEBED" referredColumn="24843FB6-CA73-6F13-2BF5-CEC6053F2E4C"/>
+</associations>
+</Column>
 <Column name="FIRST_NAME" id="DCFEF7AC-34BF-B15E-90E2-DAD9B25C3FDD">
 <createdBy>ASUS</createdBy>
 <createdTime>2021-05-01 16:20:05 UTC</createdTime>
@@ -45,7 +60,6 @@
 <createdBy>ASUS</createdBy>
 <createdTime>2021-05-01 16:20:05 UTC</createdTime>
 <ownerDesignName>StarModel</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT025</logicalDatatype>
@@ -96,26 +110,10 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="CUSTOMERS_MINI_ID" id="4F912DA7-12D0-6056-DB18-970098822B13">
-<createdBy>ASUS</createdBy>
-<createdTime>2021-05-01 18:25:47 UTC</createdTime>
-<ownerDesignName>StarModel</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>9</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="C4138F0E-FD11-316E-FE31-F95676DFEB24" referredColumn="24843FB6-CA73-6F13-2BF5-CEC6053F2E4C"/>
-</associations>
-</Column>
 <Column name="EMAIL" id="45FFABCE-E533-C1EE-69C1-385FEFB04BC1">
 <createdBy>ASUS</createdBy>
 <createdTime>2021-05-04 11:45:13 UTC</createdTime>
 <ownerDesignName>StarModel</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -123,9 +121,22 @@
 <ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="MARITAL_STATUS" id="D67F66D3-E133-0FC3-3CEB-7982239ACD04">
-<createdBy>ASUS</createdBy>
-<createdTime>2021-05-04 11:54:33 UTC</createdTime>
+<Column name="PHONE_NUMBER" id="1A6A41E7-D164-2977-8DE1-40BE53BA0A4C">
+<createdBy>nserus</createdBy>
+<createdTime>2021-05-05 11:02:18 UTC</createdTime>
+<ownerDesignName>StarModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MARITAL_STATUS" id="5C573956-E280-536C-50A1-23D800351C11">
+<createdBy>nserus</createdBy>
+<createdTime>2021-05-05 11:39:34 UTC</createdTime>
+<generatorID>6024B3EA-F1D5-E0D6-39FF-4D50A6947468</generatorID>
 <ownerDesignName>StarModel</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -148,14 +159,14 @@
 <colUsage columnID="559C2ED8-FFB9-4D18-D48F-CDD24EAF3A0D"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="9CD5AE3E-4E26-6023-C0E1-F0DFDEB23763" name="CUSTOMERS_CUSTOMERS_MINI_FK">
-<createdBy>ASUS</createdBy>
-<createdTime>2021-05-01 18:25:47 UTC</createdTime>
+<ind_PK_UK id="0A7979E2-A5F1-C890-AD63-AE72759BD818" name="CUSTOMERS_CUSTOMERS_MINI_FK">
+<createdBy>nserus</createdBy>
+<createdTime>2021-05-05 11:48:54 UTC</createdTime>
 <ownerDesignName>StarModel</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="4F912DA7-12D0-6056-DB18-970098822B13"/>
+<colUsage columnID="29A9AF17-C11D-7C24-37B5-F0398BF74E40"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

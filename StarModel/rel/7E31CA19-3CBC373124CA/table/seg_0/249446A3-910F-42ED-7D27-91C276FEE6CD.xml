@@ -15,14 +15,14 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="SALARY_PERCENT" id="AC8BF1F1-7BB7-0C17-5838-8B5D9667B041">
 <createdBy>ASUS</createdBy>
 <createdTime>2021-05-01 18:08:59 UTC</createdTime>
 <ownerDesignName>StarModel</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -34,7 +34,6 @@
 <createdBy>ASUS</createdBy>
 <createdTime>2021-05-01 18:08:59 UTC</createdTime>
 <ownerDesignName>StarModel</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>

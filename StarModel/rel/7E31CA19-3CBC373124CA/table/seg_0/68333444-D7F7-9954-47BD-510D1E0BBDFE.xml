@@ -19,6 +19,21 @@
 <ownDataTypeParameters>,6,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="EMPLOYEES_MINI_ID" id="5B56AA0D-4FA1-01F5-FA66-97B3A2D05BA1">
+<createdBy>nserus</createdBy>
+<createdTime>2021-05-05 11:48:58 UTC</createdTime>
+<ownerDesignName>StarModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="77C3C040-2EAB-61FA-4899-A3EEE4C1D164" referredColumn="44E3AF65-4058-7521-B66D-87AF329D3332"/>
+</associations>
+</Column>
 <Column name="FIRST_NAME" id="0EEC33EF-07FB-829A-6E98-CE74CCA21011">
 <createdBy>ASUS</createdBy>
 <createdTime>2021-04-29 11:17:52 UTC</createdTime>
@@ -56,32 +71,16 @@
 <createdBy>ASUS</createdBy>
 <createdTime>2021-04-29 11:24:07 UTC</createdTime>
 <ownerDesignName>StarModel</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="EMPLOYEES_MINI_ID" id="CA359348-4659-B601-0D8C-66A43417EF6B">
-<createdBy>ASUS</createdBy>
-<createdTime>2021-05-01 18:13:42 UTC</createdTime>
-<ownerDesignName>StarModel</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="BCF71CFC-9D9A-CD61-E9E9-02246F5E333F" referredColumn="44E3AF65-4058-7521-B66D-87AF329D3332"/>
-</associations>
-</Column>
 <Column name="PHONE_NUMBER" id="D401C39A-0F8E-C526-FB46-6CD5678EE91D">
 <createdBy>ASUS</createdBy>
 <createdTime>2021-05-04 11:38:19 UTC</createdTime>
 <ownerDesignName>StarModel</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -93,7 +92,6 @@
 <createdBy>ASUS</createdBy>
 <createdTime>2021-05-04 11:39:06 UTC</createdTime>
 <ownerDesignName>StarModel</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -105,7 +103,6 @@
 <createdBy>ASUS</createdBy>
 <createdTime>2021-05-04 11:49:31 UTC</createdTime>
 <ownerDesignName>StarModel</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -118,7 +115,6 @@
 <createdBy>ASUS</createdBy>
 <createdTime>2021-05-04 11:51:00 UTC</createdTime>
 <ownerDesignName>StarModel</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -127,11 +123,10 @@
 <ownDataTypeParameters>,5,2</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="SALARY_MIN " id="11F8D9D1-0A42-18B6-3889-3C67DF076425">
+<Column name="SALARY_MIN" id="11F8D9D1-0A42-18B6-3889-3C67DF076425">
 <createdBy>ASUS</createdBy>
 <createdTime>2021-05-04 11:51:00 UTC</createdTime>
 <ownerDesignName>StarModel</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -153,14 +148,14 @@
 <colUsage columnID="2A81D22A-F1F6-B7E9-8646-ED008A36A0DE"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="9E5FCC05-062F-77FA-9AFD-73612578A08F" name="EMPLOYEES_EMPLOYEES_MINI_FK">
-<createdBy>ASUS</createdBy>
-<createdTime>2021-05-01 18:13:42 UTC</createdTime>
+<ind_PK_UK id="0BE04EDA-9FB9-E64C-F8B4-092B00555A74" name="EMPLOYEES_EMPLOYEES_MINI_FK">
+<createdBy>nserus</createdBy>
+<createdTime>2021-05-05 11:48:58 UTC</createdTime>
 <ownerDesignName>StarModel</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="CA359348-4659-B601-0D8C-66A43417EF6B"/>
+<colUsage columnID="5B56AA0D-4FA1-01F5-FA66-97B3A2D05BA1"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
