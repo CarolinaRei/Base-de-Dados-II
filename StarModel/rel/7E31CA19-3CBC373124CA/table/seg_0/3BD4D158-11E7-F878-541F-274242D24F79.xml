@@ -34,16 +34,6 @@
 <colAssociation fkAssociation="45FD255E-418E-F356-3B27-B0BC4886BFC2" referredColumn="C1690245-45C0-169C-78A6-787E975EDD5A"/>
 </associations>
 </Column>
-<Column name="DATE" id="C387EEF7-23C3-ACFC-F218-BB87C899B7F2">
-<createdBy>ASUS</createdBy>
-<createdTime>2021-05-01 16:39:56 UTC</createdTime>
-<ownerDesignName>StarModel</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 <Column name="DAY" id="3FDC3611-AD67-645E-D475-489D44BCDA06">
 <createdBy>ASUS</createdBy>
 <createdTime>2021-05-01 16:39:56 UTC</createdTime>
@@ -86,17 +76,6 @@
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>10 BYTE</dataTypeSize>
 <ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="TRIMESTER" id="ADF11E81-1B26-E523-9F63-7E6C4A9E7777">
-<createdBy>ASUS</createdBy>
-<createdTime>2021-05-01 16:39:56 UTC</createdTime>
-<ownerDesignName>StarModel</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>1</dataTypePrecision>
-<ownDataTypeParameters>,1,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="DAY_WEEK" id="33F836C3-FEF7-7062-2D9E-D14BF0548F38">

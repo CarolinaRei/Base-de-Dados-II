@@ -19,17 +19,6 @@
 <ownDataTypeParameters>,9,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="MARITAL_STATUS" id="57009128-69C0-8F12-00C3-D73A0FC0F12F">
-<createdBy>ASUS</createdBy>
-<createdTime>2021-05-01 18:17:27 UTC</createdTime>
-<ownerDesignName>StarModel</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>20 BYTE</dataTypeSize>
-<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 <Column name="INCOME_LEVEL" id="BEC182A1-AFC8-7DE6-D875-15451E216D5E">
 <createdBy>ASUS</createdBy>
 <createdTime>2021-05-01 17:50:43 UTC</createdTime>
