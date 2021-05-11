@@ -1,10 +1,39 @@
-create or replace synonym oltp_channels for oltp_2021.channels@query_link;
-create or replace  synonym oltp_custom for oltp_2021.customers@query_link;
-create or replace  synonym x_dev_company for oltp_2021.delivery_company@query_link;
-create or replace  synonym oltp_employ for oltp_2021.employees@query_link;
-create or replace  synonym x_fleet for oltp_2021.fleet@query_link;
-create or replace  synonym oltp_product_desc for oltp_2021.product_descriptions@query_link;
-create or replace  synonym oltp_sales for oltp_2021.sales@query_link;
+-- To create all synonyms
+select 'create or replace synonym '||table_name||' for oltp_2021.'||table_name||'@query_link;'
+from all_tables@query_link
+where owner = 'OLTP_2021';
+/
+
+-- Operational DB
+create or replace synonym BUYS_ROWS for oltp_2021.BUYS_ROWS@query_link;
+create or replace synonym CATEGORIES for oltp_2021.CATEGORIES@query_link;
+create or replace synonym CHANNELS for oltp_2021.CHANNELS@query_link;
+create or replace synonym CITIES for oltp_2021.CITIES@query_link;
+create or replace synonym COUNTRIES for oltp_2021.COUNTRIES@query_link;
+create or replace synonym COUNTRY_REGIONS for oltp_2021.COUNTRY_REGIONS@query_link;
+create or replace synonym COUNTRY_SUBREGIONS for oltp_2021.COUNTRY_SUBREGIONS@query_link;
+create or replace synonym CUSTOMERS for oltp_2021.CUSTOMERS@query_link;
+create or replace synonym EMPLOYEES for oltp_2021.EMPLOYEES@query_link;
+create or replace synonym PRODUCTS for oltp_2021.PRODUCTS@query_link;
+create or replace synonym PRODUCT_DESCRIPTIONS for oltp_2021.PRODUCT_DESCRIPTIONS@query_link;
+create or replace synonym PROMOTIONS for oltp_2021.PROMOTIONS@query_link;
+create or replace synonym PROMOTION_CATEGORIES for oltp_2021.PROMOTION_CATEGORIES@query_link;
+create or replace synonym PROMOTION_SUBCATEGORIES for oltp_2021.PROMOTION_SUBCATEGORIES@query_link;
+create or replace synonym SALES for oltp_2021.SALES@query_link;
+create or replace synonym SALES_ROWS for oltp_2021.SALES_ROWS@query_link;
+create or replace synonym STATE_PROVINCES for oltp_2021.STATE_PROVINCES@query_link;
+create or replace synonym SUB_CATEGORIES for oltp_2021.SUB_CATEGORIES@query_link;
+create or replace synonym SUPPLEMENTARY_DEMOGRAPHICS for oltp_2021.SUPPLEMENTARY_DEMOGRAPHICS@query_link;
+create or replace synonym SUPPLIERS for oltp_2021.SUPPLIERS@query_link;
+
+-- Extra tables
+create or replace synonym delivery_company for oltp_2021.delivery_company@query_link;
+create or replace synonym fleet for oltp_2021.fleet@query_link;
+/
+
+
+/* Old version (for now)
+
 -- Sales Table
 
 CREATE TABLE sales (
