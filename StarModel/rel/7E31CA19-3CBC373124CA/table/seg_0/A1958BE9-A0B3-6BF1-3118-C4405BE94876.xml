@@ -40,6 +40,17 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="SOLD_PRODUCTS" id="05E7CC6C-1647-C25A-100B-4E8B9E45A64C">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-05-06 11:31:55 UTC</createdTime>
+<ownerDesignName>StarModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="DA3A1138-39DA-6F9A-22CA-DCAC7194C7AB" name="PRODUCTS_MINI_PK">

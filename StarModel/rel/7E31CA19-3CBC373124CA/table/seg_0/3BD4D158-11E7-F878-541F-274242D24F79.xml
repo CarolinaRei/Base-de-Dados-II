@@ -73,17 +73,6 @@
 <ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="TRIMESTER" id="ADF11E81-1B26-E523-9F63-7E6C4A9E7777">
-<createdBy>ASUS</createdBy>
-<createdTime>2021-05-01 16:39:56 UTC</createdTime>
-<ownerDesignName>StarModel</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>1</dataTypePrecision>
-<ownDataTypeParameters>,1,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 <Column name="DAY_WEEK" id="33F836C3-FEF7-7062-2D9E-D14BF0548F38">
 <createdBy>ASUS</createdBy>
 <createdTime>2021-05-01 16:39:56 UTC</createdTime>
