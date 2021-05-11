@@ -1,9 +1,10 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D3DFA711-F41D-42F3-4A32-12A379E7BA00" name="SALES">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D3DFA711-F41D-42F3-4A32-12A379E7BA00" name="DW_SALES">
 <createdBy>ASUS</createdBy>
 <createdTime>2021-04-29 10:38:40 UTC</createdTime>
 <generatorID>FC78D0FF-1CEC-A1B5-3044-DB9014D8B73C</generatorID>
 <ownerDesignName>StarModel</ownerDesignName>
+<ordsAlias>sales</ordsAlias>
 <abbreviation>SALES</abbreviation>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
@@ -59,19 +60,6 @@
 <dataTypePrecision>4</dataTypePrecision>
 <dataTypeScale>2</dataTypeScale>
 <ownDataTypeParameters>,4,2</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="Column_14" id="D99A83D6-F891-87A6-5077-74B48E994D56">
-<createdBy>nserus</createdBy>
-<createdTime>2021-05-05 11:27:35 UTC</createdTime>
-<ownerDesignName>StarModel</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>3</dataTypePrecision>
-<dataTypeScale>2</dataTypeScale>
-<ownDataTypeParameters>,3,2</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="DATE" id="0E566020-F067-DCFB-B4A2-626B92C6ECBA">

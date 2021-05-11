@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2613D6AD-3CD3-D5B1-F49B-F5A6B2430966" name="MANHA_TARDE">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2613D6AD-3CD3-D5B1-F49B-F5A6B2430966" name="DW_MANHA_TARDE">
 <createdBy>nserus</createdBy>
 <createdTime>2021-05-05 11:49:49 UTC</createdTime>
 <ownerDesignName>StarModel</ownerDesignName>

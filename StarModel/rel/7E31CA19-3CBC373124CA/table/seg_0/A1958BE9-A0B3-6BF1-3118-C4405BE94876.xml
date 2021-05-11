@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A1958BE9-A0B3-6BF1-3118-C4405BE94876" name="PRODUCTS_MINI">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A1958BE9-A0B3-6BF1-3118-C4405BE94876" name="DW_PRODUCTS_MINI">
 <createdBy>ASUS</createdBy>
 <createdTime>2021-05-01 17:52:26 UTC</createdTime>
 <ownerDesignName>StarModel</ownerDesignName>
