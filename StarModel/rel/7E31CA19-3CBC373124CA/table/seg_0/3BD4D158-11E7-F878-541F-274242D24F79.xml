@@ -19,21 +19,6 @@
 <ownDataTypeParameters>,9,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="MANHA_TARDE_ID" id="2B43BB0F-F3CB-999D-D8A9-90EF18EDF388">
-<createdBy>nserus</createdBy>
-<createdTime>2021-05-05 11:51:01 UTC</createdTime>
-<ownerDesignName>StarModel</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>9</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="45FD255E-418E-F356-3B27-B0BC4886BFC2" referredColumn="C1690245-45C0-169C-78A6-787E975EDD5A"/>
-</associations>
-</Column>
 <Column name="DATE" id="C387EEF7-23C3-ACFC-F218-BB87C899B7F2">
 <createdBy>ASUS</createdBy>
 <createdTime>2021-05-01 16:39:56 UTC</createdTime>
@@ -132,16 +117,6 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="9BD66A2F-6161-25B5-BB85-730967523787"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="03F2FB6A-7967-D402-DF8E-918F84D7A0CB" name="DATE_MANHA_TARDE_FK">
-<createdBy>nserus</createdBy>
-<createdTime>2021-05-05 11:51:01 UTC</createdTime>
-<ownerDesignName>StarModel</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="2B43BB0F-F3CB-999D-D8A9-90EF18EDF388"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

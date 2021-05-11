@@ -9,18 +9,6 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="ID" id="BDCE474B-3489-284F-DDDA-8CFDEC32766E">
-<createdBy>ASUS</createdBy>
-<createdTime>2021-04-29 10:38:40 UTC</createdTime>
-<generatorID>5A010DA8-D563-7524-12E8-5DFFA004DA88</generatorID>
-<ownerDesignName>StarModel</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>9</dataTypePrecision>
-<ownDataTypeParameters>,9,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 <Column name="PRODUCT_QUANTITY" id="E362CCDC-779A-D592-6CF3-C195DC74D1F2">
 <createdBy>ASUS</createdBy>
 <createdTime>2021-05-01 17:22:25 UTC</createdTime>
@@ -232,7 +220,12 @@
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="BDCE474B-3489-284F-DDDA-8CFDEC32766E"/>
+<colUsage columnID="0E566020-F067-DCFB-B4A2-626B92C6ECBA"/>
+<colUsage columnID="BBFACE56-38F1-EBC6-5318-D8B3F8446701"/>
+<colUsage columnID="D5CEE800-C27C-6E40-3C46-41F5FC2407AC"/>
+<colUsage columnID="8774CBF2-E9ED-AE51-6A61-45FA00697D3A"/>
+<colUsage columnID="0CF59A35-B6CF-73B0-EB83-CEECC3DDE82D"/>
+<colUsage columnID="FA992C79-D0D5-C544-133B-F82B84A8CB0A"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="76B0AB4C-C0B6-1983-13AC-F4980A1CB60B" name="SALES_EMPLOYEES_FK">
