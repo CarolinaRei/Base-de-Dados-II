@@ -2,6 +2,7 @@ select * from delivery_company;
 select * from fleet;
 /
 
+
 -- Products
 
 CREATE TABLE dw_products (
@@ -18,7 +19,7 @@ ALTER TABLE dw_products ADD CONSTRAINT products_pk PRIMARY KEY ( id );
 ALTER TABLE dw_products
     ADD CONSTRAINT products_products_mini_fk FOREIGN KEY ( products_mini_id )
         REFERENCES dw_products_mini ( id );
-        
+     
         
 -- Products mini
 
@@ -31,10 +32,15 @@ CREATE TABLE dw_products_mini (
 
 ALTER TABLE dw_products_mini ADD CONSTRAINT products_mini_pk PRIMARY KEY ( id );
 
+
 -- Employees
+
+drop table dw_employees;
+/
 
 CREATE TABLE dw_employees (
     id                  NUMBER(6) NOT NULL,
+    employee_id         NUMBER(6) NOT NULL,
     employees_mini_id   NUMBER(9) NOT NULL,
     first_name          VARCHAR2(20 BYTE) NOT NULL,
     last_name           VARCHAR2(20 BYTE) NOT NULL,
@@ -51,8 +57,8 @@ ALTER TABLE dw_employees ADD CONSTRAINT employees_pk PRIMARY KEY ( id );
 
 ALTER TABLE dw_employees
     ADD CONSTRAINT employees_employees_mini_fk FOREIGN KEY ( employees_mini_id )
-        REFERENCES dw_employees_mini ( id );
-        
+        REFERENCES dw_employees_mini ( id );        
+    
     
 -- Employees mini
 
@@ -64,10 +70,15 @@ CREATE TABLE dw_employees_mini (
 
 ALTER TABLE dw_employees_mini ADD CONSTRAINT employees_mini_pk PRIMARY KEY ( id );
 
+
 -- Customers
+
+drop table dw_customers;
+/
 
 CREATE TABLE dw_customers (
     id                  NUMBER(9) NOT NULL,
+    cust_id             NUMBER(6) NOT NULL,
     customers_mini_id   NUMBER(9) NOT NULL,
     first_name          VARCHAR2(20 BYTE) NOT NULL,
     last_name           VARCHAR2(40 BYTE) NOT NULL,
@@ -87,8 +98,8 @@ ALTER TABLE dw_customers ADD CONSTRAINT customers_pk PRIMARY KEY ( id );
 
 ALTER TABLE dw_customers
     ADD CONSTRAINT customers_customers_mini_fk FOREIGN KEY ( customers_mini_id )
-        REFERENCES dw_customers_mini ( id );
-        
+        REFERENCES dw_customers_mini ( id );        
+  
         
 -- Customers mini
 
