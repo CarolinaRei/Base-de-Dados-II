@@ -19,6 +19,17 @@
 <ownDataTypeParameters>,9,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="CUST_ID" id="8913B61D-6354-AAF0-5896-9A6D99B50546">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-05-12 10:18:23 UTC</createdTime>
+<ownerDesignName>StarModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="CUSTOMERS_MINI_ID" id="29A9AF17-C11D-7C24-37B5-F0398BF74E40">
 <createdBy>nserus</createdBy>
 <createdTime>2021-05-05 11:48:54 UTC</createdTime>

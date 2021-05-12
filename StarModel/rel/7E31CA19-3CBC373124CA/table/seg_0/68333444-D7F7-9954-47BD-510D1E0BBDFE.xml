@@ -19,6 +19,17 @@
 <ownDataTypeParameters>,6,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="EMPLOYEE_ID" id="E10EFBF6-502F-B8C8-EE41-A44AED68ADFB">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-05-12 10:17:05 UTC</createdTime>
+<ownerDesignName>StarModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="EMPLOYEES_MINI_ID" id="5B56AA0D-4FA1-01F5-FA66-97B3A2D05BA1">
 <createdBy>nserus</createdBy>
 <createdTime>2021-05-05 11:48:58 UTC</createdTime>
