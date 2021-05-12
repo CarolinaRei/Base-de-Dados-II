@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="159EE2BE-98C3-7778-5524-8AB27BC46CF0" name="PRODUCTS">
+<createdBy>nserus</createdBy>
+<createdTime>2021-05-05 11:10:34 UTC</createdTime>
+<generatorID>5882C21C-7B08-1990-5B85-1A6713BF34FB</generatorID>
+<ownerDesignName>StarModel</ownerDesignName>
+<engineerTo>
+<item key="7E31CA19-BD02-7AD3-624A-3CBC373124CA" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="53B1DB5A-2D98-1A17-B4BD-0FFF5CFD8B6B">
+<createdBy>nserus</createdBy>
+<createdTime>2021-05-05 11:10:34 UTC</createdTime>
+<generatorID>8B6C60EF-79B5-D62F-DF85-493DAA85412A</generatorID>
+<ownerDesignName>StarModel</ownerDesignName>
+<engineerTo>
+<item key="7E31CA19-BD02-7AD3-624A-3CBC373124CA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NAME" id="1FFF86D4-9BA5-920A-E3B0-0FFA3C1A6404">
+<createdBy>nserus</createdBy>
+<createdTime>2021-05-05 11:10:34 UTC</createdTime>
+<generatorID>41544AE1-C2F8-6B94-C78F-BD4FFDAAFD06</generatorID>
+<ownerDesignName>StarModel</ownerDesignName>
+<engineerTo>
+<item key="7E31CA19-BD02-7AD3-624A-3CBC373124CA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DESC" id="D8278990-4CFB-E145-83D7-E15F7C757C6C">
+<createdBy>nserus</createdBy>
+<createdTime>2021-05-05 11:10:34 UTC</createdTime>
+<generatorID>A4A93179-946D-6076-F077-853D4E253FFD</generatorID>
+<ownerDesignName>StarModel</ownerDesignName>
+<engineerTo>
+<item key="7E31CA19-BD02-7AD3-624A-3CBC373124CA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 BYTE</dataTypeSize>
+<ownDataTypeParameters>4000 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PRICE MAX" id="23F99B84-83D5-0DBD-6599-CA17EA76BE25">
+<createdBy>nserus</createdBy>
+<createdTime>2021-05-05 11:10:34 UTC</createdTime>
+<generatorID>DD2A1581-364D-B092-8F18-C72C8FADD2D9</generatorID>
+<ownerDesignName>StarModel</ownerDesignName>
+<engineerTo>
+<item key="7E31CA19-BD02-7AD3-624A-3CBC373124CA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,4,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PRICE MIN" id="52BA516E-C640-16A3-90B9-4511AAE330D9">
+<createdBy>nserus</createdBy>
+<createdTime>2021-05-05 11:10:34 UTC</createdTime>
+<generatorID>7AFF0481-5C02-B933-4721-2156582AD08C</generatorID>
+<ownerDesignName>StarModel</ownerDesignName>
+<engineerTo>
+<item key="7E31CA19-BD02-7AD3-624A-3CBC373124CA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,4,2</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="30603B39-B828-D105-7169-797B18BD0FE9" name="PRODUCTS PK">
+<createdBy>nserus</createdBy>
+<createdTime>2021-05-05 11:10:34 UTC</createdTime>
+<generatorID>BEF8A896-DEEE-3E20-239D-F00E41D36974</generatorID>
+<ownerDesignName>StarModel</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="7E31CA19-BD02-7AD3-624A-3CBC373124CA" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>53B1DB5A-2D98-1A17-B4BD-0FFF5CFD8B6B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

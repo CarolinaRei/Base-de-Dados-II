@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="SALES_DATE_FK" directorySegmentName="seg_0" id="12FBA799-3C95-C2CB-5678-7EBA42D4C055">
+<createdBy>nserus</createdBy>
+<createdTime>2021-05-05 11:10:34 UTC</createdTime>
+<generatorID>F65B903C-DB0F-54CF-2CBB-229AF67819E9</generatorID>
+<ownerDesignName>StarModel</ownerDesignName>
+<engineerTo>
+<item key="7E31CA19-BD02-7AD3-624A-3CBC373124CA" value="true"/>
+</engineerTo>
+<sourcePk>C93B04DF-2823-299D-167C-9E525197CA5B</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>CEB1FDFD-1EB8-2A68-3744-B5164584D623</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>FC78D0FF-1CEC-A1B5-3044-DB9014D8B73C</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

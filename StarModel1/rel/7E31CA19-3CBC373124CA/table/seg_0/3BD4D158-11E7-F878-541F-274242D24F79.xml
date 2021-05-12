@@ -1,0 +1,123 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3BD4D158-11E7-F878-541F-274242D24F79" name="DATE">
+<createdBy>ASUS</createdBy>
+<createdTime>2021-04-29 10:41:30 UTC</createdTime>
+<ownerDesignName>StarModel1</ownerDesignName>
+<ordsAlias>table_7</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="9BD66A2F-6161-25B5-BB85-730967523787">
+<createdBy>ASUS</createdBy>
+<createdTime>2021-04-29 11:12:27 UTC</createdTime>
+<ownerDesignName>StarModel1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATE" id="C387EEF7-23C3-ACFC-F218-BB87C899B7F2">
+<createdBy>ASUS</createdBy>
+<createdTime>2021-05-01 16:39:56 UTC</createdTime>
+<ownerDesignName>StarModel1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DAY" id="3FDC3611-AD67-645E-D475-489D44BCDA06">
+<createdBy>ASUS</createdBy>
+<createdTime>2021-05-01 16:39:56 UTC</createdTime>
+<ownerDesignName>StarModel1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MONTH" id="F2DC4E26-AB7F-7F0E-5F77-64BA6203DED2">
+<createdBy>ASUS</createdBy>
+<createdTime>2021-05-01 16:39:56 UTC</createdTime>
+<ownerDesignName>StarModel1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="YEAR" id="69F82591-D2AB-4A7F-9E78-ED8E28378162">
+<createdBy>ASUS</createdBy>
+<createdTime>2021-05-01 16:39:56 UTC</createdTime>
+<ownerDesignName>StarModel1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MONTH_NAME" id="9D164122-BC2C-46DD-FF97-D79D943F48A4">
+<createdBy>ASUS</createdBy>
+<createdTime>2021-05-01 16:39:56 UTC</createdTime>
+<ownerDesignName>StarModel1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TRIMESTER" id="ADF11E81-1B26-E523-9F63-7E6C4A9E7777">
+<createdBy>ASUS</createdBy>
+<createdTime>2021-05-01 16:39:56 UTC</createdTime>
+<ownerDesignName>StarModel1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DAY_WEEK" id="33F836C3-FEF7-7062-2D9E-D14BF0548F38">
+<createdBy>ASUS</createdBy>
+<createdTime>2021-05-01 16:39:56 UTC</createdTime>
+<ownerDesignName>StarModel1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DAY_WEEK_NAME" id="5A6F246D-D490-4859-266C-526D9D09AF76">
+<createdBy>ASUS</createdBy>
+<createdTime>2021-05-01 16:39:56 UTC</createdTime>
+<ownerDesignName>StarModel1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8AE89B75-2A4F-5700-94D5-492F1847BE34" name="DATE_PK">
+<createdBy>ASUS</createdBy>
+<createdTime>2021-04-29 11:12:27 UTC</createdTime>
+<ownerDesignName>StarModel1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9BD66A2F-6161-25B5-BB85-730967523787"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

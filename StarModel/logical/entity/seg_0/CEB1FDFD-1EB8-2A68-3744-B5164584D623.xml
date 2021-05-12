@@ -1,0 +1,161 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="CEB1FDFD-1EB8-2A68-3744-B5164584D623" name="DATE">
+<createdBy>nserus</createdBy>
+<createdTime>2021-05-05 11:10:34 UTC</createdTime>
+<generatorID>3BD4D158-11E7-F878-541F-274242D24F79</generatorID>
+<ownerDesignName>StarModel</ownerDesignName>
+<engineerTo>
+<item key="7E31CA19-BD02-7AD3-624A-3CBC373124CA" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="34B6C3FA-3D6D-A682-C692-46B44301D457">
+<createdBy>nserus</createdBy>
+<createdTime>2021-05-05 11:10:34 UTC</createdTime>
+<generatorID>9BD66A2F-6161-25B5-BB85-730967523787</generatorID>
+<ownerDesignName>StarModel</ownerDesignName>
+<engineerTo>
+<item key="7E31CA19-BD02-7AD3-624A-3CBC373124CA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DATE" id="7559AAF5-9003-7983-18AB-1B0EE3D583FE">
+<createdBy>nserus</createdBy>
+<createdTime>2021-05-05 11:10:34 UTC</createdTime>
+<generatorID>C387EEF7-23C3-ACFC-F218-BB87C899B7F2</generatorID>
+<ownerDesignName>StarModel</ownerDesignName>
+<engineerTo>
+<item key="7E31CA19-BD02-7AD3-624A-3CBC373124CA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DAY" id="293C8631-D990-9883-8F55-C47F3F4AB905">
+<createdBy>nserus</createdBy>
+<createdTime>2021-05-05 11:10:34 UTC</createdTime>
+<generatorID>3FDC3611-AD67-645E-D475-489D44BCDA06</generatorID>
+<ownerDesignName>StarModel</ownerDesignName>
+<engineerTo>
+<item key="7E31CA19-BD02-7AD3-624A-3CBC373124CA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MONTH" id="93249934-02BD-6778-D32D-884B5FFF58DB">
+<createdBy>nserus</createdBy>
+<createdTime>2021-05-05 11:10:34 UTC</createdTime>
+<generatorID>F2DC4E26-AB7F-7F0E-5F77-64BA6203DED2</generatorID>
+<ownerDesignName>StarModel</ownerDesignName>
+<engineerTo>
+<item key="7E31CA19-BD02-7AD3-624A-3CBC373124CA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="YEAR" id="72F1BF07-B10B-8222-A756-3AFAE89CB969">
+<createdBy>nserus</createdBy>
+<createdTime>2021-05-05 11:10:34 UTC</createdTime>
+<generatorID>69F82591-D2AB-4A7F-9E78-ED8E28378162</generatorID>
+<ownerDesignName>StarModel</ownerDesignName>
+<engineerTo>
+<item key="7E31CA19-BD02-7AD3-624A-3CBC373124CA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MONTH NAME" id="FAB83FE5-BAC1-A1CE-456F-11DEDB4E243F">
+<createdBy>nserus</createdBy>
+<createdTime>2021-05-05 11:10:34 UTC</createdTime>
+<generatorID>9D164122-BC2C-46DD-FF97-D79D943F48A4</generatorID>
+<ownerDesignName>StarModel</ownerDesignName>
+<engineerTo>
+<item key="7E31CA19-BD02-7AD3-624A-3CBC373124CA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TRIMESTER" id="E106D40A-49D0-9007-0468-02986463EBC9">
+<createdBy>nserus</createdBy>
+<createdTime>2021-05-05 11:10:34 UTC</createdTime>
+<generatorID>ADF11E81-1B26-E523-9F63-7E6C4A9E7777</generatorID>
+<ownerDesignName>StarModel</ownerDesignName>
+<engineerTo>
+<item key="7E31CA19-BD02-7AD3-624A-3CBC373124CA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DAY WEEK" id="4AC6216E-4F26-1BA9-E363-55B0BE272C8F">
+<createdBy>nserus</createdBy>
+<createdTime>2021-05-05 11:10:34 UTC</createdTime>
+<generatorID>33F836C3-FEF7-7062-2D9E-D14BF0548F38</generatorID>
+<ownerDesignName>StarModel</ownerDesignName>
+<engineerTo>
+<item key="7E31CA19-BD02-7AD3-624A-3CBC373124CA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DAY WEEK NAME" id="847A2A3B-429E-8588-9D4E-4FB27C6D032A">
+<createdBy>nserus</createdBy>
+<createdTime>2021-05-05 11:10:34 UTC</createdTime>
+<generatorID>5A6F246D-D490-4859-266C-526D9D09AF76</generatorID>
+<ownerDesignName>StarModel</ownerDesignName>
+<engineerTo>
+<item key="7E31CA19-BD02-7AD3-624A-3CBC373124CA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C93B04DF-2823-299D-167C-9E525197CA5B" name="DATE PK">
+<createdBy>nserus</createdBy>
+<createdTime>2021-05-05 11:10:34 UTC</createdTime>
+<generatorID>8AE89B75-2A4F-5700-94D5-492F1847BE34</generatorID>
+<ownerDesignName>StarModel</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="7E31CA19-BD02-7AD3-624A-3CBC373124CA" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>34B6C3FA-3D6D-A682-C692-46B44301D457</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

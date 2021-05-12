@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="846D1F0A-029A-96E8-3066-FE506D0A0B9B" name="DW_DELIVERY_COMPANY">
+<createdBy>ASUS</createdBy>
+<createdTime>2021-04-29 10:39:36 UTC</createdTime>
+<ownerDesignName>StarModel</ownerDesignName>
+<ordsAlias>table_2</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="2C93BE2E-6890-48BE-4221-B0F0E4173A5F">
+<createdBy>ASUS</createdBy>
+<createdTime>2021-04-29 11:12:33 UTC</createdTime>
+<ownerDesignName>StarModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAME" id="7BED6B43-AB3F-AF2C-A97C-E1DA655408B2">
+<createdBy>ASUS</createdBy>
+<createdTime>2021-05-01 16:13:08 UTC</createdTime>
+<ownerDesignName>StarModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TYPE" id="F64DFCF5-22A9-BAAB-C1F9-BAC6873379ED">
+<createdBy>ASUS</createdBy>
+<createdTime>2021-05-01 16:13:29 UTC</createdTime>
+<ownerDesignName>StarModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FLEET_ID" id="047873B7-7322-8215-AB8F-65615C1BA16D">
+<createdBy>nserus</createdBy>
+<createdTime>2021-05-05 11:54:17 UTC</createdTime>
+<ownerDesignName>StarModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="START_DATE" id="D82152E1-ED17-C4CD-4CE4-141E9C5B9E00">
+<createdBy>nserus</createdBy>
+<createdTime>2021-05-05 11:54:17 UTC</createdTime>
+<ownerDesignName>StarModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="END_DATE" id="17995EBF-A956-284B-1BA2-9702357CDD7A">
+<createdBy>nserus</createdBy>
+<createdTime>2021-05-05 11:54:17 UTC</createdTime>
+<ownerDesignName>StarModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1F301456-CC4B-E627-75C2-2493EC747A33" name="DELIVERY_COMPANY_PK">
+<createdBy>ASUS</createdBy>
+<createdTime>2021-04-29 11:12:41 UTC</createdTime>
+<ownerDesignName>StarModel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2C93BE2E-6890-48BE-4221-B0F0E4173A5F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

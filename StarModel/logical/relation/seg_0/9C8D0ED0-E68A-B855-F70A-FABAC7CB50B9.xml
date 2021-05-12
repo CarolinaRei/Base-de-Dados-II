@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="SALES_EMPLOYEES_FK" directorySegmentName="seg_0" id="9C8D0ED0-E68A-B855-F70A-FABAC7CB50B9">
+<createdBy>nserus</createdBy>
+<createdTime>2021-05-05 11:10:34 UTC</createdTime>
+<generatorID>04A86FEC-2958-9D9E-9B79-B8D8F9752129</generatorID>
+<ownerDesignName>StarModel</ownerDesignName>
+<engineerTo>
+<item key="7E31CA19-BD02-7AD3-624A-3CBC373124CA" value="true"/>
+</engineerTo>
+<sourcePk>10095B62-4FF0-F711-0DCC-E523614034F0</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>2E819858-8BBA-9149-E01F-DEDFD895DC28</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>FC78D0FF-1CEC-A1B5-3044-DB9014D8B73C</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

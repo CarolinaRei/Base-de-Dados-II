@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6EBBC19D-E0A5-4AD6-63BF-BFF8B5946644" name="DW_CUSTOMERS_MINI">
+<createdBy>ASUS</createdBy>
+<createdTime>2021-05-01 17:48:16 UTC</createdTime>
+<ownerDesignName>StarModel</ownerDesignName>
+<ordsAlias>table_7</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="24843FB6-CA73-6F13-2BF5-CEC6053F2E4C">
+<createdBy>ASUS</createdBy>
+<createdTime>2021-05-01 17:59:21 UTC</createdTime>
+<ownerDesignName>StarModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="INCOME_LEVEL" id="BEC182A1-AFC8-7DE6-D875-15451E216D5E">
+<createdBy>ASUS</createdBy>
+<createdTime>2021-05-01 17:50:43 UTC</createdTime>
+<ownerDesignName>StarModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREDIT_LIMIT" id="0CA09494-6A74-5381-1F13-C957C6861B96">
+<createdBy>ASUS</createdBy>
+<createdTime>2021-05-01 17:50:43 UTC</createdTime>
+<ownerDesignName>StarModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CITY" id="A0237997-621A-2B15-A6A1-200FB3D942F6">
+<createdBy>ASUS</createdBy>
+<createdTime>2021-05-01 17:50:43 UTC</createdTime>
+<ownerDesignName>StarModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12 BYTE</dataTypeSize>
+<ownDataTypeParameters>12 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STREET_ADDRESS" id="62AE5D2A-C483-64AA-33B5-C5EA94038CBD">
+<createdBy>ASUS</createdBy>
+<createdTime>2021-05-04 11:59:50 UTC</createdTime>
+<ownerDesignName>StarModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="POSTAL_CODE" id="72D7C9AD-32E7-8D1E-9688-9E513E6978AF">
+<createdBy>ASUS</createdBy>
+<createdTime>2021-05-04 11:59:50 UTC</createdTime>
+<ownerDesignName>StarModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6CE7169D-BF41-FE85-FF24-8C3C362EB46B" name="CUSTOMERS_MINI_PK">
+<createdBy>ASUS</createdBy>
+<createdTime>2021-05-01 17:59:21 UTC</createdTime>
+<ownerDesignName>StarModel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="24843FB6-CA73-6F13-2BF5-CEC6053F2E4C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

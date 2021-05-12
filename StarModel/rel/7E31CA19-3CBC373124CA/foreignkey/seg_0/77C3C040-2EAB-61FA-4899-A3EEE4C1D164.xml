@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="77C3C040-2EAB-61FA-4899-A3EEE4C1D164" containerWithKeyObject="68333444-D7F7-9954-47BD-510D1E0BBDFE" localFKIndex="0BE04EDA-9FB9-E64C-F8B4-092B00555A74" name="EMPLOYEES_EMPLOYEES_MINI_FK">
+<createdBy>nserus</createdBy>
+<createdTime>2021-05-05 11:48:58 UTC</createdTime>
+<ownerDesignName>StarModel</ownerDesignName>
+<referredTableLongName>EMPLOYEES_MINI</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>249446A3-910F-42ED-7D27-91C276FEE6CD</referredTableID>
+<keyObject>CA408CC2-6775-9099-6F12-3BF08C01B05C</keyObject>
+<referredKeyID>CA408CC2-6775-9099-6F12-3BF08C01B05C</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
