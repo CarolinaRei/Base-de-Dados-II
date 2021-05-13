@@ -30,16 +30,15 @@
 <ownDataTypeParameters>,3,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="COMMISSION_PCT" id="13E9170B-E0DA-D0CF-FA1A-5D84630BD086">
+<Column name="COMMISSION_PERCENTAGE" id="13E9170B-E0DA-D0CF-FA1A-5D84630BD086">
 <createdBy>ASUS</createdBy>
 <createdTime>2021-05-01 18:08:59 UTC</createdTime>
 <ownerDesignName>StarModel</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>5</dataTypePrecision>
-<dataTypeScale>3</dataTypeScale>
-<ownDataTypeParameters>,5,3</ownDataTypeParameters>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
