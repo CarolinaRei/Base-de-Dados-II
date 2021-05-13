@@ -117,17 +117,21 @@ ALTER TABLE dw_customers_mini ADD CONSTRAINT customers_mini_pk PRIMARY KEY ( id 
 
 -- Delivery Company
 
+drop table dw_delivery_company;
+/
+
+
 CREATE TABLE dw_delivery_company (
-    id           NUMBER(6) NOT NULL,
-    name         VARCHAR2(20 BYTE) NOT NULL,
-    type         VARCHAR2(20 BYTE) NOT NULL,
-    fleet_id     NUMBER(9),
-    start_date   DATE,
-    end_date     DATE
+    delivery_company_id   NUMBER(6) NOT NULL,
+    id                    NUMBER(6) NOT NULL,
+    name                  VARCHAR2(20 BYTE) NOT NULL,
+    type                  VARCHAR2(20 BYTE) NOT NULL,
+    start_date            DATE,
+    end_date              DATE
 );
 
-ALTER TABLE dw_delivery_company ADD CONSTRAINT delivery_company_pk PRIMARY KEY ( id );
-
+ALTER TABLE dw_delivery_company ADD CONSTRAINT delivery_company_pk PRIMARY KEY ( delivery_company_id );
+/
 
 -- Date
 
