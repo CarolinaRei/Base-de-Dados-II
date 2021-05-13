@@ -110,23 +110,10 @@
 <ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="COMMISSION_MIN" id="0B5FE97D-914A-6EFC-17EB-90AFCA30A3AF">
+<Column name="COMMISSION_PCT" id="0B5FE97D-914A-6EFC-17EB-90AFCA30A3AF">
 <createdBy>ASUS</createdBy>
 <createdTime>2021-05-04 11:49:31 UTC</createdTime>
 <ownerDesignName>StarModel</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>5</dataTypePrecision>
-<dataTypeScale>3</dataTypeScale>
-<ownDataTypeParameters>,5,3</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="COMMISSION_MAX" id="9709837E-DF22-6241-9199-0855592F333B">
-<createdBy>nserus</createdBy>
-<createdTime>2021-05-13 11:01:21 UTC</createdTime>
-<ownerDesignName>StarModel</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
