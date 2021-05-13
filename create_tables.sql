@@ -12,7 +12,7 @@ CREATE TABLE dw_products (
     "DESC"             VARCHAR2(4000 BYTE) NOT NULL,
     price_max          NUMBER(4, 2) NOT NULL,
     price_min          NUMBER(4, 2) NOT NULL
-);
+);e
 
 ALTER TABLE dw_products ADD CONSTRAINT products_pk PRIMARY KEY ( id );
 
@@ -145,7 +145,7 @@ CREATE TABLE dw_date (
 ALTER TABLE dw_date ADD CONSTRAINT date_pk PRIMARY KEY ( id );
 
 
--- Manhã/Tarde
+-- Manhï¿½/Tarde
 
 CREATE TABLE dw_manha_tarde (
     id            NUMBER(9) NOT NULL,
