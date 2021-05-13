@@ -8,6 +8,17 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="DELIVERY_COMPANY_ID" id="4F6DB2D7-D695-0949-BE6D-E8277C61CE52">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-05-13 11:14:12 UTC</createdTime>
+<ownerDesignName>StarModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="ID" id="2C93BE2E-6890-48BE-4221-B0F0E4173A5F">
 <createdBy>ASUS</createdBy>
 <createdTime>2021-04-29 11:12:33 UTC</createdTime>
@@ -39,18 +50,6 @@
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>20 BYTE</dataTypeSize>
 <ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="FLEET_ID" id="047873B7-7322-8215-AB8F-65615C1BA16D">
-<createdBy>nserus</createdBy>
-<createdTime>2021-05-05 11:54:17 UTC</createdTime>
-<ownerDesignName>StarModel</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>9</dataTypePrecision>
-<ownDataTypeParameters>,9,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="START_DATE" id="D82152E1-ED17-C4CD-4CE4-141E9C5B9E00">
@@ -85,7 +84,7 @@
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="2C93BE2E-6890-48BE-4221-B0F0E4173A5F"/>
+<colUsage columnID="4F6DB2D7-D695-0949-BE6D-E8277C61CE52"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
