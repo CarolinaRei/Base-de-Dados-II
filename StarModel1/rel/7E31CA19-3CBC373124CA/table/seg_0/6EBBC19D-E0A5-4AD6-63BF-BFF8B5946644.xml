@@ -54,18 +54,6 @@
 <ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="CREDIT_LIMIT" id="0CA09494-6A74-5381-1F13-C957C6861B96">
-<createdBy>ASUS</createdBy>
-<createdTime>2021-05-01 17:50:43 UTC</createdTime>
-<ownerDesignName>StarModel1</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>6</dataTypePrecision>
-<ownDataTypeParameters>,6,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 <Column name="CITY" id="A0237997-621A-2B15-A6A1-200FB3D942F6">
 <createdBy>ASUS</createdBy>
 <createdTime>2021-05-01 17:50:43 UTC</createdTime>
