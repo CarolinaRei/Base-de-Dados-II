@@ -1,15 +1,11 @@
-select * from delivery_company;
-select * from fleet;
-/
-
-
 -- Products
 
 CREATE TABLE dw_products (
     id                 NUMBER(6) NOT NULL,
+    prod_id            NUMBER(6) NOT NULL,
     products_mini_id   NUMBER(9) NOT NULL,
     name               VARCHAR2(50 BYTE) NOT NULL,
-    "DESC"             VARCHAR2(4000 BYTE) NOT NULL,
+    description        VARCHAR2(4000 BYTE) NOT NULL,
     price_max          NUMBER(4, 2) NOT NULL,
     price_min          NUMBER(4, 2) NOT NULL
 );

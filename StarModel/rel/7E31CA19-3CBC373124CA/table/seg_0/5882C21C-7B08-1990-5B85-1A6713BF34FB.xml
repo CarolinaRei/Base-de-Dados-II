@@ -19,6 +19,17 @@
 <ownDataTypeParameters>,6,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="PROD_ID" id="069396BD-BEB8-14F2-F436-111FAAB74FE6">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-05-15 00:33:57 UTC</createdTime>
+<ownerDesignName>StarModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="PRODUCTS_MINI_ID" id="B2331563-3E9B-C097-F644-4670467EE20E">
 <createdBy>nserus</createdBy>
 <createdTime>2021-05-05 11:49:02 UTC</createdTime>
@@ -45,7 +56,7 @@
 <ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="DESC" id="A4A93179-946D-6076-F077-853D4E253FFD">
+<Column name="DESCRIPTION" id="A4A93179-946D-6076-F077-853D4E253FFD">
 <createdBy>ASUS</createdBy>
 <createdTime>2021-05-01 16:16:44 UTC</createdTime>
 <ownerDesignName>StarModel</ownerDesignName>
