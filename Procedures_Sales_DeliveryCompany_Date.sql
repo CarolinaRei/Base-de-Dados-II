@@ -1,6 +1,7 @@
--- Dimensão simples (delivery company)
+-- Dimensï¿½o simples (delivery company)
 
 create sequence delivery_company_seq;
+
 /
 
 create or replace procedure etl_simple_dimension is
