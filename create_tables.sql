@@ -1,11 +1,15 @@
+select * from delivery_company;
+select * from fleet;
+/
+
+
 -- Products
 
 CREATE TABLE dw_products (
     id                 NUMBER(6) NOT NULL,
-    prod_id            NUMBER(6) NOT NULL,
     products_mini_id   NUMBER(9) NOT NULL,
     name               VARCHAR2(50 BYTE) NOT NULL,
-    description        VARCHAR2(4000 BYTE) NOT NULL,
+    "DESC"             VARCHAR2(4000 BYTE) NOT NULL,
     price_max          NUMBER(4, 2) NOT NULL,
     price_min          NUMBER(4, 2) NOT NULL
 );
@@ -32,30 +36,29 @@ ALTER TABLE dw_products_mini ADD CONSTRAINT products_mini_pk PRIMARY KEY ( id );
 -- Employees
 
 drop table dw_employees;
+drop table dw_employees
 /
-
-CREATE TABLE dw_employees (
-    id                  NUMBER(6) NOT NULL,
-    employee_id         NUMBER(6) NOT NULL,
-    employees_mini_id   NUMBER(9) NOT NULL,
-    first_name          VARCHAR2(20 BYTE) NOT NULL,
-    last_name           VARCHAR2(20 BYTE) NOT NULL,
-    manager             CHAR(1) NOT NULL,
-    hire_date           DATE NOT NULL,
-    phone_number        NUMBER(9) NOT NULL,
-    email               VARCHAR2(30 BYTE) NOT NULL,
-    commission_pct      NUMBER(5, 3) NOT NULL,
-    salary_max          NUMBER(5, 2) NOT NULL,
-    salary_min          NUMBER(3, 2) NOT NULL
+    CREATE TABLE dw_employees (
+    id                 NUMBER(9) NOT NULL,
+    employee_id        NUMBER(9) NOT NULL,
+    employees_mini_id  NUMBER(9) NOT NULL,
+    first_name         VARCHAR2(20 BYTE) NOT NULL,
+    last_name          VARCHAR2(20 BYTE) NOT NULL,
+    manager_id         NUMBER(9) NOT NULL,
+    hire_date          DATE NOT NULL,
+    phone_number       NUMBER(9) NOT NULL,
+    email              VARCHAR2(30 BYTE) NOT NULL,
+    commission_min     NUMBER(5, 3) NOT NULL,
+    comission_max      NUMBER(5, 3) NOT NULL,
+    salary_max         NUMBER(6, 2) NOT NULL,
+    salary_min         NUMBER(4, 2) NOT NULL
 );
 
 ALTER TABLE dw_employees ADD CONSTRAINT employees_pk PRIMARY KEY ( id );
 
 ALTER TABLE dw_employees
     ADD CONSTRAINT employees_employees_mini_fk FOREIGN KEY ( employees_mini_id )
-        REFERENCES dw_employees_mini ( id );        
-    
-    
+        REFERENCES dw_employees_mini ( id );
 -- Employees mini
 
 CREATE TABLE dw_employees_mini (
@@ -145,7 +148,7 @@ CREATE TABLE dw_date (
 ALTER TABLE dw_date ADD CONSTRAINT date_pk PRIMARY KEY ( id );
 
 
--- Manhã/Tarde
+-- Manhï¿½/Tarde
 
 CREATE TABLE dw_manha_tarde (
     id            NUMBER(9) NOT NULL,
