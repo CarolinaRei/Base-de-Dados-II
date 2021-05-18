@@ -23,32 +23,46 @@
 <createdBy>ASUS</createdBy>
 <createdTime>2021-05-01 17:53:27 UTC</createdTime>
 <ownerDesignName>StarModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>3</dataTypePrecision>
-<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>3</dataTypeScale>
+<ownDataTypeParameters>,5,3</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="PROMOTION_END_DATE" id="F16B784B-DAD6-3CB7-72D3-35B4ADF46B6F">
-<createdBy>ASUS</createdBy>
-<createdTime>2021-05-01 17:53:27 UTC</createdTime>
+<Column name="PROMOTION_START_DATE" id="56490AF6-DB6B-43A0-2403-C264285969C0">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-05-18 14:48:48 UTC</createdTime>
 <ownerDesignName>StarModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="SOLD_PRODUCTS" id="05E7CC6C-1647-C25A-100B-4E8B9E45A64C">
+<Column name="PROMOTION_END_DATE" id="F16B784B-DAD6-3CB7-72D3-35B4ADF46B6F">
+<createdBy>ASUS</createdBy>
+<createdTime>2021-05-01 17:53:27 UTC</createdTime>
+<ownerDesignName>StarModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STATUS_PRODUCTS" id="05E7CC6C-1647-C25A-100B-4E8B9E45A64C">
 <createdBy>Afonso</createdBy>
 <createdTime>2021-05-06 11:31:55 UTC</createdTime>
 <ownerDesignName>StarModel</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>8</dataTypePrecision>
-<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>

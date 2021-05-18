@@ -7,11 +7,12 @@ select * from fleet;
 
 CREATE TABLE dw_products (
     id                 NUMBER(6) NOT NULL,
+    prod_id            NUMBER(6) NOT NULL,
     products_mini_id   NUMBER(9) NOT NULL,
     name               VARCHAR2(50 BYTE) NOT NULL,
-    "DESC"             VARCHAR2(4000 BYTE) NOT NULL,
-    price_max          NUMBER(4, 2) NOT NULL,
-    price_min          NUMBER(4, 2) NOT NULL
+    description        VARCHAR2(4000 BYTE) NOT NULL,
+    price_max          NUMBER(8, 2) NOT NULL,
+    price_min          NUMBER(8, 2) NOT NULL
 );
 
 ALTER TABLE dw_products ADD CONSTRAINT products_pk PRIMARY KEY ( id );
@@ -19,15 +20,15 @@ ALTER TABLE dw_products ADD CONSTRAINT products_pk PRIMARY KEY ( id );
 ALTER TABLE dw_products
     ADD CONSTRAINT products_products_mini_fk FOREIGN KEY ( products_mini_id )
         REFERENCES dw_products_mini ( id );
-     
         
 -- Products mini
 
 CREATE TABLE dw_products_mini (
-    id                   NUMBER(9) NOT NULL,
-    price_percentage     NUMBER(3) NOT NULL,
-    promotion_end_date   DATE NOT NULL,
-    sold_products        NUMBER(8) NOT NULL
+    id                     NUMBER(9) NOT NULL,
+    price_percentage       NUMBER(5, 3),
+    promotion_start_date   DATE,
+    promotion_end_date     DATE,
+    status_products        VARCHAR2(20 BYTE) NOT NULL
 );
 
 ALTER TABLE dw_products_mini ADD CONSTRAINT products_mini_pk PRIMARY KEY ( id );
