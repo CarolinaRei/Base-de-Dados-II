@@ -23,8 +23,11 @@ ALTER TABLE dw_products
         
 -- Products mini
 
+drop table dw_products_mini;
+/
 CREATE TABLE dw_products_mini (
     id                     NUMBER(9) NOT NULL,
+    promo_id               NUMBER NOT NULL,
     price_percentage       NUMBER(5, 3),
     promotion_start_date   DATE,
     promotion_end_date     DATE,
