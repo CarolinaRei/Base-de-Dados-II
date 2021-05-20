@@ -5,6 +5,9 @@ select * from fleet;
 
 -- Products
 
+drop table dw_products;
+/
+
 CREATE TABLE dw_products (
     id                 NUMBER(6) NOT NULL,
     prod_id            NUMBER(6) NOT NULL,
@@ -12,7 +15,9 @@ CREATE TABLE dw_products (
     name               VARCHAR2(50 BYTE) NOT NULL,
     description        VARCHAR2(4000 BYTE) NOT NULL,
     price_max          NUMBER(8, 2) NOT NULL,
-    price_min          NUMBER(8, 2) NOT NULL
+    price_min          NUMBER(8, 2) NOT NULL,
+    sub_category       VARCHAR2(50 BYTE) NOT NULL,
+    category           VARCHAR2(50 BYTE) NOT NULL
 );
 
 ALTER TABLE dw_products ADD CONSTRAINT products_pk PRIMARY KEY ( id );
@@ -20,22 +25,21 @@ ALTER TABLE dw_products ADD CONSTRAINT products_pk PRIMARY KEY ( id );
 ALTER TABLE dw_products
     ADD CONSTRAINT products_products_mini_fk FOREIGN KEY ( products_mini_id )
         REFERENCES dw_products_mini ( id );
+     
         
 -- Products mini
 
 drop table dw_products_mini;
 /
+
 CREATE TABLE dw_products_mini (
-    id                     NUMBER(9) NOT NULL,
-    promo_id               NUMBER NOT NULL,
-    price_percentage       NUMBER(5, 3),
-    promotion_start_date   DATE,
-    promotion_end_date     DATE,
-    status_products        VARCHAR2(20 BYTE) NOT NULL
+    id               NUMBER(9) NOT NULL,
+    pack_size_step   NUMBER NOT NULL,
+    pack_size_min    NUMBER NOT NULL,
+    pack_size_max    NUMBER NOT NULL
 );
 
 ALTER TABLE dw_products_mini ADD CONSTRAINT products_mini_pk PRIMARY KEY ( id );
-
 
 -- Employees
 

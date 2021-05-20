@@ -19,7 +19,7 @@
 <ownDataTypeParameters>,9,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="PROMO_ID" id="7B831AC9-AA2D-AB74-9E3D-F48DC8A96416">
+<Column name="PACK_SIZE_STEP" id="7B831AC9-AA2D-AB74-9E3D-F48DC8A96416">
 <createdBy>Afonso</createdBy>
 <createdTime>2021-05-18 15:35:09 UTC</createdTime>
 <ownerDesignName>StarModel</ownerDesignName>
@@ -29,50 +29,24 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="PRICE_PERCENTAGE" id="96964C20-D9D9-468F-48E2-B0EDF487DDEB">
+<Column name="PACK_SIZE_MIN" id="96964C20-D9D9-468F-48E2-B0EDF487DDEB">
 <createdBy>ASUS</createdBy>
 <createdTime>2021-05-01 17:53:27 UTC</createdTime>
 <ownerDesignName>StarModel</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>5</dataTypePrecision>
-<dataTypeScale>3</dataTypeScale>
-<ownDataTypeParameters>,5,3</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="PROMOTION_START_DATE" id="56490AF6-DB6B-43A0-2403-C264285969C0">
+<Column name="PACK_SIZE_MAX" id="56490AF6-DB6B-43A0-2403-C264285969C0">
 <createdBy>Afonso</createdBy>
 <createdTime>2021-05-18 14:48:48 UTC</createdTime>
 <ownerDesignName>StarModel</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
+<logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="PROMOTION_END_DATE" id="F16B784B-DAD6-3CB7-72D3-35B4ADF46B6F">
-<createdBy>ASUS</createdBy>
-<createdTime>2021-05-01 17:53:27 UTC</createdTime>
-<ownerDesignName>StarModel</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="STATUS_PRODUCTS" id="05E7CC6C-1647-C25A-100B-4E8B9E45A64C">
-<createdBy>Afonso</createdBy>
-<createdTime>2021-05-06 11:31:55 UTC</createdTime>
-<ownerDesignName>StarModel</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>20 BYTE</dataTypeSize>
-<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
