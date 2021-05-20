@@ -110,31 +110,7 @@
 <ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="COMMISSION_MIN" id="0B5FE97D-914A-6EFC-17EB-90AFCA30A3AF">
-<createdBy>ASUS</createdBy>
-<createdTime>2021-05-04 11:49:31 UTC</createdTime>
-<ownerDesignName>StarModel</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>5</dataTypePrecision>
-<dataTypeScale>3</dataTypeScale>
-<ownDataTypeParameters>,5,3</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="COMISSION_MAX" id="889323CE-6F95-3141-FBFD-943B5AAD41DA">
-<createdBy>nserus</createdBy>
-<createdTime>2021-05-15 15:50:56 UTC</createdTime>
-<ownerDesignName>StarModel</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>5</dataTypePrecision>
-<dataTypeScale>3</dataTypeScale>
-<ownDataTypeParameters>,5,3</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="SALARY_MAX" id="93A8E534-108B-41CA-81A5-74FCBC8E2E95">
+<Column name="SALARY" id="11F8D9D1-0A42-18B6-3889-3C67DF076425">
 <createdBy>ASUS</createdBy>
 <createdTime>2021-05-04 11:51:00 UTC</createdTime>
 <ownerDesignName>StarModel</ownerDesignName>
@@ -142,20 +118,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>6</dataTypePrecision>
-<dataTypeScale>2</dataTypeScale>
-<ownDataTypeParameters>,6,2</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="SALARY_MIN" id="11F8D9D1-0A42-18B6-3889-3C67DF076425">
-<createdBy>ASUS</createdBy>
-<createdTime>2021-05-04 11:51:00 UTC</createdTime>
-<ownerDesignName>StarModel</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>4</dataTypePrecision>
-<dataTypeScale>2</dataTypeScale>
-<ownDataTypeParameters>,4,2</ownDataTypeParameters>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>

@@ -46,7 +46,7 @@ ALTER TABLE dw_products_mini ADD CONSTRAINT products_mini_pk PRIMARY KEY ( id );
 drop table dw_employees;
 drop table dw_employees
 /
-    CREATE TABLE dw_employees (
+CREATE TABLE dw_employees (
     id                 NUMBER(9) NOT NULL,
     employee_id        NUMBER(9) NOT NULL,
     employees_mini_id  NUMBER(9) NOT NULL,
@@ -56,10 +56,7 @@ drop table dw_employees
     hire_date          DATE NOT NULL,
     phone_number       NUMBER(9) NOT NULL,
     email              VARCHAR2(30 BYTE) NOT NULL,
-    commission_min     NUMBER(5, 3) NOT NULL,
-    comission_max      NUMBER(5, 3) NOT NULL,
-    salary_max         NUMBER(6, 2) NOT NULL,
-    salary_min         NUMBER(4, 2) NOT NULL
+    salary             NUMBER(6) NOT NULL
 );
 
 ALTER TABLE dw_employees ADD CONSTRAINT employees_pk PRIMARY KEY ( id );
@@ -70,13 +67,13 @@ ALTER TABLE dw_employees
 -- Employees mini
 
 CREATE TABLE dw_employees_mini (
-    id               NUMBER(9) NOT NULL,
-    salary_percent   NUMBER(3) NOT NULL,
-    commission_pct   NUMBER(5, 3) NOT NULL
+    id              NUMBER(9) NOT NULL,
+    salary_min      NUMBER(5) NOT NULL,
+    salary_max      NUMBER(6) NOT NULL,
+    "SALARY LEVEL"  NUMBER(2) NOT NULL
 );
 
 ALTER TABLE dw_employees_mini ADD CONSTRAINT employees_mini_pk PRIMARY KEY ( id );
-
 
 -- Customers
 
