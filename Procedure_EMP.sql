@@ -20,19 +20,16 @@ create or replace procedure procedure_employees is
     sal_pct NUMBER(3,2):=1.00;
     com_pct NUMBER(3,2):=1.00;
 begin
-    select min(commission_pct), max(commission_pct), min(salary), max(salary), salary, commission_pct
-    into com_min_value, com_max_value, sal_min_value, sal_max_value, sal, commission
+    select min(commission_pct), max(commission_pct), min(salary), max(salary), avg(salary)
+    into com_min_value, com_max_value, sal_min_value, sal_max_value, avg_salary
     from employees;
     
-    sal_pct := (sal-sal_min_value)/(sal_max_value-sal_min_value);
-    com_pct := (commission-com_min_value)/(com_max_value-com_min_value);
-    
-    insert into mini_dw_employees(id, salary_percent, commission_pct)
+    insert into mini_dw_employees(id, salary_min, salary_max, salary_level)
     select mini_emp_seq.nextval, sal_pt, com_pct;
     
-    insert into dw_employees(id, employee_id, first_name, last_name, manager_id, hire_date, phone_number, email, commission_min, comission_max, salary_max, salary_min)
-    select emp_seq.nextval, employee_id, first_name, last_name, manager_id, hire_date, phone_number, email, com_min_value, com_max_value, sal_max_value, sal_min_value
-    from employees;
+    insert into dw_employees(id, employee_idk employees_mini_id, first_name, last_name, manager_id, hire_date, phone_number, email, salary)
+    select emp_seq.nextval, employee_id, id, first_name, last_name, manager_id, hire_date, phone_number, email, salary
+    from employees, mini_dw_employees;
 end;
 /
 
