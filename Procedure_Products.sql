@@ -4,44 +4,41 @@
 
 create sequence products_mini_seq;
 /
-
+drop sequence products_mini_seq;
+/
 create sequence products_seq;
 /
 
 
 -- Carregamento da minidimensão (dw_products_mini)
--- TODO: insert values on steps
 
 create or replace procedure etl_import_products_mini is 
 begin 
-    for etl_products_mini in (
-        select distinct promo_id,
-                        discount_pct,
-                        promo_begin_date,
-                        promo_end_date,
-                        prod_status
-        from promotions,
-             sales_rows,
-             products
-        where sales_rows.promotion_id = promotions.promo_id 
-          and sales_rows.prod_id = products.prod_id
-    )
-    loop
-        insert into dw_products_mini (id, 
-                                      promo_id, 
-                                      price_percentage, 
-                                      promotion_start_date, 
-                                      promotion_end_date, 
-                                      status_products)
-        values (
-            products_mini_seq.nextval, 
-            etl_products_mini.promo_id,
-            etl_products_mini.discount_pct,
-            etl_products_mini.promo_begin_date,
-            etl_products_mini.promo_end_date,
-            etl_products_mini.prod_status
-        );
-    end loop;
+    insert into dw_products_mini (id, pack_size_step, pack_size_min, pack_size_max)
+    values (products_mini_seq.nextval, 'XXS', 0.01, 0.05);
+    
+    insert into dw_products_mini (id, pack_size_step, pack_size_min, pack_size_max)
+    values (products_mini_seq.nextval, 'XS', 0.06, 0.10);
+    
+    insert into dw_products_mini (id, pack_size_step, pack_size_min, pack_size_max)
+    values (products_mini_seq.nextval, 'S', 0.11, 0.15);
+    
+    insert into dw_products_mini (id, pack_size_step, pack_size_min, pack_size_max)
+    values (products_mini_seq.nextval, 'M', 0.16, 0.20);
+    
+    insert into dw_products_mini (id, pack_size_step, pack_size_min, pack_size_max)
+    values (products_mini_seq.nextval, 'L', 0.21, 0.25);
+    
+    insert into dw_products_mini (id, pack_size_step, pack_size_min, pack_size_max)
+    values (products_mini_seq.nextval, 'XL', 0.26, 0.30);
+    
+    insert into dw_products_mini (id, pack_size_step, pack_size_min, pack_size_max)
+    values (products_mini_seq.nextval, 'XXL', 0.31, 0.36);
+    
+    insert into dw_products_mini (id, pack_size_step, pack_size_min, pack_size_max)
+    values (products_mini_seq.nextval, 'XXXL', 0.36, 0.40);
+    
+    commit;
 end;
 /
 
@@ -95,3 +92,5 @@ exec etl_import_products;
 
 select * from dw_products;
 /
+
+select * from products;
