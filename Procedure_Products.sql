@@ -5,7 +5,12 @@
 create sequence products_mini_seq;
 /
 
+create sequence products_seq;
+/
+
+
 -- Carregamento da minidimensão (dw_products_mini)
+-- TODO: insert values on steps
 
 create or replace procedure etl_import_products_mini is 
 begin 
@@ -46,12 +51,8 @@ exec etl_import_products_mini;
 select * from dw_products_mini;
 /
 
+
 -- Carregamento da dimensão (dw_products)
-
-create sequence products_seq;
-/
-
--- Carregamento da minidimensão (dw_products_mini)
 
 create or replace procedure etl_import_products is 
 begin 
@@ -73,7 +74,6 @@ begin
                                  description, 
                                  price_max, 
                                  price_min)
-        
         values (
             products_seq.nextval, 
             etl_products.prod_id,
@@ -81,9 +81,10 @@ begin
             etl_products.prod_name,
             etl_products.prod_desc, 
             etl_products.prod_list_price, 
-            etl_products.prod_min_price);
+            etl_products.prod_min_price
+            )
             -- TODO: Incluir a chave estrangeira que liga a dimensão à minidimensão
-            -- where dw_products.products_mini_id = dw_products_mini.id;
+            where dw_products.products_mini_id = dw_products_mini.id;
     end loop;
 end;
 /
@@ -92,5 +93,5 @@ end;
 exec etl_import_products;
 /
 
-select * from promotions;
+select * from dw_products;
 /
