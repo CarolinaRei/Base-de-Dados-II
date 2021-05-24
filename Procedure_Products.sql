@@ -4,9 +4,11 @@
 
 create sequence products_mini_seq;
 /
-drop sequence products_mini_seq;
-/
+
 create sequence products_seq;
+/
+
+select * from products;
 /
 
 
@@ -14,11 +16,9 @@ create sequence products_seq;
 
 create or replace procedure etl_import_products_mini is 
 begin 
+
     insert into dw_products_mini (id, pack_size_step, pack_size_min, pack_size_max)
-    values (products_mini_seq.nextval, 'XXS', 0.01, 0.05);
-    
-    insert into dw_products_mini (id, pack_size_step, pack_size_min, pack_size_max)
-    values (products_mini_seq.nextval, 'XS', 0.06, 0.10);
+    values (products_mini_seq.nextval, 'XS', 0.01, 0.10);
     
     insert into dw_products_mini (id, pack_size_step, pack_size_min, pack_size_max)
     values (products_mini_seq.nextval, 'S', 0.11, 0.15);
@@ -49,40 +49,42 @@ select * from dw_products_mini;
 /
 
 
+
 -- Carregamento da dimensão (dw_products)
 
 create or replace procedure etl_import_products is 
 begin 
-    for etl_products in (
-        select distinct prod_id,
-                        prod_name, 
-                        prod_desc, 
-                        prod_list_price, 
-                        prod_min_price
-        from product_descriptions, 
-             products
-        where products.prod_descriptions_id = product_descriptions.prod_desc_id
-    )
-    loop
-        insert into dw_products (id, 
-                                 prod_id,
-                                 -- products_mini_id,
-                                 name, 
-                                 description, 
-                                 price_max, 
-                                 price_min)
-        values (
-            products_seq.nextval, 
-            etl_products.prod_id,
-            -- dw_products_mini.id,
-            etl_products.prod_name,
-            etl_products.prod_desc, 
-            etl_products.prod_list_price, 
-            etl_products.prod_min_price
-            )
-            -- TODO: Incluir a chave estrangeira que liga a dimensão à minidimensão
-            where dw_products.products_mini_id = dw_products_mini.id;
-    end loop;
+    -- Error: PL/SQL: ORA-00913: demasiados valores
+    insert into dw_products (id, 
+                             prod_id,
+                             products_mini_id,
+                             name, 
+                             description, 
+                             price_max, 
+                             price_min,
+                             sub_category,
+                             category)
+    select
+        products_seq.nextval, 
+        prod_id,
+        dw_products_mini.id,
+        prod_name,
+        prod_desc, 
+        prod_list_price, 
+        prod_min_price,
+        prod_subcategory,
+        prod_category,
+        id
+    from
+        products,
+        product_descriptions,
+        sub_categories,
+        categories,
+        dw_products_mini
+    where sub_categories.cat_id = categories.cat_id
+    and products.sub_cat_id = sub_categories.sub_cat_id
+    and products.prod_descriptions_id = product_descriptions.prod_desc_id
+    and products.prod_pack_size = dw_products_mini.pack_size_step;
 end;
 /
 
