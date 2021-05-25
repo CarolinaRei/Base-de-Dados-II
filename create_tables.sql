@@ -124,8 +124,8 @@ drop table dw_delivery_company;
 
 
 CREATE TABLE dw_delivery_company (
-    delivery_company_id   NUMBER(6) NOT NULL,
-    id                    NUMBER(6) NOT NULL,
+    delivery_company_id   NUMBER(9) NOT NULL,
+    id                    NUMBER(9) NOT NULL,
     name                  VARCHAR2(20 BYTE) NOT NULL,
     type                  VARCHAR2(20 BYTE) NOT NULL,
     start_date            DATE,
