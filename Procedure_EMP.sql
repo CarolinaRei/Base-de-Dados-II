@@ -39,7 +39,7 @@ begin
     
     
     insert into dw_employees(id, employee_id, employees_mini_id, first_name, last_name, manager_id, hire_date, phone_number, email, salary)
-    select emp_seq.nextval, employee_id, id, first_name, last_name, manager_id, hire_date, phone_number, email, salary
+    select emp_seq.nextval, employee_id, func_sal_lvl(employee_id), first_name, last_name, manager_id, hire_date, phone_number, email, salary
     from employees, mini_dw_employees
     where salary > sal_min AND salary < sal_max;
 end;
@@ -49,20 +49,17 @@ end;
 CREATE OR replace FUNCTION func_sal_lvl(
     employee_id NUMBER
 ) RETURN NUMBER IS
-    salary_               dw_employees.salary%TYPE;
-    age                   NUMBER;
-    salvl       dw_employees_mini.salary_level%TYPE;
+    salary_               employees.salary%TYPE;
+    salvl                 dw_employees_mini.salary_level%TYPE;
     id_                   NUMBER;
-    v_estado_civil        customers.cust_marital_status%TYPE;
-    v2_estado_civil       min_dim_cust.estado_civil%TYPE; 
 BEGIN  
     SELECT
         salary
     INTO salary_ 
     FROM
-        dw_employees
+        employees
     WHERE
-        dw_employees.employee_id = employee_id;
+        employees.employee_id = employee_id;
 
     
     IF salary_ >= 2000 AND salary_ <= 5000 THEN
