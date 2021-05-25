@@ -14,8 +14,7 @@ CREATE TABLE dw_products (
     products_mini_id   NUMBER(9) NOT NULL,
     name               VARCHAR2(50 BYTE) NOT NULL,
     description        VARCHAR2(4000 BYTE) NOT NULL,
-    price_max          NUMBER(8, 2) NOT NULL,
-    price_min          NUMBER(8, 2) NOT NULL,
+    price              NUMBER(8, 2) NOT NULL,
     sub_category       VARCHAR2(50 BYTE) NOT NULL,
     category           VARCHAR2(50 BYTE) NOT NULL
 );
@@ -35,8 +34,8 @@ drop table dw_products_mini;
 CREATE TABLE dw_products_mini (
     id               NUMBER(9) NOT NULL,
     pack_size_step   VARCHAR2(5 BYTE) NOT NULL,
-    pack_size_min    NUMBER,
-    pack_size_max    NUMBER
+    pack_size_min    NUMBER(2),
+    pack_size_max    NUMBER(2)
 );
 
 ALTER TABLE dw_products_mini ADD CONSTRAINT products_mini_pk PRIMARY KEY ( id );

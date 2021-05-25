@@ -9,32 +9,28 @@ create sequence products_seq;
 /
 
 
-
 -- Carregamento da minidimensão (dw_products_mini)
 
 create or replace procedure etl_import_products_mini is 
 begin 
 
     insert into dw_products_mini (id, pack_size_step, pack_size_min, pack_size_max)
-    values (products_mini_seq.nextval, 'XS', 0.01, 0.10);
+    values (products_mini_seq.nextval, 'XS', 30, 34);
     
     insert into dw_products_mini (id, pack_size_step, pack_size_min, pack_size_max)
-    values (products_mini_seq.nextval, 'S', 0.11, 0.15);
+    values (products_mini_seq.nextval, 'S', 34, 38);
     
     insert into dw_products_mini (id, pack_size_step, pack_size_min, pack_size_max)
-    values (products_mini_seq.nextval, 'M', 0.16, 0.20);
+    values (products_mini_seq.nextval, 'M', 38, 40);
     
     insert into dw_products_mini (id, pack_size_step, pack_size_min, pack_size_max)
-    values (products_mini_seq.nextval, 'L', 0.21, 0.25);
+    values (products_mini_seq.nextval, 'L', 40, 42);
     
     insert into dw_products_mini (id, pack_size_step, pack_size_min, pack_size_max)
-    values (products_mini_seq.nextval, 'XL', 0.26, 0.30);
+    values (products_mini_seq.nextval, 'XL', 42, 44);
     
     insert into dw_products_mini (id, pack_size_step, pack_size_min, pack_size_max)
-    values (products_mini_seq.nextval, 'XXL', 0.31, 0.36);
-    
-    insert into dw_products_mini (id, pack_size_step, pack_size_min, pack_size_max)
-    values (products_mini_seq.nextval, 'XXXL', 0.36, 0.40);
+    values (products_mini_seq.nextval, 'XXL', 44, 46);
     
     commit;
 end;
@@ -47,7 +43,6 @@ select * from dw_products_mini;
 /
 
 
-
 -- Carregamento da dimensão (dw_products)
 
 create or replace procedure etl_import_products is 
@@ -57,8 +52,7 @@ begin
                              products_mini_id,
                              name, 
                              description,
-                             price_max,
-                             price_min,
+                             price,
                              sub_category,
                              category)
     select
@@ -68,7 +62,6 @@ begin
         prod_name,
         prod_desc, 
         prod_list_price, 
-        prod_min_price,
         prod_subcategory,
         prod_category
     from

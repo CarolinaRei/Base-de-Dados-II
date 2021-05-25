@@ -67,21 +67,9 @@
 <ownDataTypeParameters>4000 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="PRICE_MAX" id="DD2A1581-364D-B092-8F18-C72C8FADD2D9">
+<Column name="PRICE" id="DD2A1581-364D-B092-8F18-C72C8FADD2D9">
 <createdBy>ASUS</createdBy>
 <createdTime>2021-05-04 11:40:43 UTC</createdTime>
-<ownerDesignName>StarModel</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>8</dataTypePrecision>
-<dataTypeScale>2</dataTypeScale>
-<ownDataTypeParameters>,8,2</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="PRICE_MIN" id="7AFF0481-5C02-B933-4721-2156582AD08C">
-<createdBy>nserus</createdBy>
-<createdTime>2021-05-05 10:51:38 UTC</createdTime>
 <ownerDesignName>StarModel</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
