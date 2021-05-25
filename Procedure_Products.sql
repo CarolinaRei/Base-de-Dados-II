@@ -8,8 +8,6 @@ create sequence products_mini_seq;
 create sequence products_seq;
 /
 
-select * from products;
-/
 
 
 -- Carregamento da minidimensão (dw_products_mini)
@@ -54,13 +52,12 @@ select * from dw_products_mini;
 
 create or replace procedure etl_import_products is 
 begin 
-    -- Error: PL/SQL: ORA-00913: demasiados valores
     insert into dw_products (id, 
                              prod_id,
                              products_mini_id,
                              name, 
-                             description, 
-                             price_max, 
+                             description,
+                             price_max,
                              price_min,
                              sub_category,
                              category)
@@ -73,26 +70,21 @@ begin
         prod_list_price, 
         prod_min_price,
         prod_subcategory,
-        prod_category,
-        id
+        prod_category
     from
         products,
+        dw_products_mini,
         product_descriptions,
         sub_categories,
-        categories,
-        dw_products_mini
+        categories
     where sub_categories.cat_id = categories.cat_id
     and products.sub_cat_id = sub_categories.sub_cat_id
-    and products.prod_descriptions_id = product_descriptions.prod_desc_id
-    and products.prod_pack_size = dw_products_mini.pack_size_step;
+    and products.prod_descriptions_id = product_descriptions.prod_desc_id;
 end;
 /
-
 
 exec etl_import_products;
 /
 
 select * from dw_products;
 /
-
-select * from products;
