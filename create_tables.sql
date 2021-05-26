@@ -47,9 +47,9 @@ CREATE TABLE dw_employees (
     employees_mini_id  NUMBER(9) NOT NULL,
     first_name         VARCHAR2(20 BYTE) NOT NULL,
     last_name          VARCHAR2(20 BYTE) NOT NULL,
-    manager_id         NUMBER(9) NOT NULL,
+    manager_id         NUMBER(9) ,
     hire_date          DATE NOT NULL,
-    phone_number       NUMBER(9) NOT NULL,
+    phone_number       VARCHAR2(30 BYTE) NOT NULL,
     email              VARCHAR2(30 BYTE) NOT NULL,
     salary             NUMBER(6) NOT NULL
 );
