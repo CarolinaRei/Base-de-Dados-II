@@ -1,8 +1,3 @@
-select * from delivery_company;
-select * from fleet;
-/
-
-
 -- Products
 
 drop table dw_products;
@@ -40,6 +35,7 @@ CREATE TABLE dw_products_mini (
 
 ALTER TABLE dw_products_mini ADD CONSTRAINT products_mini_pk PRIMARY KEY ( id );
 
+
 -- Employees
 
 drop table dw_employees;
@@ -63,6 +59,8 @@ ALTER TABLE dw_employees ADD CONSTRAINT employees_pk PRIMARY KEY ( id );
 ALTER TABLE dw_employees
     ADD CONSTRAINT employees_employees_mini_fk FOREIGN KEY ( employees_mini_id )
         REFERENCES dw_employees_mini ( id );
+        
+        
 -- Employees mini
 
 CREATE TABLE dw_employees_mini (
@@ -73,6 +71,8 @@ CREATE TABLE dw_employees_mini (
 );
 
 ALTER TABLE dw_employees_mini ADD CONSTRAINT employees_mini_pk PRIMARY KEY ( id );
+
+
 -- Customers
 
 drop table dw_customers;
@@ -149,16 +149,6 @@ CREATE TABLE dw_date (
 );
 
 ALTER TABLE dw_date ADD CONSTRAINT date_pk PRIMARY KEY ( id );
-
-
--- Manh�/Tarde
-
-CREATE TABLE dw_manha_tarde (
-    id            NUMBER(9) NOT NULL,
-    manha_tarde   CHAR(1) NOT NULL
-);
-
-ALTER TABLE dw_manha_tarde ADD CONSTRAINT manha_tarde_pk PRIMARY KEY ( id );
 
 
 -- Sales
