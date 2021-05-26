@@ -75,10 +75,38 @@ ALTER TABLE dw_employees_mini ADD CONSTRAINT employees_mini_pk PRIMARY KEY ( id 
 
 -- Customers
 
-drop table dw_customers;
-/
 
-CREATE TABLE dw_customers (
+CREATE TABLE DW_Customers
+(
+cust_id NUMBER(6) NOT NULL,
+cust_first_name VARCHAR2(20 BYTE) NOT NULL,
+cust_last_name VARCHAR2(20 BYTE) NOT NULL,
+44cust_gender CHAR(1 BYTE) NOT NULL,
+cust_year_of_birth NUMBER(4) NOT NULL,
+cust_marital_status VARCHAR2(20 BYTE),
+cust_street_adress VARCHAR2(40 BYTE) NOT NULL,
+cust_postal_code VARCHAR2(10 BYTE) NOT NULL,
+cust_main_phone_number VARCHAR2(25 BYTE) NOT NULL,
+cust_income_level VARCHAR2(30 BYTE) NOT NULL,
+cust_credit_limit NUMBER NOT NULL,
+cust_email VARCHAR2(30 BYTE) NOT NULL,
+cust_total VARCHAR2(14 BYTE),
+cust_month_of_birth NUMBER(2) NOT NULL,
+cust_city_name VARCHAR2(30 BYTE) NOT NULL,
+cust_province_name VARCHAR2(40 BYTE) NOT NULL,
+cust_country_name VARCHAR2(40 BYTE) NOT NULL,
+cust_subregion_name VARCHAR2(30 BYTE) NOT NULL,
+cust_region_name VARCHAR2(20 BYTE) NOT NULL,
+cust_age_group NUMBER,
+cust_social_class NUMBER,
+PRIMARY KEY ( cust_id ),
+FOREIGN KEY ( cust_age_group ) REFERENCES DW_age_gap (
+age_group_id ),
+FOREIGN KEY ( cust_social_class ) REFERENCES DW_social_class(
+social_class_id )
+);
+
+/*CREATE TABLE dw_customers (
     id                  NUMBER(9) NOT NULL,
     cust_id             NUMBER(6) NOT NULL,
     customers_mini_id   NUMBER(9) NOT NULL,
@@ -100,7 +128,7 @@ ALTER TABLE dw_customers ADD CONSTRAINT customers_pk PRIMARY KEY ( id );
 
 ALTER TABLE dw_customers
     ADD CONSTRAINT customers_customers_mini_fk FOREIGN KEY ( customers_mini_id )
-        REFERENCES dw_customers_mini ( id );        
+        REFERENCES dw_customers_mini ( id );       */ 
   
         
 -- Customers mini
@@ -160,13 +188,13 @@ CREATE TABLE dw_sales (
     total_employees    NUMBER(4, 2),
     "DATE"             NUMBER(9) NOT NULL,
     employees          NUMBER(6) NOT NULL,
-    products           NUMBER(6) NOT NULL,
-    customers          NUMBER(9) NOT NULL,
-    delivery_company   NUMBER(6) NOT NULL,
     employees_mini     NUMBER(9) NOT NULL,
-    customers_mini     NUMBER(9) NOT NULL,
+    products           NUMBER(6) NOT NULL,
     products_mini      NUMBER(9) NOT NULL,
-    manha_tarde_id     NUMBER(9) NOT NULL
+    customers          NUMBER(9) NOT NULL,
+    social_class       NUMBER(4) NOT NULL,
+    age_gap            NUMBER(3) NOT NULL,
+    delivery_company   NUMBER(6) NOT NULL
 );
 
 ALTER TABLE dw_sales
@@ -174,16 +202,19 @@ ALTER TABLE dw_sales
                                           employees,
                                           products,
                                           customers,
-                                          delivery_company,
-                                          manha_tarde_id );
+                                          delivery_company );
+
+ALTER TABLE dw_sales
+    ADD CONSTRAINT dw_sales_dw_age_gap_fk FOREIGN KEY ( age_gap )
+        REFERENCES dw_age_gap ( age_group_id );
 
 ALTER TABLE dw_sales
     ADD CONSTRAINT sales_customers_fk FOREIGN KEY ( customers )
         REFERENCES dw_customers ( id );
 
 ALTER TABLE dw_sales
-    ADD CONSTRAINT sales_customers_mini_fk FOREIGN KEY ( customers_mini )
-        REFERENCES dw_customers_mini ( id );
+    ADD CONSTRAINT sales_customers_mini_fk FOREIGN KEY ( social_class )
+        REFERENCES dw_social_class ( social_class_id );
 
 ALTER TABLE dw_sales
     ADD CONSTRAINT sales_date_fk FOREIGN KEY ( "DATE" )
@@ -191,7 +222,7 @@ ALTER TABLE dw_sales
 
 ALTER TABLE dw_sales
     ADD CONSTRAINT sales_delivery_company_fk FOREIGN KEY ( delivery_company )
-        REFERENCES dw_delivery_company ( id );
+        REFERENCES dw_delivery_company ( delivery_company_id );
 
 ALTER TABLE dw_sales
     ADD CONSTRAINT sales_employees_fk FOREIGN KEY ( employees )
@@ -200,10 +231,6 @@ ALTER TABLE dw_sales
 ALTER TABLE dw_sales
     ADD CONSTRAINT sales_employees_mini_fk FOREIGN KEY ( employees_mini )
         REFERENCES dw_employees_mini ( id );
-
-ALTER TABLE dw_sales
-    ADD CONSTRAINT sales_manha_tarde_fk FOREIGN KEY ( manha_tarde_id )
-        REFERENCES dw_manha_tarde ( id );
 
 ALTER TABLE dw_sales
     ADD CONSTRAINT sales_products_fk FOREIGN KEY ( products )

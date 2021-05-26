@@ -70,7 +70,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>9</dataTypePrecision>
-<ownDataTypeParameters>,9,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
@@ -92,48 +92,6 @@
 <colAssociation fkAssociation="04A86FEC-2958-9D9E-9B79-B8D8F9752129" referredColumn="2A81D22A-F1F6-B7E9-8646-ED008A36A0DE"/>
 </associations>
 </Column>
-<Column name="PRODUCTS" id="D5CEE800-C27C-6E40-3C46-41F5FC2407AC">
-<createdBy>ASUS</createdBy>
-<createdTime>2021-04-29 11:13:06 UTC</createdTime>
-<ownerDesignName>StarModel</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>6</dataTypePrecision>
-<ownDataTypeParameters>,6,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="504F07CF-3105-DB57-EA48-79D0328152F7" referredColumn="8B6C60EF-79B5-D62F-DF85-493DAA85412A"/>
-</associations>
-</Column>
-<Column name="CUSTOMERS" id="8774CBF2-E9ED-AE51-6A61-45FA00697D3A">
-<createdBy>ASUS</createdBy>
-<createdTime>2021-05-04 11:54:33 UTC</createdTime>
-<ownerDesignName>StarModel</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>9</dataTypePrecision>
-<ownDataTypeParameters>,9,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="2E3AE9E5-9D85-8D38-C627-DA27CDE24704" referredColumn="559C2ED8-FFB9-4D18-D48F-CDD24EAF3A0D"/>
-</associations>
-</Column>
-<Column name="DELIVERY_COMPANY" id="0CF59A35-B6CF-73B0-EB83-CEECC3DDE82D">
-<createdBy>ASUS</createdBy>
-<createdTime>2021-04-29 11:13:31 UTC</createdTime>
-<ownerDesignName>StarModel</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>6</dataTypePrecision>
-<ownDataTypeParameters>,6,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 <Column name="EMPLOYEES_MINI" id="1BD494EE-772D-8F11-C146-F441C1A0027A">
 <createdBy>ASUS</createdBy>
 <createdTime>2021-05-01 18:13:55 UTC</createdTime>
@@ -142,26 +100,26 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>9</dataTypePrecision>
-<ownDataTypeParameters>,9,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="62C2E4A9-7EA5-68AF-5D64-1A67A8E643BB" referredColumn="44E3AF65-4058-7521-B66D-87AF329D3332"/>
 </associations>
 </Column>
-<Column name="CUSTOMERS_MINI" id="9715F1A0-066A-4A14-A81E-80B43400917E">
+<Column name="PRODUCTS" id="D5CEE800-C27C-6E40-3C46-41F5FC2407AC">
 <createdBy>ASUS</createdBy>
-<createdTime>2021-05-01 18:25:55 UTC</createdTime>
+<createdTime>2021-04-29 11:13:06 UTC</createdTime>
 <ownerDesignName>StarModel</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>9</dataTypePrecision>
-<ownDataTypeParameters>,9,</ownDataTypeParameters>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="5E83B867-DA3B-0FDA-17B5-56E96FA21A4E" referredColumn="24843FB6-CA73-6F13-2BF5-CEC6053F2E4C"/>
+<colAssociation fkAssociation="504F07CF-3105-DB57-EA48-79D0328152F7" referredColumn="8B6C60EF-79B5-D62F-DF85-493DAA85412A"/>
 </associations>
 </Column>
 <Column name="PRODUCTS_MINI" id="2FB85CD5-5941-648C-2993-2B8526D8E68F">
@@ -172,26 +130,59 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>9</dataTypePrecision>
-<ownDataTypeParameters>,9,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="6D08FDD4-C287-0890-01DC-65116DE852DC" referredColumn="5A70B36B-810C-02DB-8E21-7EAFCD6C3D86"/>
 </associations>
 </Column>
-<Column name="MANHA_TARDE_ID" id="FA992C79-D0D5-C544-133B-F82B84A8CB0A">
-<createdBy>nserus</createdBy>
-<createdTime>2021-05-05 11:51:11 UTC</createdTime>
+<Column name="CUSTOMERS" id="8774CBF2-E9ED-AE51-6A61-45FA00697D3A">
+<createdBy>ASUS</createdBy>
+<createdTime>2021-05-04 11:54:33 UTC</createdTime>
 <ownerDesignName>StarModel</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>9</dataTypePrecision>
-<ownDataTypeParameters>,9,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2E3AE9E5-9D85-8D38-C627-DA27CDE24704" referredColumn="559C2ED8-FFB9-4D18-D48F-CDD24EAF3A0D"/>
+</associations>
 </Column>
-<Column name="DW_DELIVERY_COMPANY_DELIVERY_COMPANY_ID" id="1AC9334D-DBAA-CEF2-3DE3-38A7DAF883DB">
+<Column name="SOCIAL_CLASS" id="9715F1A0-066A-4A14-A81E-80B43400917E">
+<createdBy>ASUS</createdBy>
+<createdTime>2021-05-01 18:25:55 UTC</createdTime>
+<ownerDesignName>StarModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5E83B867-DA3B-0FDA-17B5-56E96FA21A4E" referredColumn="24843FB6-CA73-6F13-2BF5-CEC6053F2E4C"/>
+</associations>
+</Column>
+<Column name="AGE_GAP" id="8C4E6BEB-FC0D-23A0-8F1C-03D8B8A46C40">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-05-26 17:52:55 UTC</createdTime>
+<ownerDesignName>StarModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E63C8B71-1C04-59A5-B3F2-E33CAF7279AD" referredColumn="8B305059-75FF-26F0-D404-F1F9268FEC13"/>
+</associations>
+</Column>
+<Column name="DELIVERY_COMPANY" id="1AC9334D-DBAA-CEF2-3DE3-38A7DAF883DB">
 <createdBy>Afonso</createdBy>
 <createdTime>2021-05-13 11:14:12 UTC</createdTime>
 <ownerDesignName>StarModel</ownerDesignName>
@@ -221,8 +212,7 @@
 <colUsage columnID="BBFACE56-38F1-EBC6-5318-D8B3F8446701"/>
 <colUsage columnID="D5CEE800-C27C-6E40-3C46-41F5FC2407AC"/>
 <colUsage columnID="8774CBF2-E9ED-AE51-6A61-45FA00697D3A"/>
-<colUsage columnID="0CF59A35-B6CF-73B0-EB83-CEECC3DDE82D"/>
-<colUsage columnID="FA992C79-D0D5-C544-133B-F82B84A8CB0A"/>
+<colUsage columnID="1AC9334D-DBAA-CEF2-3DE3-38A7DAF883DB"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="76B0AB4C-C0B6-1983-13AC-F4980A1CB60B" name="SALES_EMPLOYEES_FK">
@@ -303,6 +293,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="2FB85CD5-5941-648C-2993-2B8526D8E68F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2013EA4E-8330-B615-8DDF-1B9D27C64548" name="DW_SALES_DW_AGE_GAP_FK">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-05-26 17:52:55 UTC</createdTime>
+<ownerDesignName>StarModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8C4E6BEB-FC0D-23A0-8F1C-03D8B8A46C40"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
