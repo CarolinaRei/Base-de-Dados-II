@@ -38,7 +38,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>9</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
@@ -179,6 +179,21 @@
 <ownDataTypeParameters>,6,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="DW_AGE_GAP_AGE_GROUP_ID" id="BAC2493A-3034-2499-0B66-940D799E26FE">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-05-26 17:52:34 UTC</createdTime>
+<ownerDesignName>StarModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="91A0B606-0884-85A3-0497-9B3A075F3A7F" referredColumn="8B305059-75FF-26F0-D404-F1F9268FEC13"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="F5EF4317-5FC5-3D7F-1AE8-8879F9D47712" name="CUSTOMERS_PK">
@@ -200,6 +215,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="29A9AF17-C11D-7C24-37B5-F0398BF74E40"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="03E6B0E6-A847-DCC1-6CD4-9B7999A91CAD" name="DW_CUSTOMERS_DW_AGE_GAP_FK">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-05-26 17:52:34 UTC</createdTime>
+<ownerDesignName>StarModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BAC2493A-3034-2499-0B66-940D799E26FE"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="91A0B606-0884-85A3-0497-9B3A075F3A7F" containerWithKeyObject="9C6B2679-695B-43B7-32FC-C5C9056E5AA8" localFKIndex="03E6B0E6-A847-DCC1-6CD4-9B7999A91CAD" name="DW_CUSTOMERS_DW_AGE_GAP_FK">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-05-26 17:52:34 UTC</createdTime>
+<ownerDesignName>StarModel</ownerDesignName>
+<referredTableLongName>DW_AGE_GAP</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>11DAC687-B155-733D-A74E-AC260829C9CE</referredTableID>
+<keyObject>8A948A86-ABEC-10C3-360E-2D9B45B183E4</keyObject>
+<referredKeyID>8A948A86-ABEC-10C3-360E-2D9B45B183E4</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>AGE_GROUP_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

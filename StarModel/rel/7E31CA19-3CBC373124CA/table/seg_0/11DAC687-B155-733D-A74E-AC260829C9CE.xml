@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="11DAC687-B155-733D-A74E-AC260829C9CE" name="DW_AGE_GAP">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-05-26 17:51:00 UTC</createdTime>
+<ownerDesignName>StarModel</ownerDesignName>
+<ordsAlias>table_11</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="AGE_GROUP_ID" id="8B305059-75FF-26F0-D404-F1F9268FEC13">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-05-26 17:51:55 UTC</createdTime>
+<ownerDesignName>StarModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GENDER" id="944A32AD-DC8F-5890-B1EC-4BAD08150FDF">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-05-26 17:51:55 UTC</createdTime>
+<ownerDesignName>StarModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AGE_GROUP" id="C3D0D3C2-ABC5-C88C-231E-95F8A039D7C0">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-05-26 17:51:55 UTC</createdTime>
+<ownerDesignName>StarModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8A948A86-ABEC-10C3-360E-2D9B45B183E4" name="DW_AGE_GAP_PK">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-05-26 17:51:55 UTC</createdTime>
+<ownerDesignName>StarModel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8B305059-75FF-26F0-D404-F1F9268FEC13"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
