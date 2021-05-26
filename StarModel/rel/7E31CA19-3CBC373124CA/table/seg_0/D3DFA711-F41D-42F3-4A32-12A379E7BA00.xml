@@ -190,9 +190,6 @@
 <ownDataTypeParameters>,9,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="B40AA532-3E2C-BE47-DA64-80E0AA545E5E" referredColumn="C1690245-45C0-169C-78A6-787E975EDD5A"/>
-</associations>
 </Column>
 <Column name="DW_DELIVERY_COMPANY_DELIVERY_COMPANY_ID" id="1AC9334D-DBAA-CEF2-3DE3-38A7DAF883DB">
 <createdBy>Afonso</createdBy>
@@ -202,7 +199,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>6</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
@@ -306,16 +303,6 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="2FB85CD5-5941-648C-2993-2B8526D8E68F"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="4E2BDB77-557B-6221-14BB-BE0F3E124D62" name="SALES_MANHA_TARDE_FK">
-<createdBy>nserus</createdBy>
-<createdTime>2021-05-05 11:51:11 UTC</createdTime>
-<ownerDesignName>StarModel</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="FA992C79-D0D5-C544-133B-F82B84A8CB0A"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
