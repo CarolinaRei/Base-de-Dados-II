@@ -3,51 +3,84 @@
 create sequence emp_seq;
 create sequence mini_emp_seq;
 
+drop sequence emp_seq;
+drop sequence mini_emp_seq;
+
 select * from dw_employees;
 
+select * from dw_employees_mini;
 select * from employees;
 
-create or replace procedure procedure_employees is
-    com_min_value NUMBER(5,3):= 1.00;
-    com_max_value NUMBER(5,3):= 2.00;
+
+/*-----------------------------------------------------------------------------------------------------------------------------------
+PROCEDURE MINI
+---------------------------------------------------------------------------------------------------------------------------------------*/
+
+exec procedure_employees_mini;
+
+create or replace procedure procedure_employees_mini is
+    sal_min_value NUMBER(4):= 1;
+    sal_min NUMBER(6):= 1;
+    sal_max NUMBER(6):= 2;
     
+begin
+
+    select min(salary)
+    into  sal_min_value
+    from employees;
+
+    sal_min := sal_min_value-100;
+    sal_max := sal_min +3000;
+    
+    for loop_p in 1..8 loop
+        insert into dw_employees_mini(id, salary_min, salary_max, salary_level)
+        values (mini_emp_seq.nextval, sal_min, sal_max, mini_emp_seq.currval);
+        sal_min := sal_min + 3000;
+        sal_max:= sal_min + 3000;
+    end loop;
+end;
+/
+
+
+create or replace procedure procedure_employees is
     sal_min_value NUMBER(4):= 1;
     sal_max_value NUMBER(6):= 2;
-    sal_min NUMBER(4):= 1;
+    sal_min NUMBER(6):= 1;
     sal_max NUMBER(6):= 2;
     
     sal NUMBER(4):= 1;
-    commissiom NUMBER(5,3):= 2;
     
     sal_pct NUMBER(3,2):=1.00;
-    com_pct NUMBER(3,2):=1.00;
 begin
     select min(salary), max(salary)
     into  sal_min_value, sal_max_value
     from employees;
     
     sal_min := sal_min_value-100;
+    sal_max := sal_min +3000;
     
-    for lvl in 1..7 loop
-        sal_max:= sal_min + 3000
-        
-        insert into mini_dw_employees(id, salary_min, salary_max, salary_level)
-        select mini_emp_seq.nextval, sal_min, sal_max, lvl
+    
+        if cenas = 1 
+        insert into dw_employees_mini(id, salary_min, salary_max, salary_level)
+        select mini_emp_seq.nextval, sal_min, sal_max, mini_emp_seq.currval
         from employees;
-        sal_min := sal_min + 3000
-    end loop;
-    
+        
+        sal_min := sal_min + 3000;
+        sal_max:= sal_min + 3000;
+        
     
     insert into dw_employees(id, employee_id, employees_mini_id, first_name, last_name, manager_id, hire_date, phone_number, email, salary)
     select emp_seq.nextval, employee_id, func_sal_lvl(employee_id), first_name, last_name, manager_id, hire_date, phone_number, email, salary
-    from employees, mini_dw_employees
-    where salary > sal_min AND salary < sal_max;
+    from employees, dw_employees_mini
+    where employee_id<100;
+    
+    
 end;
 /
 
 
 CREATE OR replace FUNCTION func_sal_lvl(
-    employee_id NUMBER
+    p_employee_id NUMBER
 ) RETURN NUMBER IS
     salary_               employees.salary%TYPE;
     salvl                 dw_employees_mini.salary_level%TYPE;
@@ -59,7 +92,7 @@ BEGIN
     FROM
         employees
     WHERE
-        employees.employee_id = employee_id;
+        employee_id = p_employee_id;
 
     
     IF salary_ >= 2000 AND salary_ <= 5000 THEN
@@ -90,8 +123,7 @@ BEGIN
     RETURN id_;
 END func_sal_lvl;
 /
-
-exec EMPLO;
+exec procedure_employees;
 /
 
 select * from dw_delivery_company;

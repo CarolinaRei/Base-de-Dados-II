@@ -64,10 +64,10 @@ ALTER TABLE dw_employees
 -- Employees mini
 
 CREATE TABLE dw_employees_mini (
-    id            NUMBER(9) NOT NULL,
-    salary_min    NUMBER(5) NOT NULL,
-    salary_max    NUMBER(6) NOT NULL,
-    salary_level  NUMBER(2) NOT NULL
+    id            NUMBER(3) NOT NULL,
+    salary_min    NUMBER(7) NOT NULL,
+    salary_max    NUMBER(7) NOT NULL,
+    salary_level  NUMBER(5) NOT NULL
 );
 
 ALTER TABLE dw_employees_mini ADD CONSTRAINT employees_mini_pk PRIMARY KEY ( id );
