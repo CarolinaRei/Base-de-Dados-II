@@ -54,7 +54,7 @@ begin
     
     insert into dw_employees(id, employee_id, employees_mini_id, first_name, last_name, manager_id, hire_date, phone_number, email, salary)
     select emp_seq.nextval, employee_id, func_sal_lvl(employee_id), first_name, last_name, manager_id, hire_date, phone_number, email, salary
-    from employees, dw_employees_mini;
+    from employees;
     
     
 end;
