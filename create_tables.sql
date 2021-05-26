@@ -81,7 +81,7 @@ CREATE TABLE DW_Customers
 cust_id NUMBER(6) NOT NULL,
 cust_first_name VARCHAR2(20 BYTE) NOT NULL,
 cust_last_name VARCHAR2(20 BYTE) NOT NULL,
-44cust_gender CHAR(1 BYTE) NOT NULL,
+cust_gender CHAR(1 BYTE) NOT NULL,
 cust_year_of_birth NUMBER(4) NOT NULL,
 cust_marital_status VARCHAR2(20 BYTE),
 cust_street_adress VARCHAR2(40 BYTE) NOT NULL,
