@@ -115,6 +115,36 @@ BEGIN
     return customers_dim_id;
 END func_customers_id;
 /
+select * from customers;
+
+CREATE OR replace FUNCTION func_social_id(
+    p_customers_id NUMBER
+) RETURN NUMBER IS
+     social_dim_id                   NUMBER;
+BEGIN 
+    select cust_social_class
+    into social_dim_id
+    from dw_customers
+    where dw_customers.cust_id = p_customers_id;
+    
+    return social_dim_id;
+END func_social_id;
+/
+select * from customers;
+
+CREATE OR replace FUNCTION func_age_id(
+    p_customers_id NUMBER
+) RETURN NUMBER IS
+     age_dim_id                   NUMBER;
+BEGIN 
+    select cust_age_group
+    into age_dim_id
+    from dw_customers
+    where dw_customers.cust_id = p_customers_id;
+    
+    return age_dim_id;
+END func_age_id;
+/
 select * from Delivery_company;
 
 CREATE OR replace FUNCTION func_Delivery_id(
