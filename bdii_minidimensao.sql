@@ -1,3 +1,5 @@
+create sequence id_seq;
+
 create or replace PROCEDURE mini_dimensoes_dimensoes IS
 -- Inserting into a cursor values thats is going to be used in the customers table and social class table
 CURSOR c_cust IS

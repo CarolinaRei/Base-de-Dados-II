@@ -16,7 +16,7 @@ end;
 exec etl_simple_dimension;
 /
 
-select * from dw_delivery_company;
+select * from dw_delivery_company where delivery_company_id = 1000500;
 /
 
 select * from delivery_company;
