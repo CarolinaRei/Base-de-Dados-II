@@ -6,7 +6,7 @@ create sequence mini_emp_seq;
 drop sequence emp_seq;
 drop sequence mini_emp_seq;
 
-select * from dw_employees;
+select count(*) from dw_employees;
 
 select * from dw_employees_mini;
 select * from employees;
