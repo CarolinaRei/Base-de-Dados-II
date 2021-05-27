@@ -187,7 +187,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>3</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
@@ -207,7 +207,7 @@
 <colUsage columnID="559C2ED8-FFB9-4D18-D48F-CDD24EAF3A0D"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="0A7979E2-A5F1-C890-AD63-AE72759BD818" name="CUSTOMERS_CUSTOMERS_MINI_FK">
+<ind_PK_UK id="0A7979E2-A5F1-C890-AD63-AE72759BD818" name="CUSTOMERS_SOCIAL_CLASS_FK">
 <createdBy>nserus</createdBy>
 <createdTime>2021-05-05 11:48:54 UTC</createdTime>
 <ownerDesignName>StarModel</ownerDesignName>
@@ -217,7 +217,7 @@
 <colUsage columnID="29A9AF17-C11D-7C24-37B5-F0398BF74E40"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="03E6B0E6-A847-DCC1-6CD4-9B7999A91CAD" name="DW_CUSTOMERS_DW_AGE_GAP_FK">
+<ind_PK_UK id="03E6B0E6-A847-DCC1-6CD4-9B7999A91CAD" name="CUSTOMERS_AGE_GAP_FK">
 <createdBy>Afonso</createdBy>
 <createdTime>2021-05-26 17:52:34 UTC</createdTime>
 <ownerDesignName>StarModel</ownerDesignName>

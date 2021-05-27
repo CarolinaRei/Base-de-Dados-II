@@ -43,7 +43,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="8A948A86-ABEC-10C3-360E-2D9B45B183E4" name="DW_AGE_GAP_PK">
+<ind_PK_UK id="8A948A86-ABEC-10C3-360E-2D9B45B183E4" name="AGE_GAP_PK">
 <createdBy>Afonso</createdBy>
 <createdTime>2021-05-26 17:51:55 UTC</createdTime>
 <ownerDesignName>StarModel</ownerDesignName>

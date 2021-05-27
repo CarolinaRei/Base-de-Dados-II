@@ -54,7 +54,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="6CE7169D-BF41-FE85-FF24-8C3C362EB46B" name="CUSTOMERS_MINI_PK">
+<ind_PK_UK id="6CE7169D-BF41-FE85-FF24-8C3C362EB46B" name="SOCIAL_CLASS_PK">
 <createdBy>ASUS</createdBy>
 <createdTime>2021-05-01 17:59:21 UTC</createdTime>
 <ownerDesignName>StarModel</ownerDesignName>
