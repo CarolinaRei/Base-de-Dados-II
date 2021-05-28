@@ -29,13 +29,13 @@ create or replace procedure procedure_employees_mini is
 begin
 
     select min(salary), max(salary)   
-    into  sal_min_value, sal_max_value    <-- query to get max and min salary-->
+    into  sal_min_value, sal_max_value    -- query to get max and min salary--
     from employees;
 
-    sal_min := sal_min_value-100;   <-- defining lowest min value-->
-    sal_max := sal_min +3000;       <-- defining lowest max value-->
+    sal_min := sal_min_value-100;   -- defining lowest min value--
+    sal_max := sal_min +3000;       -- defining lowest max value--
     
-    while sal_max_value > sal_max loop    <-- loop to insert values
+    while sal_max_value > sal_max loop    -- loop to insert values
         insert into dw_employees_mini(id, salary_min, salary_max, salary_level)
         values (mini_emp_seq.nextval, sal_min, sal_max, mini_emp_seq.currval);
         sal_min := sal_min + 3000;
@@ -72,11 +72,11 @@ FUNCTION FOR PROCEDURE
 CREATE OR replace FUNCTION func_sal_lvl(
     p_employee_id NUMBER
 ) RETURN NUMBER IS
-    salary_               employees.salary%TYPE;     <-- salary from employees
-    salvl                 dw_employees_mini.salary_level%TYPE;   <--level from mini dimension
-    id_                   NUMBER; <-- id to return
+   /*salary_               employees.salary%TYPE;    salary from employees*/
+    salvl                 dw_employees_mini.salary_level%TYPE;   --level from mini dimension
+    id_                   NUMBER; -- id to return
 BEGIN  
-    SELECT
+    /*SELECT
         salary
     INTO salary_   <--inserting the salary from given id
     FROM
@@ -101,20 +101,28 @@ BEGIN
         salvl := 7;
     ELSIF salary_ >= 23000 AND salary_ <= 26000 THEN
         salvl := 8;
-    END IF;
+    END IF;*/
+
+    select salary_level
+    into salvl
+    from dw_employees_mini, employees 
+    where employees.employee_id=p_employee_id
+    and salary>salary_min 
+    and salary<salary_max;
 
     SELECT
         id
-    INTO id_   <-- inserting id from the level of the salary
+    INTO id_   -- inserting id from the level of the salary
     FROM
         dw_employees_mini
     WHERE
         salary_level = salvl;
 
     
-    RETURN id_; <-- returning id
+    RETURN id_; -- returning id
 END func_sal_lvl;
 /
+
 select func_sal_lvl(employee_id)
 from employees
 where employee_id = 204;
