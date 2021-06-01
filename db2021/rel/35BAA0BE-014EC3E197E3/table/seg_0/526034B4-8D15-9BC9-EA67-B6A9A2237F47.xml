@@ -1,0 +1,283 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="526034B4-8D15-9BC9-EA67-B6A9A2237F47" schemaObject="AB1CECC4-688F-3D24-6E47-E4216A861C1E" name="SUPPLEMENTARY_DEMOGRAPHICS">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>OLTP_2021</sourceObjSchema>
+<sourceObjName>SUPPLEMENTARY_DEMOGRAPHICS</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:32 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CUST_ID" id="3C2F9B71-5356-9D67-E747-D668BD537A69">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>SUPPLEMENTARY_DEMOGRAPHICS</sourceObjSchema>
+<sourceObjName>CUST_ID</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:34 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BF2706AD-D490-42E7-7BEF-9FEE6B4C49B8" referredColumn="89D1C3B5-ED91-9A96-DBEF-D6D929963C28"/>
+</associations>
+</Column>
+<Column name="EDUCATION" id="131288D5-1D5D-23CA-5139-EE18A2F2503C">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>SUPPLEMENTARY_DEMOGRAPHICS</sourceObjSchema>
+<sourceObjName>EDUCATION</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:34 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>21 BYTE</dataTypeSize>
+<ownDataTypeParameters>21 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OCCUPATION" id="6680615D-9B5B-B7E0-BDA7-843503C4D267">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>SUPPLEMENTARY_DEMOGRAPHICS</sourceObjSchema>
+<sourceObjName>OCCUPATION</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:34 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>21 BYTE</dataTypeSize>
+<ownDataTypeParameters>21 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HOUSEHOLD_SIZE" id="B639F125-4D23-1BD3-B284-539CC6150E4D">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>SUPPLEMENTARY_DEMOGRAPHICS</sourceObjSchema>
+<sourceObjName>HOUSEHOLD_SIZE</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:34 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>21 BYTE</dataTypeSize>
+<ownDataTypeParameters>21 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="YRS_RESIDENCE" id="CFD16779-33D2-6CEC-18C7-A6B391DB1342">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>SUPPLEMENTARY_DEMOGRAPHICS</sourceObjSchema>
+<sourceObjName>YRS_RESIDENCE</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:34 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AFFINITY_CARD" id="3566BFC2-10CC-2720-A240-8E37B09EC98C">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>SUPPLEMENTARY_DEMOGRAPHICS</sourceObjSchema>
+<sourceObjName>AFFINITY_CARD</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:34 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BULK_PACK_DISKETTES" id="9924D5CC-AF31-28ED-1D3A-36C1E1D9006C">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>SUPPLEMENTARY_DEMOGRAPHICS</sourceObjSchema>
+<sourceObjName>BULK_PACK_DISKETTES</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:34 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FLAT_PANEL_MONITOR" id="52562C8F-2A19-ABD2-7F92-D9B6033755EF">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>SUPPLEMENTARY_DEMOGRAPHICS</sourceObjSchema>
+<sourceObjName>FLAT_PANEL_MONITOR</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:34 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HOME_THEATER_PACKAGE" id="9AAE37DC-E5A0-762C-D478-28B1CEFBD15F">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>SUPPLEMENTARY_DEMOGRAPHICS</sourceObjSchema>
+<sourceObjName>HOME_THEATER_PACKAGE</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:34 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BOOKKEEPING_APPLICATION" id="43FD4352-F401-E5F4-1CC1-8259300D305E">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>SUPPLEMENTARY_DEMOGRAPHICS</sourceObjSchema>
+<sourceObjName>BOOKKEEPING_APPLICATION</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:34 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRINTER_SUPPLIES" id="5620768F-EEFA-2CCF-1821-0AF68054FCCD">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>SUPPLEMENTARY_DEMOGRAPHICS</sourceObjSchema>
+<sourceObjName>PRINTER_SUPPLIES</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:34 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Y_BOX_GAMES" id="7D896064-4805-FD27-CF9C-2E49EE34DFA7">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>SUPPLEMENTARY_DEMOGRAPHICS</sourceObjSchema>
+<sourceObjName>Y_BOX_GAMES</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:34 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OS_DOC_SET_KANJI" id="0ED9B07C-9741-D742-C721-6CD01218E9EF">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>SUPPLEMENTARY_DEMOGRAPHICS</sourceObjSchema>
+<sourceObjName>OS_DOC_SET_KANJI</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:34 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COMMENTS" id="0D6BDC4D-E6AC-205B-94BE-270D95F2CFC2">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>SUPPLEMENTARY_DEMOGRAPHICS</sourceObjSchema>
+<sourceObjName>COMMENTS</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:34 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 BYTE</dataTypeSize>
+<ownDataTypeParameters>4000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="926094B6-7FAB-575D-F27E-E27EB4A00A4C" name="SUPP_DEMO_PK">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>OLTP_2021</sourceObjSchema>
+<sourceObjName>SUPP_DEMO_PK</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:38 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3C2F9B71-5356-9D67-E747-D668BD537A69"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F71805AB-DE97-CB19-A2F9-CFB8224C6767" schemaObject="AB1CECC4-688F-3D24-6E47-E4216A861C1E" name="SUPP_DEMO_PK">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>OLTP_2021</sourceObjSchema>
+<sourceObjName>SUPP_DEMO_PK</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:35 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3C2F9B71-5356-9D67-E747-D668BD537A69"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FCC86EED-34ED-2878-DE45-EC40DEDC856A" schemaObject="AB1CECC4-688F-3D24-6E47-E4216A861C1E" name="SUP_TEXT_IDX">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>OLTP_2021</sourceObjSchema>
+<sourceObjName>SUP_TEXT_IDX</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:35 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0D6BDC4D-E6AC-205B-94BE-270D95F2CFC2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FF4654BB-D155-56A7-0F84-045FBC4F98E7" name="SUPP_DEMO_CUSTOMERS_FK">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:39 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3C2F9B71-5356-9D67-E747-D668BD537A69"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

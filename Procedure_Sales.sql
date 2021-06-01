@@ -19,11 +19,11 @@ begin
     into employees_all
     from dw_employees;
     
-    insert into dw_sales(product_quantity, total_price, total_customers, total_employees, date, employees, employees_mini, products, products_mini, customers, social_class, age_gap, delivery_company)
-    select count(prod_id), sum(prod_cost), count(cust_id), count(employee_id), func_date_id(trunc(sale_date)), func_employees_id(employee_id),
+    insert into dw_sales(product_quantity, total_sold_quantity, total_sold_amount, total_customers, total_employees, date, employees, employees_mini, products, products_mini, customers, social_class, age_gap, delivery_company)
+    select count(prod_id), count(quantity_sold), sum(amount_sold), count(cust_id), count(employee_id), func_date_id(trunc(sale_date)), func_employees_id(employee_id),
     func_mini_emp_id(employee_id), func_products_id(prod_id), 
-    func_mini_prod_id(prod_id), func_customers_id(cust_id), func_social_id(cust_id)/*SDADASDASASFASFlater*/, func_age_id(cust_id)/*ASDASDSADASDADASDlater*/,func_Delivery_id(id)
-    from sales, sales_rows;
+    func_mini_prod_id(prod_id), func_customers_id(cust_id), func_social_id(cust_id), func_age_id(cust_id),func_Delivery_id(id)
+    from sales, sales_rows where func_mini_emp_id.employee_id <1000;
 end;
 /
 select * from dw_date;

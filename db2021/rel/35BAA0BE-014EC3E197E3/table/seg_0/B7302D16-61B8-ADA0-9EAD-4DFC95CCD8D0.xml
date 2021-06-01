@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B7302D16-61B8-ADA0-9EAD-4DFC95CCD8D0" schemaObject="AB1CECC4-688F-3D24-6E47-E4216A861C1E" name="PROMOTION_CATEGORIES">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>OLTP_2021</sourceObjSchema>
+<sourceObjName>PROMOTION_CATEGORIES</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:32 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PROMO_CATEGORY_ID" id="741E9E1C-4E4C-84F0-82F1-D5B3B61B4274">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>PROMOTION_CATEGORIES</sourceObjSchema>
+<sourceObjName>PROMO_CATEGORY_ID</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:34 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PROMO_CATEGORY" id="028701D2-9702-A1CC-046A-777676D3BD7A">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>PROMOTION_CATEGORIES</sourceObjSchema>
+<sourceObjName>PROMO_CATEGORY</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:34 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C6EC50E8-7F6F-2B06-2E67-80B90F7F5600" name="PK_PROMOTION_CATEGORIES">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>OLTP_2021</sourceObjSchema>
+<sourceObjName>PK_PROMOTION_CATEGORIES</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:37 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="741E9E1C-4E4C-84F0-82F1-D5B3B61B4274"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F53C02FC-C897-8AFD-4658-5736003D5F55" schemaObject="AB1CECC4-688F-3D24-6E47-E4216A861C1E" name="PROMOTION_CATEGORIES_PK">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>OLTP_2021</sourceObjSchema>
+<sourceObjName>PROMOTION_CATEGORIES_PK</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:34 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="741E9E1C-4E4C-84F0-82F1-D5B3B61B4274"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

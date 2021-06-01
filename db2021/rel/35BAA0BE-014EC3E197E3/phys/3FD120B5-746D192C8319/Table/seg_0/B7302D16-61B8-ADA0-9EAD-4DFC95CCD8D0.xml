@@ -1,0 +1,50 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="PROMOTION_CATEGORIES" directorySegmentName="seg_0" id="B7302D16-61B8-ADA0-9EAD-4DFC95CCD8D0">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:32 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<schemaObject>AB1CECC4-688F-3D24-6E47-E4216A861C1E</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>D9A958D9-0FB3-3721-D126-99DF50710B93</segment>
+<tableSpace>F69DD04B-95F4-8388-51A8-7115B0A7F1B5</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="PROMO_CATEGORY" id="028701D2-9702-A1CC-046A-777676D3BD7A">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:34 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PROMO_CATEGORY_ID" id="741E9E1C-4E4C-84F0-82F1-D5B3B61B4274">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:34 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PROMOTION_CATEGORIES_PK" id="F53C02FC-C897-8AFD-4658-5736003D5F55">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:34 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<schemaObject>AB1CECC4-688F-3D24-6E47-E4216A861C1E</schemaObject>
+<segment>9493DA21-4893-1073-A6CD-CEA032FD451F</segment>
+<tableSpace>F69DD04B-95F4-8388-51A8-7115B0A7F1B5</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_PROMOTION_CATEGORIES" id="C6EC50E8-7F6F-2B06-2E67-80B90F7F5600">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:37 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<segment>9493DA21-4893-1073-A6CD-CEA032FD451F</segment>
+<tableSpace>F69DD04B-95F4-8388-51A8-7115B0A7F1B5</tableSpace>
+<existingIndex>F53C02FC-C897-8AFD-4658-5736003D5F55</existingIndex>
+<indexSegment>9493DA21-4893-1073-A6CD-CEA032FD451F</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

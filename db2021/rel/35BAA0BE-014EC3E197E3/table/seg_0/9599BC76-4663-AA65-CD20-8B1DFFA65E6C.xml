@@ -1,0 +1,103 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9599BC76-4663-AA65-CD20-8B1DFFA65E6C" schemaObject="AB1CECC4-688F-3D24-6E47-E4216A861C1E" name="COUNTRIES">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>OLTP_2021</sourceObjSchema>
+<sourceObjName>COUNTRIES</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[country dimension table (snowflake)]]></commentInRDBMS>
+<ownerDesignName>db2021</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COUNTRY_ID" id="DCD9C17D-FC48-2F54-F94E-6AAC442893BE">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>COUNTRIES</sourceObjSchema>
+<sourceObjName>COUNTRY_ID</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[primary key]]></commentInRDBMS>
+<ownerDesignName>db2021</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COUNTRY_NAME" id="62BB0DAF-A32E-14C8-B114-6BAC21AD4E88">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>COUNTRIES</sourceObjSchema>
+<sourceObjName>COUNTRY_NAME</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[country name]]></commentInRDBMS>
+<ownerDesignName>db2021</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 BYTE</dataTypeSize>
+<ownDataTypeParameters>40 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>CKC_COUNTRY_NAME_COUNTRIE</notNullConstraintName>
+</Column>
+<Column name="COUNTRY_SUBREGION" id="E20DC168-4C07-356D-A08D-40E490BDFF4E">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>COUNTRIES</sourceObjSchema>
+<sourceObjName>COUNTRY_SUBREGION</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[e.g. Western Europe, to allow hierarchies]]></commentInRDBMS>
+<ownerDesignName>db2021</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CF06F8A8-A4AE-F2D9-25BE-482DE187DC26" referredColumn="5A84C2EE-697C-334F-4943-3FB442EB6290"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F78992EB-ABB5-1C98-63CB-632B2D6AC744" name="PK_COUNTRIES">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>OLTP_2021</sourceObjSchema>
+<sourceObjName>PK_COUNTRIES</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:37 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DCD9C17D-FC48-2F54-F94E-6AAC442893BE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="84EEBCB2-6B42-C4CF-9AC5-2D0C224F31A7" schemaObject="AB1CECC4-688F-3D24-6E47-E4216A861C1E" name="PK_COUNTRIES">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>OLTP_2021</sourceObjSchema>
+<sourceObjName>PK_COUNTRIES</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:34 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DCD9C17D-FC48-2F54-F94E-6AAC442893BE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F611CB85-2594-1F60-CBFA-F1531650AD67" name="FK_COUNTRIES_COUNTRY_SUBREGION">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:39 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E20DC168-4C07-356D-A08D-40E490BDFF4E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

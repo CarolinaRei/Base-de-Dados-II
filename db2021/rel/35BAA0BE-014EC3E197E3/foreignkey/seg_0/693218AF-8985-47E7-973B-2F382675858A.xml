@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="693218AF-8985-47E7-973B-2F382675858A" containerWithKeyObject="3200B9CD-AE3A-F41D-31D1-C215CA52854E" localFKIndex="C45D278B-52FC-7DDB-DBCA-1FA80D7476F7" name="FK_SALES_EMPLOYEE">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>OLTP_2021</sourceObjSchema>
+<sourceObjName>FK_SALES_EMPLOYEE</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:39 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<referredTableLongName>OLTP_2021.EMPLOYEES</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>708ED0CB-887A-1B98-B60D-7C187838389B</referredTableID>
+<keyObject>D3324CF4-BBA7-3E3B-D44B-1C27C966B974</keyObject>
+<referredKeyID>D3324CF4-BBA7-3E3B-D44B-1C27C966B974</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>EMPLOYEE_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

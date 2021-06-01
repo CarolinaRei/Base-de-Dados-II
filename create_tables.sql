@@ -181,20 +181,24 @@ ALTER TABLE dw_date ADD CONSTRAINT date_pk PRIMARY KEY ( id );
 
 -- Sales
 
+drop table dw_sales;
+/
+
 CREATE TABLE dw_sales (
-    product_quantity   NUMBER(3, 2),
-    total_price        NUMBER(5, 2),
-    total_customers    NUMBER(6, 2),
-    total_employees    NUMBER(4, 2),
-    "DATE"             NUMBER(9) NOT NULL,
-    employees          NUMBER(6) NOT NULL,
-    employees_mini     NUMBER(9) NOT NULL,
-    products           NUMBER(6) NOT NULL,
-    products_mini      NUMBER(9) NOT NULL,
-    customers          NUMBER(9) NOT NULL,
-    social_class       NUMBER(4) NOT NULL,
-    age_gap            NUMBER(3) NOT NULL,
-    delivery_company   NUMBER(9) NOT NULL
+    product_quantity      NUMBER(6, 2),
+    total_sold_quantity   NUMBER(3, 2),
+    sold_amount           NUMBER(3, 2),
+    total_customers       NUMBER(6, 2),
+    total_employees       NUMBER(4, 2),
+    "DATE"                NUMBER(9) NOT NULL,
+    employees             NUMBER(6) NOT NULL,
+    employees_mini        NUMBER(9) NOT NULL,
+    products              NUMBER(6) NOT NULL,
+    products_mini         NUMBER(9) NOT NULL,
+    customers             NUMBER(9) NOT NULL,
+    social_class          NUMBER(4) NOT NULL,
+    age_gap               NUMBER(3) NOT NULL,
+    delivery_company      NUMBER(6) NOT NULL
 );
 
 ALTER TABLE dw_sales
@@ -205,12 +209,16 @@ ALTER TABLE dw_sales
                                           delivery_company );
 
 ALTER TABLE dw_sales
-    ADD CONSTRAINT sales_age_gap_fk FOREIGN KEY ( age_gap )
+    ADD CONSTRAINT dw_sales_dw_age_gap_fk FOREIGN KEY ( age_gap )
         REFERENCES dw_age_gap ( age_group_id );
 
 ALTER TABLE dw_sales
     ADD CONSTRAINT sales_customers_fk FOREIGN KEY ( customers )
         REFERENCES dw_customers ( cust_id );
+
+ALTER TABLE dw_sales
+    ADD CONSTRAINT sales_customers_mini_fk FOREIGN KEY ( social_class )
+        REFERENCES dw_social_class ( social_class_id );
 
 ALTER TABLE dw_sales
     ADD CONSTRAINT sales_date_fk FOREIGN KEY ( "DATE" )
@@ -235,7 +243,3 @@ ALTER TABLE dw_sales
 ALTER TABLE dw_sales
     ADD CONSTRAINT sales_products_mini_fk FOREIGN KEY ( products_mini )
         REFERENCES dw_products_mini ( id );
-
-ALTER TABLE dw_sales
-    ADD CONSTRAINT sales_social_class_fk FOREIGN KEY ( social_class )
-        REFERENCES dw_social_class ( social_class_id );

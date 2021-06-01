@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B8F40C21-020A-A1B0-3759-3FA571708985" schemaObject="AB1CECC4-688F-3D24-6E47-E4216A861C1E" name="SUPPLIERS">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>OLTP_2021</sourceObjSchema>
+<sourceObjName>SUPPLIERS</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:32 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SUPPLIER_ID" id="A20148A7-540C-5DC8-0329-CB00D5645E3F">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>SUPPLIERS</sourceObjSchema>
+<sourceObjName>SUPPLIER_ID</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:34 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,6,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAME" id="EC0D8544-474F-FBE0-F3E7-F9D50A6B0BB1">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>SUPPLIERS</sourceObjSchema>
+<sourceObjName>NAME</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:34 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ADDRESS" id="A3DFEF6E-1BAC-8272-A090-E6857AC0C41A">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>SUPPLIERS</sourceObjSchema>
+<sourceObjName>ADDRESS</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:34 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>120 BYTE</dataTypeSize>
+<ownDataTypeParameters>120 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="40B4F993-6FD3-8E76-79E2-DA603775D24E" name="PK_SUPPLIERS">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>OLTP_2021</sourceObjSchema>
+<sourceObjName>PK_SUPPLIERS</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:38 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A20148A7-540C-5DC8-0329-CB00D5645E3F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A05EB5D1-A022-2C90-7BC9-56A0A2DD4002" schemaObject="AB1CECC4-688F-3D24-6E47-E4216A861C1E" name="PK_SUPPLIER">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>OLTP_2021</sourceObjSchema>
+<sourceObjName>PK_SUPPLIER</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:35 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A20148A7-540C-5DC8-0329-CB00D5645E3F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

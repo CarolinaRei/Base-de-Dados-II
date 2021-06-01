@@ -1,0 +1,6 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SchemaObject class="oracle.dbtools.crest.model.design.relational.SchemaObject" name="OLTP_2021" directorySegmentName="seg_0" id="AB1CECC4-688F-3D24-6E47-E4216A861C1E">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:31 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+</SchemaObject>

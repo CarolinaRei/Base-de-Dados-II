@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2C90345F-1D58-C37D-850E-AAF0C69718A0" schemaObject="AB1CECC4-688F-3D24-6E47-E4216A861C1E" name="COUNTRY_SUBREGIONS">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>OLTP_2021</sourceObjSchema>
+<sourceObjName>COUNTRY_SUBREGIONS</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:31 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COUNTRY_SUBREGION_ID" id="5A84C2EE-697C-334F-4943-3FB442EB6290">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>COUNTRY_SUBREGIONS</sourceObjSchema>
+<sourceObjName>COUNTRY_SUBREGION_ID</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:33 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COUNTRY_SUBREGION" id="0803201B-80D4-791E-71C3-4A8BD1856CD7">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>COUNTRY_SUBREGIONS</sourceObjSchema>
+<sourceObjName>COUNTRY_SUBREGION</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:33 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COUNTRY_REGION" id="25BAF57C-08D8-722B-450B-6C363327C2FF">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>COUNTRY_SUBREGIONS</sourceObjSchema>
+<sourceObjName>COUNTRY_REGION</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:33 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FC7DD1A6-D103-2C7D-904A-C5E7FE8ED24A" referredColumn="1C1B87AE-BDAE-6BE1-D672-5349E9EB8DFD"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="95D7D86D-3E8F-3593-D6F3-A223565DCC88" name="PK_COUNTRY_SUBREGIONS">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>OLTP_2021</sourceObjSchema>
+<sourceObjName>PK_COUNTRY_SUBREGIONS</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:37 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5A84C2EE-697C-334F-4943-3FB442EB6290"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="30433837-0019-B076-2268-C0A91C2395EF" schemaObject="AB1CECC4-688F-3D24-6E47-E4216A861C1E" name="COUNTRY_SUBREGION_PK">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>OLTP_2021</sourceObjSchema>
+<sourceObjName>COUNTRY_SUBREGION_PK</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:34 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5A84C2EE-697C-334F-4943-3FB442EB6290"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6802272D-8651-1F19-1379-E68AC9845929" name="FK_COUNTRY_SUBREGION_C_REGION">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:39 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="25BAF57C-08D8-722B-450B-6C363327C2FF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

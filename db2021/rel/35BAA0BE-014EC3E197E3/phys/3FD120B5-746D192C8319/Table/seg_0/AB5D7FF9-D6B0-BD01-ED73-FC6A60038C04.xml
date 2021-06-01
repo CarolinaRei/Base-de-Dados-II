@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="CITIES" directorySegmentName="seg_0" id="AB5D7FF9-D6B0-BD01-ED73-FC6A60038C04">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:31 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<schemaObject>AB1CECC4-688F-3D24-6E47-E4216A861C1E</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>E00ADD0E-4A75-41A0-66D0-FCF6DAEE4DD5</segment>
+<tableSpace>F69DD04B-95F4-8388-51A8-7115B0A7F1B5</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="CITY" id="6FB156C8-D07A-EF16-4871-679332FC30D6">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:33 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CITY_ID" id="A60CAB50-5C99-CC83-84F6-AE4F83A53570">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:33 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="STATE_PROVINCE" id="C09A7867-920C-A6B3-B6A0-04194C0200B7">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:33 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="CITY_PK" id="F11DEAE6-A56F-E215-78CF-5C26956DC525">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:34 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<schemaObject>AB1CECC4-688F-3D24-6E47-E4216A861C1E</schemaObject>
+<segment>9493DA21-4893-1073-A6CD-CEA032FD451F</segment>
+<tableSpace>F69DD04B-95F4-8388-51A8-7115B0A7F1B5</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_CITIES_STATE_PROVINCE" id="66F6A992-F197-C5B1-1DFB-4463A520F2AA">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:39 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_CITIES" id="272FB305-BCED-CF58-943A-9A7E1118036D">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:37 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<segment>9493DA21-4893-1073-A6CD-CEA032FD451F</segment>
+<tableSpace>F69DD04B-95F4-8388-51A8-7115B0A7F1B5</tableSpace>
+<existingIndex>F11DEAE6-A56F-E215-78CF-5C26956DC525</existingIndex>
+<indexSegment>9493DA21-4893-1073-A6CD-CEA032FD451F</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>
