@@ -18,12 +18,12 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>3</dataTypePrecision>
+<dataTypePrecision>6</dataTypePrecision>
 <dataTypeScale>2</dataTypeScale>
-<ownDataTypeParameters>,3,2</ownDataTypeParameters>
+<ownDataTypeParameters>,6,2</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="TOTAL_PRICE" id="6C902409-0FF2-01FC-97A3-7967CD9AAFE9">
+<Column name="TOTAL_SOLD_QUANTITY" id="6C902409-0FF2-01FC-97A3-7967CD9AAFE9">
 <createdBy>ASUS</createdBy>
 <createdTime>2021-05-01 17:22:25 UTC</createdTime>
 <ownerDesignName>StarModel</ownerDesignName>
@@ -31,9 +31,22 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT026</logicalDatatype>
-<dataTypePrecision>5</dataTypePrecision>
+<dataTypePrecision>3</dataTypePrecision>
 <dataTypeScale>2</dataTypeScale>
-<ownDataTypeParameters>,5,2</ownDataTypeParameters>
+<ownDataTypeParameters>,3,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SOLD_AMOUNT" id="F5592E9D-A614-ACA6-4443-5ED70A753C77">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-06-01 15:00:38 UTC</createdTime>
+<ownerDesignName>StarModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,3,2</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="TOTAL_CUSTOMERS" id="4F827AC2-702C-DBAA-F247-A538704E13D9">
