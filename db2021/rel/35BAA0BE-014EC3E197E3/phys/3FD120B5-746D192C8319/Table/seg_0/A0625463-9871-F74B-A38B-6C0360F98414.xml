@@ -1,0 +1,55 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="CATEGORIES" directorySegmentName="seg_0" id="A0625463-9871-F74B-A38B-6C0360F98414">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:31 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<schemaObject>AB1CECC4-688F-3D24-6E47-E4216A861C1E</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>E00ADD0E-4A75-41A0-66D0-FCF6DAEE4DD5</segment>
+<tableSpace>F69DD04B-95F4-8388-51A8-7115B0A7F1B5</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="CAT_ID" id="29938E64-F43D-5B42-5289-9C1C38040918">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:33 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PROD_CATEGORY" id="5E61C053-6CF7-2D25-E638-AED741FBB368">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:33 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PROD_CAT_DESC" id="BDE0D337-15C1-4D24-EBEE-5E9654893B18">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:33 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PK_CATEGORIES" id="904CBF0B-19FE-91EB-AE99-CDB5B1751894">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:34 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<schemaObject>AB1CECC4-688F-3D24-6E47-E4216A861C1E</schemaObject>
+<segment>9493DA21-4893-1073-A6CD-CEA032FD451F</segment>
+<tableSpace>F69DD04B-95F4-8388-51A8-7115B0A7F1B5</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_CATEGORIES" id="A644FFD5-4028-F4BC-65CD-3D27C0E55948">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:36 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<segment>9493DA21-4893-1073-A6CD-CEA032FD451F</segment>
+<tableSpace>F69DD04B-95F4-8388-51A8-7115B0A7F1B5</tableSpace>
+<existingIndex>904CBF0B-19FE-91EB-AE99-CDB5B1751894</existingIndex>
+<indexSegment>9493DA21-4893-1073-A6CD-CEA032FD451F</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

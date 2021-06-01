@@ -1,0 +1,460 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3200B9CD-AE3A-F41D-31D1-C215CA52854E" schemaObject="AB1CECC4-688F-3D24-6E47-E4216A861C1E" name="SALES">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>OLTP_2021</sourceObjSchema>
+<sourceObjName>SALES</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[facts table, without a primary key; all rows are uniquely identified by the combination of all foreign keys]]></commentInRDBMS>
+<ownerDesignName>db2021</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CUST_ID" id="58039F29-ABB3-6A1F-1087-4E375378E953">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>SALES</sourceObjSchema>
+<sourceObjName>CUST_ID</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:34 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3EAD67DF-6C07-78D5-9C40-D309CEB5C607" referredColumn="89D1C3B5-ED91-9A96-DBEF-D6D929963C28"/>
+</associations>
+</Column>
+<Column name="CHANNEL_ID" id="803DBC83-1A0B-D2E0-0D08-38BB411C9907">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>SALES</sourceObjSchema>
+<sourceObjName>CHANNEL_ID</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:34 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="22DCAEC4-9CAD-D13F-EE4E-826F15571C7A" referredColumn="ABF70DA7-73BD-8A03-A4E9-98CF9822DA6E"/>
+</associations>
+</Column>
+<Column name="SALE_DATE" id="99626E78-3733-8F27-A01D-D3499EAE5638">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>SALES</sourceObjSchema>
+<sourceObjName>SALE_DATE</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:34 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EMPLOYEE_ID" id="1BE18C0D-5785-8E17-74A4-EF577872B42E">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>SALES</sourceObjSchema>
+<sourceObjName>EMPLOYEE_ID</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:34 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="693218AF-8985-47E7-973B-2F382675858A" referredColumn="B1C8E994-3624-724F-00D8-5CA593B32F2B"/>
+</associations>
+</Column>
+<Column name="SALE_ID" id="99AFCBB5-DAF3-CC92-5223-15D53B15EE5B">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>SALES</sourceObjSchema>
+<sourceObjName>SALE_ID</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[primary key]]></commentInRDBMS>
+<ownerDesignName>db2021</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STORE_ID" id="9D9CDF40-2609-EF12-78B8-57AE45846517">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>SALES</sourceObjSchema>
+<sourceObjName>STORE_ID</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:34 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,6,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DONATION_ID" id="BF039928-005F-F9B2-8E0B-326FA04044B4">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>SALES</sourceObjSchema>
+<sourceObjName>DONATION_ID</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:34 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,6,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ORDER_ID" id="26A003AD-FE30-8F0F-E0B5-5817DF84A51A">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>SALES</sourceObjSchema>
+<sourceObjName>ORDER_ID</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:34 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,9,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DELIVERY_ID" id="9FB85018-B1AB-5695-CE0E-E6071F48EB89">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>SALES</sourceObjSchema>
+<sourceObjName>DELIVERY_ID</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:34 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,6,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STORE_PROMOTION_ID" id="0C59BE49-0436-1AFB-9A45-C6B6B50D09D9">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>SALES</sourceObjSchema>
+<sourceObjName>STORE_PROMOTION_ID</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:34 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,6,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STATUS_ID" id="4FF776E2-FE44-A76F-1DDA-87B26E882AF8">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>SALES</sourceObjSchema>
+<sourceObjName>STATUS_ID</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:34 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,6,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CURRENCY_ID" id="AB3E3CE7-DE2D-4732-AC2D-F972932EB6C9">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>SALES</sourceObjSchema>
+<sourceObjName>CURRENCY_ID</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:34 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,9,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CURRENCY_RATE" id="75FA8471-9872-BF04-A20A-FBA26ED3F705">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>SALES</sourceObjSchema>
+<sourceObjName>CURRENCY_RATE</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:34 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
+<ownDataTypeParameters>,9,4</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREDIT_COMPANY_ID" id="4A8AB1A1-6975-3F09-4D15-0D7842273BDB">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>SALES</sourceObjSchema>
+<sourceObjName>CREDIT_COMPANY_ID</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:34 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,9,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PAYMENT_METHOD_ID" id="6841D592-43B5-7DF6-E109-75797BA4B4E7">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>SALES</sourceObjSchema>
+<sourceObjName>PAYMENT_METHOD_ID</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:34 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,6,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREDIT_LIMIT_ID" id="7BA6EADC-0544-608C-A811-0201113D54D5">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>SALES</sourceObjSchema>
+<sourceObjName>CREDIT_LIMIT_ID</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:34 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,6,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="WEATHER_ID" id="5647E69B-4B2C-F735-0328-A7F4CCA4A5D1">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>SALES</sourceObjSchema>
+<sourceObjName>WEATHER_ID</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:34 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,6,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MARKETING_ID" id="B70B0D83-2504-907B-7DAC-5020DDD87A0A">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>SALES</sourceObjSchema>
+<sourceObjName>MARKETING_ID</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:34 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,6,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DELIVERY_COMPANY_ID" id="E3644F6D-D233-4AB0-BABA-F671607FFB95">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>SALES</sourceObjSchema>
+<sourceObjName>DELIVERY_COMPANY_ID</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:34 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2C56D0FE-DD38-D58E-4D15-16B1C8E55B5F" referredColumn="B2591076-F146-F2B9-76EC-D4AB07870C7E"/>
+</associations>
+</Column>
+<Column name="SALESMAN_FLEET_ID" id="C3C0404C-10B8-9167-1764-D7D852748C77">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>SALES</sourceObjSchema>
+<sourceObjName>SALESMAN_FLEET_ID</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:34 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,6,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CONTRIBUTION_ID" id="3EC16D06-5111-6F2F-159A-136A393AA0EB">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>SALES</sourceObjSchema>
+<sourceObjName>CONTRIBUTION_ID</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:34 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,6,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8B44C163-5138-956F-ED9B-E5BD1B0ABCA1" name="PK_SALES">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>OLTP_2021</sourceObjSchema>
+<sourceObjName>PK_SALES</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:37 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="99AFCBB5-DAF3-CC92-5223-15D53B15EE5B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F3F0D6EE-B8D9-5F69-43F0-762ECAD0F42E" schemaObject="AB1CECC4-688F-3D24-6E47-E4216A861C1E" name="SALES_CHANNEL_ID">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>OLTP_2021</sourceObjSchema>
+<sourceObjName>SALES_CHANNEL_ID</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:35 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="803DBC83-1A0B-D2E0-0D08-38BB411C9907"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4C94721C-E5C2-6C57-5C24-49CD76360C09" schemaObject="AB1CECC4-688F-3D24-6E47-E4216A861C1E" name="SALES_CUSTOMER_FK_FK">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>OLTP_2021</sourceObjSchema>
+<sourceObjName>SALES_CUSTOMER_FK_FK</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:35 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="58039F29-ABB3-6A1F-1087-4E375378E953"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="600C4745-28F7-2929-88B4-C25938B12634" schemaObject="AB1CECC4-688F-3D24-6E47-E4216A861C1E" name="SALES_EMPLOYEE_ID">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>OLTP_2021</sourceObjSchema>
+<sourceObjName>SALES_EMPLOYEE_ID</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:35 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1BE18C0D-5785-8E17-74A4-EF577872B42E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="96ADEEDB-7E33-A2EC-7190-AD9C66F35B4F" schemaObject="AB1CECC4-688F-3D24-6E47-E4216A861C1E" name="SALES_PK">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>OLTP_2021</sourceObjSchema>
+<sourceObjName>SALES_PK</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:35 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="99AFCBB5-DAF3-CC92-5223-15D53B15EE5B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C2B07D1E-6EAB-71AF-3B84-08E6BA697367" name="FK_SALES_CHANNEL">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:39 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="803DBC83-1A0B-D2E0-0D08-38BB411C9907"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A3F9E0E2-9C4D-4167-2376-E28E17E39135" name="FK_SALES_CUSTOMER">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:39 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="58039F29-ABB3-6A1F-1087-4E375378E953"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C45D278B-52FC-7DDB-DBCA-1FA80D7476F7" name="FK_SALES_EMPLOYEE">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:39 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1BE18C0D-5785-8E17-74A4-EF577872B42E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BA1F0717-7030-1719-7A13-D5B6FEF951AF" name="SALES_DELIVERY_COMPANY_FK">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 12:15:07 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E3644F6D-D233-4AB0-BABA-F671607FFB95"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

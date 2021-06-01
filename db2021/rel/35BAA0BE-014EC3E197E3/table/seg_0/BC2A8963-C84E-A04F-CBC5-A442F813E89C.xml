@@ -1,0 +1,134 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BC2A8963-C84E-A04F-CBC5-A442F813E89C" schemaObject="AB1CECC4-688F-3D24-6E47-E4216A861C1E" name="BUYS_ROWS">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>OLTP_2021</sourceObjSchema>
+<sourceObjName>BUYS_ROWS</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:31 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PROD_ID" id="D3353C1B-8ADC-31BA-9104-B598281DC69B">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>BUYS_ROWS</sourceObjSchema>
+<sourceObjName>PROD_ID</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:33 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,6,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="52059B56-2EE9-1A11-5269-DD75C413D90A" referredColumn="433594C3-732D-0B16-6452-6C22047A9BD8"/>
+</associations>
+</Column>
+<Column name="UNIT_COST" id="9DE56110-6697-5C4C-5CBB-CB9F4D94A1C1">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>BUYS_ROWS</sourceObjSchema>
+<sourceObjName>UNIT_COST</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:33 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UNIT_PRICE" id="07C79190-5BDA-DDFB-4C0B-78F215289555">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>BUYS_ROWS</sourceObjSchema>
+<sourceObjName>UNIT_PRICE</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:33 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="QUANTITY_BOUGHT" id="A07604FC-60AE-409E-E672-2C3307BB28A2">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>BUYS_ROWS</sourceObjSchema>
+<sourceObjName>QUANTITY_BOUGHT</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:33 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,5,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BUY_ID" id="25E77C2E-0BA0-1DB6-E1D8-D3B9BAA5127F">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>BUYS_ROWS</sourceObjSchema>
+<sourceObjName>BUY_ID</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:33 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,9,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C1BD3DBE-AFF6-F208-7022-ED7DA7BAAE4B" name="PK_BUYS_ROWS">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>OLTP_2021</sourceObjSchema>
+<sourceObjName>PK_BUYS_ROWS</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:36 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="25E77C2E-0BA0-1DB6-E1D8-D3B9BAA5127F"/>
+<colUsage columnID="D3353C1B-8ADC-31BA-9104-B598281DC69B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="71A80132-D885-C635-18C1-0E0EEF29C5A3" schemaObject="AB1CECC4-688F-3D24-6E47-E4216A861C1E" name="BUYS_ROWS_PK">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>OLTP_2021</sourceObjSchema>
+<sourceObjName>BUYS_ROWS_PK</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:34 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="25E77C2E-0BA0-1DB6-E1D8-D3B9BAA5127F"/>
+<colUsage columnID="D3353C1B-8ADC-31BA-9104-B598281DC69B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4D62FF4A-54DB-C65E-7B3A-B07CCA5BCB23" name="FK_BUYS_PRODUCT">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:39 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D3353C1B-8ADC-31BA-9104-B598281DC69B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

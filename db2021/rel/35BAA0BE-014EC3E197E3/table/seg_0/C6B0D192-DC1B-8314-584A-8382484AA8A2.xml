@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C6B0D192-DC1B-8314-584A-8382484AA8A2" name="FLEET">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 12:15:16 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<ordsAlias>table_23</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="4B2B9679-BAFF-0D6F-5DA6-623FFA63A303">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 12:15:56 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="START_DATE" id="8D601277-4AF8-C7AD-8052-BA371C986D99">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 12:15:56 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="END_DATE" id="C74D70BC-B54A-D127-E39E-6F1294547F6D">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 12:15:56 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4D27BD71-9CAF-C25A-8EF1-917C7C0875CC" name="FLEET_PK">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 12:15:56 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4B2B9679-BAFF-0D6F-5DA6-623FFA63A303"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

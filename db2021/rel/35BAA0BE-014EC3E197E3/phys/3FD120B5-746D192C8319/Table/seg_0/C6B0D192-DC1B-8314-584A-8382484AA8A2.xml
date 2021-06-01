@@ -1,0 +1,36 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="FLEET" directorySegmentName="seg_0" id="C6B0D192-DC1B-8314-584A-8382484AA8A2">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 12:15:16 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ID" id="4B2B9679-BAFF-0D6F-5DA6-623FFA63A303">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 12:15:56 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="START_DATE" id="8D601277-4AF8-C7AD-8052-BA371C986D99">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 12:15:56 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="END_DATE" id="C74D70BC-B54A-D127-E39E-6F1294547F6D">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 12:15:56 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="FLEET_PK" id="4D27BD71-9CAF-C25A-8EF1-917C7C0875CC">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 12:15:56 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

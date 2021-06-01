@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AAD17C7E-3C0A-D206-EAD4-896EAECDA66F" name="DELIVERY_COMPANY">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 12:13:56 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<ordsAlias>table_22</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="B2591076-F146-F2B9-76EC-D4AB07870C7E">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 12:14:50 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAME" id="031DC670-AA37-0A13-8F7D-483B3794D96F">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 12:14:50 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TYPE" id="A417ACA6-A489-52C1-62BB-2D67A7EDA9E5">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 12:14:50 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FLEET_ID" id="87233459-0162-0DA4-2B62-2E1FD4BEE6F3">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 12:16:05 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EE451E13-E628-935D-E80C-E19EAB77323D" referredColumn="4B2B9679-BAFF-0D6F-5DA6-623FFA63A303"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F90268D8-052E-ED52-19C0-76493F7566AE" name="DELIVERY_COMPANY_PK">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 12:14:50 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B2591076-F146-F2B9-76EC-D4AB07870C7E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="51058420-1E97-10E1-DAD5-BA85DC0CBDDD" name="DELIVERY_COMPANY_FLEET_FK">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 12:16:05 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="87233459-0162-0DA4-2B62-2E1FD4BEE6F3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

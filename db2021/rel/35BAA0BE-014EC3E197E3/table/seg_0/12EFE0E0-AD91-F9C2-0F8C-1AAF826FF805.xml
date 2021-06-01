@@ -1,0 +1,133 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="12EFE0E0-AD91-F9C2-0F8C-1AAF826FF805" schemaObject="AB1CECC4-688F-3D24-6E47-E4216A861C1E" name="SUB_CATEGORIES">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>OLTP_2021</sourceObjSchema>
+<sourceObjName>SUB_CATEGORIES</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[dimension table]]></commentInRDBMS>
+<ownerDesignName>db2021</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SUB_CAT_ID" id="8B0E3A6A-0A01-E15A-AAD9-6F58132E2E5F">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>SUB_CATEGORIES</sourceObjSchema>
+<sourceObjName>SUB_CAT_ID</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[primary key]]></commentInRDBMS>
+<ownerDesignName>db2021</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,6,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CAT_ID" id="A5D18AD2-6F6B-8049-4F99-025B20670BFE">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>SUB_CATEGORIES</sourceObjSchema>
+<sourceObjName>CAT_ID</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[primary key]]></commentInRDBMS>
+<ownerDesignName>db2021</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,6,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B2DB8A02-EF1A-22E9-BD94-98A3115A5056" referredColumn="29938E64-F43D-5B42-5289-9C1C38040918"/>
+</associations>
+</Column>
+<Column name="PROD_SUBCATEGORY" id="96352D25-2CB8-89A9-6EA0-5228B552AB6B">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>SUB_CATEGORIES</sourceObjSchema>
+<sourceObjName>PROD_SUBCATEGORY</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[product subcategory]]></commentInRDBMS>
+<ownerDesignName>db2021</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>CKC_PROD_SUBCATEGORY_SUB_CATE</notNullConstraintName>
+</Column>
+<Column name="PROD_SUBCAT_DESC" id="6B753619-7CD8-56AE-63AC-ABA57D2FA2E7">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>SUB_CATEGORIES</sourceObjSchema>
+<sourceObjName>PROD_SUBCAT_DESC</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[product subcategory description]]></commentInRDBMS>
+<ownerDesignName>db2021</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2000 BYTE</dataTypeSize>
+<ownDataTypeParameters>2000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>CKC_PROD_SUBCAT_DESC_SUB_CATE</notNullConstraintName>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C50C81A0-B095-220F-F066-1E928E84E4CA" name="PK_SUB_CATEGORIES">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>OLTP_2021</sourceObjSchema>
+<sourceObjName>PK_SUB_CATEGORIES</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:38 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8B0E3A6A-0A01-E15A-AAD9-6F58132E2E5F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8567FE40-E6A0-6A0B-686F-616419C51C43" schemaObject="AB1CECC4-688F-3D24-6E47-E4216A861C1E" name="PK_SUB_CATEGORIES">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>OLTP_2021</sourceObjSchema>
+<sourceObjName>PK_SUB_CATEGORIES</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:35 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8B0E3A6A-0A01-E15A-AAD9-6F58132E2E5F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="35A2B6A3-68AC-250B-21F9-8FC77A8AC3B1" schemaObject="AB1CECC4-688F-3D24-6E47-E4216A861C1E" name="RELATIONSHIP_7_FK">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>OLTP_2021</sourceObjSchema>
+<sourceObjName>RELATIONSHIP_7_FK</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:35 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A5D18AD2-6F6B-8049-4F99-025B20670BFE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1CFB8572-8A9F-9196-904F-B281BD4AE0E0" name="FK_SUB_CATEGORIES_CATEGORY">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:39 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A5D18AD2-6F6B-8049-4F99-025B20670BFE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

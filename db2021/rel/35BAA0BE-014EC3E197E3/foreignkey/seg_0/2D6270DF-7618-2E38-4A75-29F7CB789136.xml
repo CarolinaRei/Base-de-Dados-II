@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="2D6270DF-7618-2E38-4A75-29F7CB789136" containerWithKeyObject="585DFD19-D031-3B02-9C3F-2953DFF7591B" localFKIndex="0B1BB81C-929E-7687-0DF3-E5E3C249425B" name="FK_STATE_PROVINCE_COUNTRY">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>OLTP_2021</sourceObjSchema>
+<sourceObjName>FK_STATE_PROVINCE_COUNTRY</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:39 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<referredTableLongName>OLTP_2021.COUNTRIES</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>9599BC76-4663-AA65-CD20-8B1DFFA65E6C</referredTableID>
+<keyObject>F78992EB-ABB5-1C98-63CB-632B2D6AC744</keyObject>
+<referredKeyID>F78992EB-ABB5-1C98-63CB-632B2D6AC744</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>COUNTRY_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

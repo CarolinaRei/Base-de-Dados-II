@@ -1,0 +1,191 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="SALES" directorySegmentName="seg_0" id="3200B9CD-AE3A-F41D-31D1-C215CA52854E">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:32 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<schemaObject>AB1CECC4-688F-3D24-6E47-E4216A861C1E</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>8BF7AAFE-2489-3A4F-6B31-9B0D382071B0</segment>
+<tableSpace>F69DD04B-95F4-8388-51A8-7115B0A7F1B5</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="STORE_PROMOTION_ID" id="0C59BE49-0436-1AFB-9A45-C6B6B50D09D9">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:34 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="EMPLOYEE_ID" id="1BE18C0D-5785-8E17-74A4-EF577872B42E">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:34 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ORDER_ID" id="26A003AD-FE30-8F0F-E0B5-5817DF84A51A">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:34 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CONTRIBUTION_ID" id="3EC16D06-5111-6F2F-159A-136A393AA0EB">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:34 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CREDIT_COMPANY_ID" id="4A8AB1A1-6975-3F09-4D15-0D7842273BDB">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:34 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="STATUS_ID" id="4FF776E2-FE44-A76F-1DDA-87B26E882AF8">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:34 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="WEATHER_ID" id="5647E69B-4B2C-F735-0328-A7F4CCA4A5D1">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:34 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CUST_ID" id="58039F29-ABB3-6A1F-1087-4E375378E953">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:34 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PAYMENT_METHOD_ID" id="6841D592-43B5-7DF6-E109-75797BA4B4E7">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:34 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CURRENCY_RATE" id="75FA8471-9872-BF04-A20A-FBA26ED3F705">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:34 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CREDIT_LIMIT_ID" id="7BA6EADC-0544-608C-A811-0201113D54D5">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:34 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CHANNEL_ID" id="803DBC83-1A0B-D2E0-0D08-38BB411C9907">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:34 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SALE_DATE" id="99626E78-3733-8F27-A01D-D3499EAE5638">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:34 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SALE_ID" id="99AFCBB5-DAF3-CC92-5223-15D53B15EE5B">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:34 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="STORE_ID" id="9D9CDF40-2609-EF12-78B8-57AE45846517">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:34 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DELIVERY_ID" id="9FB85018-B1AB-5695-CE0E-E6071F48EB89">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:34 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CURRENCY_ID" id="AB3E3CE7-DE2D-4732-AC2D-F972932EB6C9">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:34 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MARKETING_ID" id="B70B0D83-2504-907B-7DAC-5020DDD87A0A">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:34 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DONATION_ID" id="BF039928-005F-F9B2-8E0B-326FA04044B4">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:34 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SALESMAN_FLEET_ID" id="C3C0404C-10B8-9167-1764-D7D852748C77">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:34 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DELIVERY_COMPANY_ID" id="E3644F6D-D233-4AB0-BABA-F671607FFB95">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:34 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="SALES_CUSTOMER_FK_FK" id="4C94721C-E5C2-6C57-5C24-49CD76360C09">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:35 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<schemaObject>AB1CECC4-688F-3D24-6E47-E4216A861C1E</schemaObject>
+<segment>4BD2997C-19C8-459B-360D-72FEE7FEF946</segment>
+<tableSpace>F69DD04B-95F4-8388-51A8-7115B0A7F1B5</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="SALES_EMPLOYEE_ID" id="600C4745-28F7-2929-88B4-C25938B12634">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:35 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<schemaObject>AB1CECC4-688F-3D24-6E47-E4216A861C1E</schemaObject>
+<segment>05747F29-B0FE-EC9D-3DBA-D2A7612C83B9</segment>
+<tableSpace>F69DD04B-95F4-8388-51A8-7115B0A7F1B5</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="SALES_PK" id="96ADEEDB-7E33-A2EC-7190-AD9C66F35B4F">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:35 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<schemaObject>AB1CECC4-688F-3D24-6E47-E4216A861C1E</schemaObject>
+<segment>AC656DE4-836F-759D-0DFA-7490809AEE2A</segment>
+<tableSpace>F69DD04B-95F4-8388-51A8-7115B0A7F1B5</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="SALES_CHANNEL_ID" id="F3F0D6EE-B8D9-5F69-43F0-762ECAD0F42E">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:35 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<schemaObject>AB1CECC4-688F-3D24-6E47-E4216A861C1E</schemaObject>
+<segment>3F3C9F34-A8FC-2E6F-459B-3CC9A8A1E3DD</segment>
+<tableSpace>F69DD04B-95F4-8388-51A8-7115B0A7F1B5</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_SALES_CUSTOMER" id="A3F9E0E2-9C4D-4167-2376-E28E17E39135">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:39 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="SALES_DELIVERY_COMPANY_FK" id="BA1F0717-7030-1719-7A13-D5B6FEF951AF">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 12:15:07 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_SALES_CHANNEL" id="C2B07D1E-6EAB-71AF-3B84-08E6BA697367">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:39 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_SALES_EMPLOYEE" id="C45D278B-52FC-7DDB-DBCA-1FA80D7476F7">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:39 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_SALES" id="8B44C163-5138-956F-ED9B-E5BD1B0ABCA1">
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:37 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<segment>AC656DE4-836F-759D-0DFA-7490809AEE2A</segment>
+<tableSpace>F69DD04B-95F4-8388-51A8-7115B0A7F1B5</tableSpace>
+<existingIndex>96ADEEDB-7E33-A2EC-7190-AD9C66F35B4F</existingIndex>
+<indexSegment>AC656DE4-836F-759D-0DFA-7490809AEE2A</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

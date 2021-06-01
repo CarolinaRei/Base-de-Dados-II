@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="22EC9D2E-B42B-92CD-AFB9-617891BCD6E7" schemaObject="AB1CECC4-688F-3D24-6E47-E4216A861C1E" name="PRODUCT_DESCRIPTIONS">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>OLTP_2021</sourceObjSchema>
+<sourceObjName>PRODUCT_DESCRIPTIONS</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[dimension table]]></commentInRDBMS>
+<ownerDesignName>db2021</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PROD_DESC_ID" id="92176424-AC82-B414-233F-DA11FEA118D3">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>PRODUCT_DESCRIPTIONS</sourceObjSchema>
+<sourceObjName>PROD_DESC_ID</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[primary key]]></commentInRDBMS>
+<ownerDesignName>db2021</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,6,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PROD_NAME" id="19EA9482-580C-389D-509D-6F61D632C069">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>PRODUCT_DESCRIPTIONS</sourceObjSchema>
+<sourceObjName>PROD_NAME</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[product name]]></commentInRDBMS>
+<ownerDesignName>db2021</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>CKC_PROD_NAME_PROD_DESC</notNullConstraintName>
+</Column>
+<Column name="PROD_DESC" id="59601EC3-5F06-CCC3-2100-0C2ADC683C2B">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>PRODUCT_DESCRIPTIONS</sourceObjSchema>
+<sourceObjName>PROD_DESC</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[product description]]></commentInRDBMS>
+<ownerDesignName>db2021</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 BYTE</dataTypeSize>
+<ownDataTypeParameters>4000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>CKC_PROD_DESC_PROD_DESC</notNullConstraintName>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="857631D4-FE58-4AC5-7364-E8D3F890BB87" name="PK_PRODUCT_DESCRIPTIONS">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>OLTP_2021</sourceObjSchema>
+<sourceObjName>PK_PRODUCT_DESCRIPTIONS</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:37 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="92176424-AC82-B414-233F-DA11FEA118D3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FFE5DA35-01EF-E19B-5805-F52F7936128B" schemaObject="AB1CECC4-688F-3D24-6E47-E4216A861C1E" name="PK_PRODUCT_DESCRIPTIONS">
+<sourceConnName>oltp_query</sourceConnName>
+<sourceObjSchema>OLTP_2021</sourceObjSchema>
+<sourceObjName>PK_PRODUCT_DESCRIPTIONS</sourceObjName>
+<createdBy>Afonso</createdBy>
+<createdTime>2021-04-08 10:03:34 UTC</createdTime>
+<ownerDesignName>db2021</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="92176424-AC82-B414-233F-DA11FEA118D3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
