@@ -26,6 +26,8 @@ begin
     from sales, sales_rows where func_mini_emp_id.employee_id <1000;
 end;
 /
+select func_products_id(prod_id), dw_products_mini.id from sales_rows, dw_products_mini  where prod_id > 4275 and prod_id < 4300;
+select * from sales_rows;
 select * from dw_date;
 create or replace function func_date_id (
     p_date date
@@ -77,15 +79,18 @@ CREATE OR replace FUNCTION func_products_id(
 ) RETURN NUMBER IS
      products_dim_id                   NUMBER;
 BEGIN 
-    select id
-    into products_dim_id
-    from dw_products
-    where dw_products.prod_id = p_products_id;
-    
-    return products_dim_id;
+
+    for lvl in 1..6 loop
+        select id
+        into products_dim_id
+        from dw_products
+        where dw_products.prod_id = p_products_id
+        and products_mini_id=lvl;
+        return products_dim_id;
+    end loop;
 END func_products_id;
 /
-select * from products;
+select * from dw_products;
 
 CREATE OR replace FUNCTION func_mini_prod_id(
     p_products_id NUMBER
