@@ -1,31 +1,18 @@
 select * from sales;
 
-/
+/ --procedure for inserting facts
 create or replace procedure procedure_sales is
-    all_products NUMBER :=0;
-    total_price NUMBER :=0;
-    employees_all NUMBER :=0;
-    customers_all NUMBER :=0;
 begin
-    select count(*)
-    into all_products
-    from dw_products;
-    
-    select count(*)
-    into customers_all
-    from dw_customers;
-    
-    select count(*)
-    into employees_all
-    from dw_employees;
     
     insert into dw_sales(product_quantity, total_sold_quantity, total_sold_amount, total_customers, total_employees, date, employees, employees_mini, products, products_mini, customers, social_class, age_gap, delivery_company)
     select count(prod_id), count(quantity_sold), sum(amount_sold), count(cust_id), count(employee_id), func_date_id(trunc(sale_date)), func_employees_id(employee_id),
     func_mini_emp_id(employee_id), func_products_id(prod_id), 
     func_mini_prod_id(prod_id), func_customers_id(cust_id), func_social_id(cust_id), func_age_id(cust_id),func_Delivery_id(delivery_id)
-    from sales, sales_rows where func_mini_emp_id.employee_id <1000;
+    from sales, sales_rows ; 
 end;
 /
+
+ --Selects to test out functions
 select func_date_id(sale_date), sale_date from sales  where employee_id = 203 ;
 select func_employees_id(employee_id) from sales  where employee_id = 160;
 select func_mini_emp_id(employee_id) from sales  where employee_id = 160;
@@ -36,12 +23,8 @@ select func_customers_id(cust_id) from sales;
 select func_social_id(cust_id) from sales where cust_id = 161270;
 select func_age_id(cust_id) from sales where cust_id = 161270;
 
-select * from dw_social_class;
-select * from dw_age_gap;
-select * from dw_customers where cust_id = 161270
-;
-select * from sales_rows;
-select * from dw_date;
+
+ --function for date (gets dw_ID using the date from sales)
 create or replace function func_date_id (
     p_date date
 )return number is
@@ -57,7 +40,7 @@ begin
 end;
 /
 
-select * from sales;
+ --function for employees (gets dw_ID using the sales ID)
 
 CREATE OR replace FUNCTION func_employees_id(
     p_employee_id NUMBER
@@ -72,6 +55,7 @@ BEGIN
     return employee_dim_id;
 END func_employees_id;
 /
+--function for employees mini dimension (gets dw_ID using the sales ID)
 CREATE OR replace FUNCTION func_mini_emp_id(
     p_employee_id NUMBER
 ) RETURN NUMBER IS
@@ -85,7 +69,7 @@ BEGIN
     return employee_dim_id;
 END func_mini_emp_id;
 /
-select * from dw_products;
+--function for products (gets all 6 correspondent product_IDs using the sales_row ID)
 
 CREATE OR replace FUNCTION func_products_id(
     p_products_id NUMBER
@@ -108,7 +92,7 @@ BEGIN
     end loop;
 END func_products_id;
 /
-select * from dw_products;
+--function for products mini dimension (gets all 6 correspondent mini_product_IDs using the sales_row ID)
 
 CREATE OR replace FUNCTION func_mini_prod_id(
     p_products_id NUMBER
@@ -132,7 +116,7 @@ BEGIN
     end loop;
 END func_mini_prod_id;
 /
-select * from dw_customers;
+--function for customer dimension (gets dw_ID using the sales ID)
 
 CREATE OR replace FUNCTION func_customers_id(
     p_customers_id NUMBER
@@ -147,7 +131,7 @@ BEGIN
     return customers_dim_id;
 END func_customers_id;
 /
-select * from customers;
+--function for social id mini dimension (gets dw_ID using the sales ID)
 
 CREATE OR replace FUNCTION func_social_id(
     p_customers_id NUMBER
@@ -162,7 +146,7 @@ BEGIN
     return social_dim_id;
 END func_social_id;
 /
-select * from dw_customers;
+--function for age id mini dimension (gets ID using the sales ID)
 
 CREATE OR replace FUNCTION func_age_id(
     p_customers_id NUMBER
@@ -177,7 +161,7 @@ BEGIN
     return age_dim_id;
 END func_age_id;
 /
-select * from dw_Delivery_company;
+--function for delivery id mini dimension (gets ID using the sales ID)
 
 CREATE OR replace FUNCTION func_Delivery_id(
     p_Delivery_id NUMBER
