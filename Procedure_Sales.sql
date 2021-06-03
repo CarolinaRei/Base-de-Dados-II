@@ -1,4 +1,4 @@
-select * from dw_sales;
+select * from sales;
 
 /
 create or replace procedure procedure_sales is
@@ -22,23 +22,30 @@ begin
     insert into dw_sales(product_quantity, total_sold_quantity, total_sold_amount, total_customers, total_employees, date, employees, employees_mini, products, products_mini, customers, social_class, age_gap, delivery_company)
     select count(prod_id), count(quantity_sold), sum(amount_sold), count(cust_id), count(employee_id), func_date_id(trunc(sale_date)), func_employees_id(employee_id),
     func_mini_emp_id(employee_id), func_products_id(prod_id), 
-    func_mini_prod_id(prod_id), func_customers_id(cust_id), func_social_id(cust_id), func_age_id(cust_id),func_Delivery_id(id)
+    func_mini_prod_id(prod_id), func_customers_id(cust_id), func_social_id(cust_id), func_age_id(cust_id),func_Delivery_id(delivery_id)
     from sales, sales_rows where func_mini_emp_id.employee_id <1000;
 end;
 /
-select func_products_id(prod_id), dw_products_mini.id from sales_rows, dw_products_mini  where prod_id > 4275 and prod_id < 4300;
+select func_date_id(sale_date), sale_date from sales  where employee_id = 203 ;
+select func_employees_id(employee_id) from sales  where employee_id = 160;
+select func_mini_emp_id(employee_id) from sales  where employee_id = 160;
+select func_products_id(prod_id), dw_products_mini.id from dw_products, dw_products_mini  where prod_id = 9750;
+select func_mini_prod_id(prod_id) from dw_products where prod_id = 9750;
+select func_Delivery_id(delivery_id) from sales;
+select func_customers_id(cust_id) from sales;
+
 select * from sales_rows;
 select * from dw_date;
 create or replace function func_date_id (
     p_date date
 )return number is
-    date_id dw_date.id%TYPE;
+    date_id dw_date.dateid%TYPE;
 begin
 
-    select id
+    select dateid
     into date_id
     from dw_date
-    where dw_date.data = p_date;
+    where dw_date.dateformat = p_date;
 
     return date_id;
 end;
@@ -72,15 +79,20 @@ BEGIN
     return employee_dim_id;
 END func_mini_emp_id;
 /
-select * from products;
+select * from dw_products;
 
 CREATE OR replace FUNCTION func_products_id(
     p_products_id NUMBER
 ) RETURN NUMBER IS
      products_dim_id                   NUMBER;
+     length_saver number;
 BEGIN 
-
-    for lvl in 1..6 loop
+    select count(products_mini_id)
+    into length_saver
+    from dw_products
+    where dw_products.prod_id = p_products_id;
+    
+    for lvl in 1..length_saver loop
         select id
         into products_dim_id
         from dw_products
@@ -96,13 +108,22 @@ CREATE OR replace FUNCTION func_mini_prod_id(
     p_products_id NUMBER
 ) RETURN NUMBER IS
      products_dim_id                   NUMBER;
+     length_saver number;
 BEGIN 
-    select product_mini_id
-    into products_dim_id
+    select count(products_mini_id)
+    into length_saver
     from dw_products
     where dw_products.prod_id = p_products_id;
     
-    return products_dim_id;
+    for lvl in 1..length_saver loop
+        select products_mini_id
+        into products_dim_id
+        from dw_products
+        where dw_products.prod_id = p_products_id
+        and products_mini_id=lvl;
+        
+        return products_dim_id;
+    end loop;
 END func_mini_prod_id;
 /
 select * from customers;
@@ -150,7 +171,7 @@ BEGIN
     return age_dim_id;
 END func_age_id;
 /
-select * from Delivery_company;
+select * from dw_Delivery_company;
 
 CREATE OR replace FUNCTION func_Delivery_id(
     p_Delivery_id NUMBER
