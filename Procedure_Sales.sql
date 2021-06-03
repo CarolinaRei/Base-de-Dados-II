@@ -33,7 +33,13 @@ select func_products_id(prod_id), dw_products_mini.id from dw_products, dw_produ
 select func_mini_prod_id(prod_id) from dw_products where prod_id = 9750;
 select func_Delivery_id(delivery_id) from sales;
 select func_customers_id(cust_id) from sales;
+select func_social_id(cust_id) from sales where cust_id = 161270;
+select func_age_id(cust_id) from sales where cust_id = 161270;
 
+select * from dw_social_class;
+select * from dw_age_gap;
+select * from dw_customers where cust_id = 161270
+;
 select * from sales_rows;
 select * from dw_date;
 create or replace function func_date_id (
@@ -126,7 +132,7 @@ BEGIN
     end loop;
 END func_mini_prod_id;
 /
-select * from customers;
+select * from dw_customers;
 
 CREATE OR replace FUNCTION func_customers_id(
     p_customers_id NUMBER
@@ -156,7 +162,7 @@ BEGIN
     return social_dim_id;
 END func_social_id;
 /
-select * from customers;
+select * from dw_customers;
 
 CREATE OR replace FUNCTION func_age_id(
     p_customers_id NUMBER
