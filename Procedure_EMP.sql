@@ -35,7 +35,7 @@ begin
     sal_min := sal_min_value-100;   -- defining lowest min value--
     sal_max := sal_min +3000;       -- defining lowest max value--
     
-    while sal_max_value > sal_max loop    -- loop to insert values
+    while sal_max_value < sal_max loop    -- loop to insert values
         insert into dw_employees_mini(id, salary_min, salary_max, salary_level)
         values (mini_emp_seq.nextval, sal_min, sal_max, mini_emp_seq.currval);
         sal_min := sal_min + 3000;
